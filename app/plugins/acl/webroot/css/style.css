@@ -1,0 +1,8 @@
+.hidden { display: none; }
+.level-0 { }
+.level-1 { margin-left: 30px; }
+img.permissions-toggle:hover { cursor: pointer; }
+img.hook-toggle:hover { cursor: pointer; }
+
+ul { list-style: none; }
+

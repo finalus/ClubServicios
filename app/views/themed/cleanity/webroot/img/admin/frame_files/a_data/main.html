@@ -1,0 +1,247 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+
+	
+	<title>SQLite version 2.8.17 - 3.3.7</title>
+	<meta http-equiv="Pragma" content="no-cache">
+	<meta http-equiv="expires" content="0">
+	<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">	
+	<style type="text/css">
+	/* to add later in all themes, now can be supersed by theme*/
+	table.menu { border-bottom: 1px solid black; width: 80%;}
+	table.menuButtons { width: 70%; }
+	td.viewPropTitle { border: 1px solid white; }
+	td.viewProp {	border: 1px solid white; }
+	table.home { width: 90%; text-align: center; }
+	td.boxtitle { width: 49%; text-align: center; }
+	td.boxtitlespace { width: 2%; font-size:0px; padding:0px; }
+	h5 { margin-bottom: 3px; font-size: 12px; }
+	table.query { width: 60%; margin-top: 10px; }
+	div.BrowseOptions { text-align:left; }
+	table.BrowseOption { text-align:left; }
+	div.TableOptions { text-align: left; }
+	table.Indexes { margin: 5px; width: 70%; border: thin grey solid; text-align: center; }
+	body { font-size: 12px; }
+  .Tip { font-size: 10px; background-color : Silver; }
+  .time { font-size: 10px; float: center }
+  div.Rights { border: 1px solid blue; }
+	</style>
+	<link href="main_data/theme.css" rel="stylesheet" type="text/css">
+	<link href="main_data/main.css" rel="stylesheet" type="text/css">
+	<script src="main_data/function.js" type="text/javascript" language="javascript"></script>
+	<script src="main_data/JSCookMenu.js" type="text/javascript" language="javascript"></script>	
+	<script src="main_data/theme.js" type="text/javascript" language="javascript"></script>	
+<link rel="stylesheet" type="text/css" media="all" href="main_data/calendar-win2k-1.css">
+<script type="text/javascript" src="main_data/calendar.js"></script>
+<script type="text/javascript" src="main_data/calendar-en.js"></script>
+<script type="text/javascript" src="main_data/calendar-setup.js"></script>
+	</head><body>
+	<h2 class="sqlmVersion">Database : <a href="http://localhost/SQLiteManager/main.php?dbsel=9" style="text-decoration: none;"><span style="color: red;">Test Database</span></a> - Table <a href="http://localhost/SQLiteManager/main.php?dbsel=9&amp;table=users" style="text-decoration: none;" target="main"><span style="color: blue;">users</span></a></h2>
+<!-- common.lib.php : displayMenuTitle() -->
+	<div align="center">
+		<table class="menu" cellpadding="0" cellspacing="0">
+		<tbody><tr><td>
+		<div id="CommandMenu"><table summary="main menu" class="ThemeOfficeMenu" cellspacing="0"><tbody><tr><td class="ThemeOfficeMainItem" onmouseover="cmItemMouseOver (this,'ThemeOffice',1,null,'hbr',0)" onmouseout="cmItemMouseOut (this,400)" onmousedown="cmItemMouseDown (this,0)" onmouseup="cmItemMouseUp (this,0)"><span class="ThemeOfficeMainItemLeft">&nbsp;</span><span class="ThemeOfficeMainItemText">Structure</span><span class="ThemeOfficeMainItemRight">&nbsp;</span></td><td class="ThemeOfficeMainItem" onmouseover="cmItemMouseOver (this,'ThemeOffice',1,null,'hbr',1)" onmouseout="cmItemMouseOut (this,400)" onmousedown="cmItemMouseDown (this,1)" onmouseup="cmItemMouseUp (this,1)"><span class="ThemeOfficeMainItemLeft">&nbsp;</span><span class="ThemeOfficeMainItemText">Display</span><span class="ThemeOfficeMainItemRight">&nbsp;</span></td><td class="ThemeOfficeMainItem" onmouseover="cmItemMouseOver (this,'ThemeOffice',1,null,'hbr',2)" onmouseout="cmItemMouseOut (this,400)" onmousedown="cmItemMouseDown (this,2)" onmouseup="cmItemMouseUp (this,2)"><span class="ThemeOfficeMainItemLeft">&nbsp;</span><span class="ThemeOfficeMainItemText">SQL</span><span class="ThemeOfficeMainItemRight">&nbsp;</span></td><td class="ThemeOfficeMainItem" onmouseover="cmItemMouseOver (this,'ThemeOffice',1,null,'hbr',3)" onmouseout="cmItemMouseOut (this,400)" onmousedown="cmItemMouseDown (this,3)" onmouseup="cmItemMouseUp (this,3)"><span class="ThemeOfficeMainItemLeft">&nbsp;</span><span class="ThemeOfficeMainItemText">Select</span><span class="ThemeOfficeMainItemRight">&nbsp;</span></td><td class="ThemeOfficeMainItem" onmouseover="cmItemMouseOver (this,'ThemeOffice',1,null,'hbr',4)" onmouseout="cmItemMouseOut (this,400)" onmousedown="cmItemMouseDown (this,4)" onmouseup="cmItemMouseUp (this,4)"><span class="ThemeOfficeMainItemLeft">&nbsp;</span><span class="ThemeOfficeMainItemText">Insert</span><span class="ThemeOfficeMainItemRight">&nbsp;</span></td><td class="ThemeOfficeMainItem" onmouseover="cmItemMouseOver (this,'ThemeOffice',1,null,'hbr',5)" onmouseout="cmItemMouseOut (this,400)" onmousedown="cmItemMouseDown (this,5)" onmouseup="cmItemMouseUp (this,5)"><span class="ThemeOfficeMainItemLeft">&nbsp;</span><span class="ThemeOfficeMainItemText">Operation</span><span class="ThemeOfficeMainItemRight">&nbsp;</span></td><td class="ThemeOfficeMainItem" onmouseover="cmItemMouseOver (this,'ThemeOffice',1,null,'hbr',6)" onmouseout="cmItemMouseOut (this,400)" onmousedown="cmItemMouseDown (this,6)" onmouseup="cmItemMouseUp (this,6)"><span class="ThemeOfficeMainItemLeft">&nbsp;</span><span class="ThemeOfficeMainItemText">Export</span><span class="ThemeOfficeMainItemRight">&nbsp;</span></td><td class="ThemeOfficeMainItem" onmouseover="cmItemMouseOver (this,'ThemeOffice',1,null,'hbr',7)" onmouseout="cmItemMouseOut (this,400)" onmousedown="cmItemMouseDown (this,7)" onmouseup="cmItemMouseUp (this,7)"><span class="ThemeOfficeMainItemLeft">&nbsp;</span><span class="ThemeOfficeMainItemText">Empty</span><span class="ThemeOfficeMainItemRight">&nbsp;</span></td><td class="ThemeOfficeMainItem" onmouseover="cmItemMouseOver (this,'ThemeOffice',1,null,'hbr',8)" onmouseout="cmItemMouseOut (this,400)" onmousedown="cmItemMouseDown (this,8)" onmouseup="cmItemMouseUp (this,8)"><span class="ThemeOfficeMainItemLeft">&nbsp;</span><span class="ThemeOfficeMainItemText">Delete</span><span class="ThemeOfficeMainItemRight">&nbsp;</span></td></tr></tbody></table>
+		</div>
+		</td></tr>
+		</tbody></table>
+	</div>
+		<table class="query" align="center" cellspacing="0">		<tbody><tr>
+				<td class="queryTitle" style="white-space: nowrap;" bgcolor="#e7dfce">
+					SQL query : &nbsp;&nbsp;[<a href="http://localhost/SQLiteManager/main.php?dbsel=9&amp;table=users&amp;action=sql&amp;sql_action=modify&amp;displayResult=&amp;DisplayQuery=CREATE+TABLE+users+%28%0Aid+INTEGER+PRIMARY+KEY%2C%0Agroup_id+INTEGER%2811%29+NOT+NULL%2C%0Ausername+VARCHAR%28100%29+NOT+NULL%2C%0Afirst_name+VARCHAR%28255%29%2C%0Alast_name+VARCHAR%28255%29%2C%0Apassword+VARCHAR%28255%29+NOT+NULL%2C%0Aemail+VARCHAR%28255%29+%2C%0Aactive+BOOLEAN+NOT+NULL%2C%0Akey+VARCHAR%28255%29+NOT+NULL%2C%0Aip+VARCHAR%28255%29+NOT+NULL%2C%0Acreated+DATETIME+NOT+NULL%2C%0Amodified+DATETIME+NOT+NULL%0A%29%3B" class="titleHeader" target="main">Modify</a>]&nbsp;[<a href="http://localhost/SQLiteManager/main.php?dbsel=9&amp;table=users&amp;action=sql&amp;sql_action=explain&amp;displayResult=1&amp;DisplayQuery=CREATE+TABLE+users+%28%0Aid+INTEGER+PRIMARY+KEY%2C%0Agroup_id+INTEGER%2811%29+NOT+NULL%2C%0Ausername+VARCHAR%28100%29+NOT+NULL%2C%0Afirst_name+VARCHAR%28255%29%2C%0Alast_name+VARCHAR%28255%29%2C%0Apassword+VARCHAR%28255%29+NOT+NULL%2C%0Aemail+VARCHAR%28255%29+%2C%0Aactive+BOOLEAN+NOT+NULL%2C%0Akey+VARCHAR%28255%29+NOT+NULL%2C%0Aip+VARCHAR%28255%29+NOT+NULL%2C%0Acreated+DATETIME+NOT+NULL%2C%0Amodified+DATETIME+NOT+NULL%0A%29%3B" class="titleHeader" target="main">Explain SQL</a>]&nbsp;[<a href="http://localhost/SQLiteManager/main.php?dbsel=9&amp;table=users&amp;action=sql&amp;displayResult=1&amp;DisplayQuery=CREATE+TABLE+users+%28%0Aid+INTEGER+PRIMARY+KEY%2C%0Agroup_id+INTEGER%2811%29+NOT+NULL%2C%0Ausername+VARCHAR%28100%29+NOT+NULL%2C%0Afirst_name+VARCHAR%28255%29%2C%0Alast_name+VARCHAR%28255%29%2C%0Apassword+VARCHAR%28255%29+NOT+NULL%2C%0Aemail+VARCHAR%28255%29+%2C%0Aactive+BOOLEAN+NOT+NULL%2C%0Akey+VARCHAR%28255%29+NOT+NULL%2C%0Aip+VARCHAR%28255%29+NOT+NULL%2C%0Acreated+DATETIME+NOT+NULL%2C%0Amodified+DATETIME+NOT+NULL%0A%29%3B" class="titleHeader" target="main">Update</a>]</td></tr>
+			<tr><td class="queryBody" style="white-space: nowrap;" bgcolor="#e7dfce"><div class="sqlsyntaxe"><span class="syntaxe_keyword">CREATE</span> <span class="syntaxe_keyword">TABLE</span> <span class="syntaxe_variable">users</span>  <span class="syntaxe_variable"><span class="syntaxe_punct">(</span></span>  <span class="syntaxe_variable">id</span> <span class="syntaxe_variable">INTEGER</span> <span class="syntaxe_keyword">PRIMARY</span> <span class="syntaxe_keyword">KEY</span> <span class="syntaxe_variable"><span class="syntaxe_punct">,</span></span>  <span class="syntaxe_variable">group_id</span> <span class="syntaxe_variable">INTEGER</span> <span class="syntaxe_variable"><span class="syntaxe_punct">(</span></span> <span class="syntaxe_digit">11</span> <span class="syntaxe_variable"><span class="syntaxe_punct">)</span></span>  <span class="syntaxe_keyword">NOT</span> <span class="syntaxe_keyword">NULL</span> <span class="syntaxe_variable"><span class="syntaxe_punct">,</span></span>  <span class="syntaxe_variable">username</span> <span class="syntaxe_variable">VARCHAR</span> <span class="syntaxe_variable"><span class="syntaxe_punct">(</span></span> <span class="syntaxe_digit">100</span> <span class="syntaxe_variable"><span class="syntaxe_punct">)</span></span>  <span class="syntaxe_keyword">NOT</span> <span class="syntaxe_keyword">NULL</span> <span class="syntaxe_variable"><span class="syntaxe_punct">,</span></span>  <span class="syntaxe_variable">first_name</span> <span class="syntaxe_variable">VARCHAR</span> <span class="syntaxe_variable"><span class="syntaxe_punct">(</span></span> <span class="syntaxe_digit">255</span> <span class="syntaxe_variable"><span class="syntaxe_punct">)</span></span>  <span class="syntaxe_variable"><span class="syntaxe_punct">,</span></span>  <span class="syntaxe_variable">last_name</span> <span class="syntaxe_variable">VARCHAR</span> <span class="syntaxe_variable"><span class="syntaxe_punct">(</span></span> <span class="syntaxe_digit">255</span> <span class="syntaxe_variable"><span class="syntaxe_punct">)</span></span>  <span class="syntaxe_variable"><span class="syntaxe_punct">,</span></span>  <span class="syntaxe_variable">password</span> <span class="syntaxe_variable">VARCHAR</span> <span class="syntaxe_variable"><span class="syntaxe_punct">(</span></span> <span class="syntaxe_digit">255</span> <span class="syntaxe_variable"><span class="syntaxe_punct">)</span></span>  <span class="syntaxe_keyword">NOT</span> <span class="syntaxe_keyword">NULL</span> <span class="syntaxe_variable"><span class="syntaxe_punct">,</span></span>  <span class="syntaxe_variable">email</span> <span class="syntaxe_variable">VARCHAR</span> <span class="syntaxe_variable"><span class="syntaxe_punct">(</span></span> <span class="syntaxe_digit">255</span> <span class="syntaxe_variable"><span class="syntaxe_punct">)</span></span>   <span class="syntaxe_variable"><span class="syntaxe_punct">,</span></span>  <span class="syntaxe_variable">active</span> <span class="syntaxe_variable">BOOLEAN</span> <span class="syntaxe_keyword">NOT</span> <span class="syntaxe_keyword">NULL</span> <span class="syntaxe_variable"><span class="syntaxe_punct">,</span></span>  <span class="syntaxe_keyword">KEY</span> <span class="syntaxe_variable">VARCHAR</span> <span class="syntaxe_variable"><span class="syntaxe_punct">(</span></span> <span class="syntaxe_digit">255</span> <span class="syntaxe_variable"><span class="syntaxe_punct">)</span></span>  <span class="syntaxe_keyword">NOT</span> <span class="syntaxe_keyword">NULL</span> <span class="syntaxe_variable"><span class="syntaxe_punct">,</span></span>  <span class="syntaxe_variable">ip</span> <span class="syntaxe_variable">VARCHAR</span> <span class="syntaxe_variable"><span class="syntaxe_punct">(</span></span> <span class="syntaxe_digit">255</span> <span class="syntaxe_variable"><span class="syntaxe_punct">)</span></span>  <span class="syntaxe_keyword">NOT</span> <span class="syntaxe_keyword">NULL</span> <span class="syntaxe_variable"><span class="syntaxe_punct">,</span></span>  <span class="syntaxe_variable">created</span> <span class="syntaxe_variable">DATETIME</span> <span class="syntaxe_keyword">NOT</span> <span class="syntaxe_keyword">NULL</span> <span class="syntaxe_variable"><span class="syntaxe_punct">,</span></span>  <span class="syntaxe_variable">modified</span> <span class="syntaxe_variable">DATETIME</span> <span class="syntaxe_keyword">NOT</span> <span class="syntaxe_keyword">NULL</span>  <span class="syntaxe_variable"><span class="syntaxe_punct">)</span></span>  <span class="syntaxe_variable"><span class="syntaxe_punct">;</span></span> </div></td></tr>
+		</tbody></table><br>
+		<!-- SQLiteTableProperties.class.php : tablePropView() -->
+<br\>
+				<div align="center">
+				<table class="Main" width="80%" cellpadding="0" cellspacing="0">
+					<tbody><tr>
+						<td>
+				<form name="tabprop" action="main.php?dbsel=9" method="POST" target="main">
+				<table class="Browse" width="100%" cellpadding="0" cellspacing="0">
+					<thead>
+					<tr>			<td class="Browse">&nbsp;</td>			<td class="Browse" align="center">Field</td>
+						<td class="Browse" align="center">Type</td>
+						<td class="Browse" align="center">Null</td>
+						<td class="Browse" align="center">Default</td>
+						<td class="Browse" colspan="5" align="center">Action</td>
+					</tr>
+					</thead>	<tbody><tr onmouseover="setRowColor(this, 0, 'over', '#e7dfce', '#EAFFEA', '#FFFFAA')" onmouseout="setRowColor(this, 0, 'out', '#e7dfce', '#EAFFEA', '#FFFFAA')" bgcolor="#e7dfce">
+<td style="background-color: rgb(231, 223, 206);" class="Browse" align="center"><input name="modify[0]" type="checkbox"></td>
+<td style="background-color: rgb(231, 223, 206);" class="Browse" align="left">id</td>
+<td style="background-color: rgb(231, 223, 206);" class="Browse" align="left">INTEGER</td>
+<td style="background-color: rgb(231, 223, 206);" class="Browse" align="center">Yes</td>
+<td style="background-color: rgb(231, 223, 206);" class="Browse" align="right"><i>NULL</i></td>
+<td style="background-color: rgb(231, 223, 206);" class="Browse" width="7%" align="center"><a href="#" onclick="javascript:setTableAction('tabprop', 0, 'modify');" class="Browse"><img src="main_data/edit.png" alt="Modify" title="Modify" border="0"></a></td>
+<td style="background-color: rgb(231, 223, 206);" class="Browse" width="7%" align="center"><a href="#" onclick="javascript:if(confirm('Are you sure you want to delete the field\nid?')) setTableAction('tabprop', 0, 'delete');" class="Browse"><img src="main_data/deletecol.png" alt="Delete" title="Delete" border="0"></a></td>
+<td style="background-color: rgb(231, 223, 206);" class="Browse" width="7%" align="center"><a href="#" onclick="javascript:setTableAction('tabprop', 0, 'unique');" class="Browse"><img src="main_data/unique.png" alt="Unique" title="Unique" border="0"></a></td>
+<td style="background-color: rgb(231, 223, 206);" class="Browse" width="7%" align="center"><a href="#" onclick="javascript:setTableAction('tabprop', 0, 'index');" class="Browse"><img src="main_data/index.png" alt="Index" title="Index" border="0"></a></td>
+<td style="background-color: rgb(231, 223, 206);" class="Browse" width="7%" align="center"><a href="#" onclick="javascript:setTableAction('tabprop', 0, 'noprimary');" class="Browse"><img src="main_data/primaire.png" alt="Primary" title="Primary" border="0"></a></td>	</tr>	<tr onmouseover="setRowColor(this, 1, 'over', '#f7f3ef', '#EAFFEA', '#FFFFAA')" onmouseout="setRowColor(this, 1, 'out', '#f7f3ef', '#EAFFEA', '#FFFFAA')" bgcolor="#f7f3ef">
+<td style="background-color: rgb(247, 243, 239);" class="Browse" align="center"><input name="modify[1]" type="checkbox"></td>
+<td style="background-color: rgb(247, 243, 239);" class="Browse" align="left">group_id</td>
+<td style="background-color: rgb(247, 243, 239);" class="Browse" align="left">INTEGER(11)</td>
+<td style="background-color: rgb(247, 243, 239);" class="Browse" align="center">No</td>
+<td style="background-color: rgb(247, 243, 239);" class="Browse" align="right">&nbsp;</td>
+<td style="background-color: rgb(247, 243, 239);" class="Browse" width="7%" align="center"><a href="#" onclick="javascript:setTableAction('tabprop', 1, 'modify');" class="Browse"><img src="main_data/edit.png" alt="Modify" title="Modify" border="0"></a></td>
+<td style="background-color: rgb(247, 243, 239);" class="Browse" width="7%" align="center"><a href="#" onclick="javascript:if(confirm('Are you sure you want to delete the field\ngroup_id?')) setTableAction('tabprop', 1, 'delete');" class="Browse"><img src="main_data/deletecol.png" alt="Delete" title="Delete" border="0"></a></td>
+<td style="background-color: rgb(247, 243, 239);" class="Browse" width="7%" align="center"><a href="#" onclick="javascript:setTableAction('tabprop', 1, 'unique');" class="Browse"><img src="main_data/unique.png" alt="Unique" title="Unique" border="0"></a></td>
+<td style="background-color: rgb(247, 243, 239);" class="Browse" width="7%" align="center"><a href="#" onclick="javascript:setTableAction('tabprop', 1, 'index');" class="Browse"><img src="main_data/index.png" alt="Index" title="Index" border="0"></a></td>
+<td style="background-color: rgb(247, 243, 239);" class="Browse" width="7%" align="center">&nbsp;</td>	</tr>	<tr onmouseover="setRowColor(this, 2, 'over', '#e7dfce', '#EAFFEA', '#FFFFAA')" onmouseout="setRowColor(this, 2, 'out', '#e7dfce', '#EAFFEA', '#FFFFAA')" bgcolor="#e7dfce">
+<td style="background-color: rgb(231, 223, 206);" class="Browse" align="center"><input name="modify[2]" type="checkbox"></td>
+<td style="background-color: rgb(231, 223, 206);" class="Browse" align="left">username</td>
+<td style="background-color: rgb(231, 223, 206);" class="Browse" align="left">VARCHAR(100)</td>
+<td style="background-color: rgb(231, 223, 206);" class="Browse" align="center">No</td>
+<td style="background-color: rgb(231, 223, 206);" class="Browse" align="right">&nbsp;</td>
+<td style="background-color: rgb(231, 223, 206);" class="Browse" width="7%" align="center"><a href="#" onclick="javascript:setTableAction('tabprop', 2, 'modify');" class="Browse"><img src="main_data/edit.png" alt="Modify" title="Modify" border="0"></a></td>
+<td style="background-color: rgb(231, 223, 206);" class="Browse" width="7%" align="center"><a href="#" onclick="javascript:if(confirm('Are you sure you want to delete the field\nusername?')) setTableAction('tabprop', 2, 'delete');" class="Browse"><img src="main_data/deletecol.png" alt="Delete" title="Delete" border="0"></a></td>
+<td style="background-color: rgb(231, 223, 206);" class="Browse" width="7%" align="center"><a href="#" onclick="javascript:setTableAction('tabprop', 2, 'unique');" class="Browse"><img src="main_data/unique.png" alt="Unique" title="Unique" border="0"></a></td>
+<td style="background-color: rgb(231, 223, 206);" class="Browse" width="7%" align="center"><a href="#" onclick="javascript:setTableAction('tabprop', 2, 'index');" class="Browse"><img src="main_data/index.png" alt="Index" title="Index" border="0"></a></td>
+<td style="background-color: rgb(231, 223, 206);" class="Browse" width="7%" align="center">&nbsp;</td>	</tr>	<tr onmouseover="setRowColor(this, 3, 'over', '#f7f3ef', '#EAFFEA', '#FFFFAA')" onmouseout="setRowColor(this, 3, 'out', '#f7f3ef', '#EAFFEA', '#FFFFAA')" bgcolor="#f7f3ef">
+<td style="background-color: rgb(234, 255, 234);" class="Browse" align="center"><input name="modify[3]" type="checkbox"></td>
+<td style="background-color: rgb(234, 255, 234);" class="Browse" align="left">first_name</td>
+<td style="background-color: rgb(234, 255, 234);" class="Browse" align="left">VARCHAR(255)</td>
+<td style="background-color: rgb(234, 255, 234);" class="Browse" align="center">Yes</td>
+<td style="background-color: rgb(234, 255, 234);" class="Browse" align="right"><i>NULL</i></td>
+<td style="background-color: rgb(234, 255, 234);" class="Browse" width="7%" align="center"><a href="#" onclick="javascript:setTableAction('tabprop', 3, 'modify');" class="Browse"><img src="main_data/edit.png" alt="Modify" title="Modify" border="0"></a></td>
+<td style="background-color: rgb(234, 255, 234);" class="Browse" width="7%" align="center"><a href="#" onclick="javascript:if(confirm('Are you sure you want to delete the field\nfirst_name?')) setTableAction('tabprop', 3, 'delete');" class="Browse"><img src="main_data/deletecol.png" alt="Delete" title="Delete" border="0"></a></td>
+<td style="background-color: rgb(234, 255, 234);" class="Browse" width="7%" align="center"><a href="#" onclick="javascript:setTableAction('tabprop', 3, 'unique');" class="Browse"><img src="main_data/unique.png" alt="Unique" title="Unique" border="0"></a></td>
+<td style="background-color: rgb(234, 255, 234);" class="Browse" width="7%" align="center"><a href="#" onclick="javascript:setTableAction('tabprop', 3, 'index');" class="Browse"><img src="main_data/index.png" alt="Index" title="Index" border="0"></a></td>
+<td style="background-color: rgb(234, 255, 234);" class="Browse" width="7%" align="center">&nbsp;</td>	</tr>	<tr onmouseover="setRowColor(this, 4, 'over', '#e7dfce', '#EAFFEA', '#FFFFAA')" onmouseout="setRowColor(this, 4, 'out', '#e7dfce', '#EAFFEA', '#FFFFAA')" bgcolor="#e7dfce">
+<td style="background-color: rgb(231, 223, 206);" class="Browse" align="center"><input name="modify[4]" type="checkbox"></td>
+<td style="background-color: rgb(231, 223, 206);" class="Browse" align="left">last_name</td>
+<td style="background-color: rgb(231, 223, 206);" class="Browse" align="left">VARCHAR(255)</td>
+<td style="background-color: rgb(231, 223, 206);" class="Browse" align="center">Yes</td>
+<td style="background-color: rgb(231, 223, 206);" class="Browse" align="right"><i>NULL</i></td>
+<td style="background-color: rgb(231, 223, 206);" class="Browse" width="7%" align="center"><a href="#" onclick="javascript:setTableAction('tabprop', 4, 'modify');" class="Browse"><img src="main_data/edit.png" alt="Modify" title="Modify" border="0"></a></td>
+<td style="background-color: rgb(231, 223, 206);" class="Browse" width="7%" align="center"><a href="#" onclick="javascript:if(confirm('Are you sure you want to delete the field\nlast_name?')) setTableAction('tabprop', 4, 'delete');" class="Browse"><img src="main_data/deletecol.png" alt="Delete" title="Delete" border="0"></a></td>
+<td style="background-color: rgb(231, 223, 206);" class="Browse" width="7%" align="center"><a href="#" onclick="javascript:setTableAction('tabprop', 4, 'unique');" class="Browse"><img src="main_data/unique.png" alt="Unique" title="Unique" border="0"></a></td>
+<td style="background-color: rgb(231, 223, 206);" class="Browse" width="7%" align="center"><a href="#" onclick="javascript:setTableAction('tabprop', 4, 'index');" class="Browse"><img src="main_data/index.png" alt="Index" title="Index" border="0"></a></td>
+<td style="background-color: rgb(231, 223, 206);" class="Browse" width="7%" align="center">&nbsp;</td>	</tr>	<tr onmouseover="setRowColor(this, 5, 'over', '#f7f3ef', '#EAFFEA', '#FFFFAA')" onmouseout="setRowColor(this, 5, 'out', '#f7f3ef', '#EAFFEA', '#FFFFAA')" bgcolor="#f7f3ef">
+<td style="background-color: rgb(247, 243, 239);" class="Browse" align="center"><input name="modify[5]" type="checkbox"></td>
+<td style="background-color: rgb(247, 243, 239);" class="Browse" align="left">password</td>
+<td style="background-color: rgb(247, 243, 239);" class="Browse" align="left">VARCHAR(255)</td>
+<td style="background-color: rgb(247, 243, 239);" class="Browse" align="center">No</td>
+<td style="background-color: rgb(247, 243, 239);" class="Browse" align="right">&nbsp;</td>
+<td style="background-color: rgb(247, 243, 239);" class="Browse" width="7%" align="center"><a href="#" onclick="javascript:setTableAction('tabprop', 5, 'modify');" class="Browse"><img src="main_data/edit.png" alt="Modify" title="Modify" border="0"></a></td>
+<td style="background-color: rgb(247, 243, 239);" class="Browse" width="7%" align="center"><a href="#" onclick="javascript:if(confirm('Are you sure you want to delete the field\npassword?')) setTableAction('tabprop', 5, 'delete');" class="Browse"><img src="main_data/deletecol.png" alt="Delete" title="Delete" border="0"></a></td>
+<td style="background-color: rgb(247, 243, 239);" class="Browse" width="7%" align="center"><a href="#" onclick="javascript:setTableAction('tabprop', 5, 'unique');" class="Browse"><img src="main_data/unique.png" alt="Unique" title="Unique" border="0"></a></td>
+<td style="background-color: rgb(247, 243, 239);" class="Browse" width="7%" align="center"><a href="#" onclick="javascript:setTableAction('tabprop', 5, 'index');" class="Browse"><img src="main_data/index.png" alt="Index" title="Index" border="0"></a></td>
+<td style="background-color: rgb(247, 243, 239);" class="Browse" width="7%" align="center">&nbsp;</td>	</tr>	<tr onmouseover="setRowColor(this, 6, 'over', '#e7dfce', '#EAFFEA', '#FFFFAA')" onmouseout="setRowColor(this, 6, 'out', '#e7dfce', '#EAFFEA', '#FFFFAA')" bgcolor="#e7dfce">
+<td style="background-color: rgb(231, 223, 206);" class="Browse" align="center"><input name="modify[6]" type="checkbox"></td>
+<td style="background-color: rgb(231, 223, 206);" class="Browse" align="left">email</td>
+<td style="background-color: rgb(231, 223, 206);" class="Browse" align="left">VARCHAR(255)</td>
+<td style="background-color: rgb(231, 223, 206);" class="Browse" align="center">Yes</td>
+<td style="background-color: rgb(231, 223, 206);" class="Browse" align="right"><i>NULL</i></td>
+<td style="background-color: rgb(231, 223, 206);" class="Browse" width="7%" align="center"><a href="#" onclick="javascript:setTableAction('tabprop', 6, 'modify');" class="Browse"><img src="main_data/edit.png" alt="Modify" title="Modify" border="0"></a></td>
+<td style="background-color: rgb(231, 223, 206);" class="Browse" width="7%" align="center"><a href="#" onclick="javascript:if(confirm('Are you sure you want to delete the field\nemail?')) setTableAction('tabprop', 6, 'delete');" class="Browse"><img src="main_data/deletecol.png" alt="Delete" title="Delete" border="0"></a></td>
+<td style="background-color: rgb(231, 223, 206);" class="Browse" width="7%" align="center"><a href="#" onclick="javascript:setTableAction('tabprop', 6, 'unique');" class="Browse"><img src="main_data/unique.png" alt="Unique" title="Unique" border="0"></a></td>
+<td style="background-color: rgb(231, 223, 206);" class="Browse" width="7%" align="center"><a href="#" onclick="javascript:setTableAction('tabprop', 6, 'index');" class="Browse"><img src="main_data/index.png" alt="Index" title="Index" border="0"></a></td>
+<td style="background-color: rgb(231, 223, 206);" class="Browse" width="7%" align="center">&nbsp;</td>	</tr>	<tr onmouseover="setRowColor(this, 7, 'over', '#f7f3ef', '#EAFFEA', '#FFFFAA')" onmouseout="setRowColor(this, 7, 'out', '#f7f3ef', '#EAFFEA', '#FFFFAA')" bgcolor="#f7f3ef">
+<td style="background-color: rgb(247, 243, 239);" class="Browse" align="center"><input name="modify[7]" type="checkbox"></td>
+<td style="background-color: rgb(247, 243, 239);" class="Browse" align="left">active</td>
+<td style="background-color: rgb(247, 243, 239);" class="Browse" align="left">BOOLEAN</td>
+<td style="background-color: rgb(247, 243, 239);" class="Browse" align="center">No</td>
+<td style="background-color: rgb(247, 243, 239);" class="Browse" align="right">&nbsp;</td>
+<td style="background-color: rgb(247, 243, 239);" class="Browse" width="7%" align="center"><a href="#" onclick="javascript:setTableAction('tabprop', 7, 'modify');" class="Browse"><img src="main_data/edit.png" alt="Modify" title="Modify" border="0"></a></td>
+<td style="background-color: rgb(247, 243, 239);" class="Browse" width="7%" align="center"><a href="#" onclick="javascript:if(confirm('Are you sure you want to delete the field\nactive?')) setTableAction('tabprop', 7, 'delete');" class="Browse"><img src="main_data/deletecol.png" alt="Delete" title="Delete" border="0"></a></td>
+<td style="background-color: rgb(247, 243, 239);" class="Browse" width="7%" align="center"><a href="#" onclick="javascript:setTableAction('tabprop', 7, 'unique');" class="Browse"><img src="main_data/unique.png" alt="Unique" title="Unique" border="0"></a></td>
+<td style="background-color: rgb(247, 243, 239);" class="Browse" width="7%" align="center"><a href="#" onclick="javascript:setTableAction('tabprop', 7, 'index');" class="Browse"><img src="main_data/index.png" alt="Index" title="Index" border="0"></a></td>
+<td style="background-color: rgb(247, 243, 239);" class="Browse" width="7%" align="center">&nbsp;</td>	</tr>	<tr onmouseover="setRowColor(this, 8, 'over', '#e7dfce', '#EAFFEA', '#FFFFAA')" onmouseout="setRowColor(this, 8, 'out', '#e7dfce', '#EAFFEA', '#FFFFAA')" bgcolor="#e7dfce">
+<td class="Browse" align="center"><input name="modify[8]" type="checkbox"></td>
+<td class="Browse" align="left">key</td>
+<td class="Browse" align="left">VARCHAR(255)</td>
+<td class="Browse" align="center">No</td>
+<td class="Browse" align="right">&nbsp;</td>
+<td class="Browse" width="7%" align="center"><a href="#" onclick="javascript:setTableAction('tabprop', 8, 'modify');" class="Browse"><img src="main_data/edit.png" alt="Modify" title="Modify" border="0"></a></td>
+<td class="Browse" width="7%" align="center"><a href="#" onclick="javascript:if(confirm('Are you sure you want to delete the field\nkey?')) setTableAction('tabprop', 8, 'delete');" class="Browse"><img src="main_data/deletecol.png" alt="Delete" title="Delete" border="0"></a></td>
+<td class="Browse" width="7%" align="center"><a href="#" onclick="javascript:setTableAction('tabprop', 8, 'unique');" class="Browse"><img src="main_data/unique.png" alt="Unique" title="Unique" border="0"></a></td>
+<td class="Browse" width="7%" align="center"><a href="#" onclick="javascript:setTableAction('tabprop', 8, 'index');" class="Browse"><img src="main_data/index.png" alt="Index" title="Index" border="0"></a></td>
+<td class="Browse" width="7%" align="center">&nbsp;</td>	</tr>	<tr onmouseover="setRowColor(this, 9, 'over', '#f7f3ef', '#EAFFEA', '#FFFFAA')" onmouseout="setRowColor(this, 9, 'out', '#f7f3ef', '#EAFFEA', '#FFFFAA')" bgcolor="#f7f3ef">
+<td class="Browse" align="center"><input name="modify[9]" type="checkbox"></td>
+<td class="Browse" align="left">ip</td>
+<td class="Browse" align="left">VARCHAR(255)</td>
+<td class="Browse" align="center">No</td>
+<td class="Browse" align="right">&nbsp;</td>
+<td class="Browse" width="7%" align="center"><a href="#" onclick="javascript:setTableAction('tabprop', 9, 'modify');" class="Browse"><img src="main_data/edit.png" alt="Modify" title="Modify" border="0"></a></td>
+<td class="Browse" width="7%" align="center"><a href="#" onclick="javascript:if(confirm('Are you sure you want to delete the field\nip?')) setTableAction('tabprop', 9, 'delete');" class="Browse"><img src="main_data/deletecol.png" alt="Delete" title="Delete" border="0"></a></td>
+<td class="Browse" width="7%" align="center"><a href="#" onclick="javascript:setTableAction('tabprop', 9, 'unique');" class="Browse"><img src="main_data/unique.png" alt="Unique" title="Unique" border="0"></a></td>
+<td class="Browse" width="7%" align="center"><a href="#" onclick="javascript:setTableAction('tabprop', 9, 'index');" class="Browse"><img src="main_data/index.png" alt="Index" title="Index" border="0"></a></td>
+<td class="Browse" width="7%" align="center">&nbsp;</td>	</tr>	<tr onmouseover="setRowColor(this, 10, 'over', '#e7dfce', '#EAFFEA', '#FFFFAA')" onmouseout="setRowColor(this, 10, 'out', '#e7dfce', '#EAFFEA', '#FFFFAA')" bgcolor="#e7dfce">
+<td class="Browse" align="center"><input name="modify[10]" type="checkbox"></td>
+<td class="Browse" align="left">created</td>
+<td class="Browse" align="left">DATETIME</td>
+<td class="Browse" align="center">No</td>
+<td class="Browse" align="right">&nbsp;</td>
+<td class="Browse" width="7%" align="center"><a href="#" onclick="javascript:setTableAction('tabprop', 10, 'modify');" class="Browse"><img src="main_data/edit.png" alt="Modify" title="Modify" border="0"></a></td>
+<td class="Browse" width="7%" align="center"><a href="#" onclick="javascript:if(confirm('Are you sure you want to delete the field\ncreated?')) setTableAction('tabprop', 10, 'delete');" class="Browse"><img src="main_data/deletecol.png" alt="Delete" title="Delete" border="0"></a></td>
+<td class="Browse" width="7%" align="center"><a href="#" onclick="javascript:setTableAction('tabprop', 10, 'unique');" class="Browse"><img src="main_data/unique.png" alt="Unique" title="Unique" border="0"></a></td>
+<td class="Browse" width="7%" align="center"><a href="#" onclick="javascript:setTableAction('tabprop', 10, 'index');" class="Browse"><img src="main_data/index.png" alt="Index" title="Index" border="0"></a></td>
+<td class="Browse" width="7%" align="center">&nbsp;</td>	</tr>	<tr onmouseover="setRowColor(this, 11, 'over', '#f7f3ef', '#EAFFEA', '#FFFFAA')" onmouseout="setRowColor(this, 11, 'out', '#f7f3ef', '#EAFFEA', '#FFFFAA')" bgcolor="#f7f3ef">
+<td class="Browse" align="center"><input name="modify[11]" type="checkbox"></td>
+<td class="Browse" align="left">modified</td>
+<td class="Browse" align="left">DATETIME</td>
+<td class="Browse" align="center">No</td>
+<td class="Browse" align="right">&nbsp;</td>
+<td class="Browse" width="7%" align="center"><a href="#" onclick="javascript:setTableAction('tabprop', 11, 'modify');" class="Browse"><img src="main_data/edit.png" alt="Modify" title="Modify" border="0"></a></td>
+<td class="Browse" width="7%" align="center"><a href="#" onclick="javascript:if(confirm('Are you sure you want to delete the field\nmodified?')) setTableAction('tabprop', 11, 'delete');" class="Browse"><img src="main_data/deletecol.png" alt="Delete" title="Delete" border="0"></a></td>
+<td class="Browse" width="7%" align="center"><a href="#" onclick="javascript:setTableAction('tabprop', 11, 'unique');" class="Browse"><img src="main_data/unique.png" alt="Unique" title="Unique" border="0"></a></td>
+<td class="Browse" width="7%" align="center"><a href="#" onclick="javascript:setTableAction('tabprop', 11, 'index');" class="Browse"><img src="main_data/index.png" alt="Index" title="Index" border="0"></a></td>
+<td class="Browse" width="7%" align="center">&nbsp;</td>	</tr>	<tr><td colspan="10" class="BrowseSelect">&nbsp;&nbsp;&nbsp;<img src="main_data/arrow_ltr.gif" alt="" title="" border="0">&nbsp;
+				<a href="#" onclick="javascript:setCheckBox('tabprop','modify',true);" class="Browse">Check all</a>&nbsp;/&nbsp;
+				<a href="#" onclick="javascript:setCheckBox('tabprop', 'modify', false);" class="Browse">Uncheck all</a>&nbsp;-&nbsp;<i>For the selection</i>&nbsp;:&nbsp;
+				<a href="#" onclick="javascript: document.tabprop.action.value='modify'; document.tabprop.submit();" class="Browse"><img src="main_data/edit.png" alt="Modify" title="Modify" border="0"></a>&nbsp;-&nbsp;
+				<a href="#" onclick="javascript: if(confirm('Are you sure you want to delete this/these fields?')) { document.tabprop.action.value='delete'; document.tabprop.submit();}" class="Browse"><img src="main_data/deletecol.png" alt="Delete" title="Delete" border="0"></a></td></tr></tbody></table><input name="table" value="users" type="hidden">
+<input name="action" value="" type="hidden">
+</form><hr width="80%"><!-- SQLiteTableProperties.class.php : formAddChamp() -->
+<form name="addChamp" action="main.php?dbsel=9&amp;table=users" method="POST" target="main">
+<span style="font-size: 12px;">Add 
+				<input name="nbChamps" value="1" size="2" class="small-input" type="text"> Field(s) 
+<select name="after" class="small-input">
+<option selected="selected" value="END">At the end of table</option>
+<option value="START">At the beginning of table</option>
+<option value="0">After id</option>
+<option value="1">After group_id</option>
+<option value="2">After username</option>
+<option value="3">After first_name</option>
+<option value="4">After last_name</option>
+<option value="5">After password</option>
+<option value="6">After email</option>
+<option value="7">After active</option>
+<option value="8">After key</option>
+<option value="9">After ip</option>
+<option value="10">After created</option>
+<option value="11">After modified</option>
+</select>
+				<input value="Execute" class="button small-input" type="submit">
+<input name="action" value="addChamp" type="hidden">
+</span>
+				</form>
+<div class="TableOptions">
+<div class="Indexes">
+<h5>Management of index(es)</h5><form name="indexprop" action="main.php?dbsel=9&amp;table=users" method="POST" target="main"><table class="Index" width="90%" cellpadding="0" cellspacing="0">
+					<thead>
+					<tr>
+						<td class="Browse" align="center">Key name</td>
+						<td class="Browse" align="center">Type</td>
+						<td class="Browse" align="center">Field</td>
+						<td class="Browse" colspan="2" align="center">Action</td>
+					</tr>
+					</thead>	<tbody><tr onmouseover="setRowColor(this, 0, 'over', '#e7dfce', '#EAFFEA', '#FFFFAA')" onmouseout="setRowColor(this, 0, 'out', '#e7dfce', '#EAFFEA', '#FFFFAA')" bgcolor="#e7dfce">
+
+					<td class="Index" align="left">PRIMARY</td>
+					<td class="Index" align="left">PRIMARY</td>
+					<td class="Index" align="right">id</td>		<td class="Index" align="center">&nbsp;</td>		<td class="Index" align="center">&nbsp;</td>	</tr></tbody></table><input name="action" value="" type="hidden">
+</form>
+<form name="addIndex" action="main.php?dbsel=9&amp;table=users" method="POST" target="main">
+	<span style="font-size: 12px;">Add an Index on 
+				<input name="nbCols" value="1" size="2" class="small-input" type="text"> column(s) 
+				<input class="button" value="Execute" type="submit">
+<input name="index_action" value="addIndex" type="hidden">
+</span></form>
+</div>
+</div>
+</td>
+				</tr>
+				</tbody></table>
+				</div><script type="text/javascript">parent.left.location='left.php?dbsel=9';</script>
+</br\></body></html>

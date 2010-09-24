@@ -1,0 +1,284 @@
+/* CSS Document */
+
+body{text-align:center; margin:0; padding:0; font-family:Lucida Grande, Arial; font-size:13px; background-color:#ebebeb; color:#464646; }
+
+.wrapper{margin:0 auto; width:900px;}
+	
+.content{background-color:#FFFFFF; border:1px solid #bab9b9; text-align:center; padding-bottom:25px;}
+
+.in{width:850px; margin:15px auto 0 auto; text-align:left; position:relative;}
+
+.line{border-top:1px solid #bab9b9; height:1px; clear: both;}
+
+
+
+/*.............................................................General.................... */
+
+h1, h2, h3 {margin:0; padding:0; }
+
+h1{font-size:32px;}
+
+h2{font-family:Georgia; font-size:24px; font-style:italic; }
+
+img { border: 0;}            
+
+ul, li { list-style: none; text-align: left;}
+
+.author p{margin:0; padding:0; }
+
+.forms{line-height:2em; }
+
+a:link, a:visited{color:#30a4b1; text-decoration:none;}
+
+a:hover{color:#f7941d;}
+
+.v_line{padding:0 5px; color:#999999;}
+
+
+/*.............................................................Header.................... */
+
+.logo{float:left; margin:25px 0;}
+
+.txt_right{ float:right; margin-top:15px;}
+
+/*............................... Search Form.....................*/	
+
+
+#searchform{ position:absolute; top:13px; right:15px;}
+
+.search_box{ padding:6px; color:#999999; font-size:13px; margin:0; background-color:#FFFFFF; border:1px solid #ccc;}
+
+.search_btn{margin:0 0 0 5px; padding:6px; border:0px; background-color:#f7941d; color:#fff; height:30px; font-size:13px;}
+
+
+
+
+/*.............................................................Form.................... */
+
+fieldset { border: 0; padding: 0 0 10px 0; margin: 0;}
+
+legend { display: none; }
+
+label { display: block; font-weight: bold; text-transform: uppercase; }
+
+.input { padding: 0 0 10px 0; }
+
+.input input, .input textarea, .file input, .box {border:1px solid #bab9b9; padding:10px; width:600px; color:#707070; font-size:14px; }
+
+.input select, .box2{border:1px solid #bab9b9; padding:10px; width:400px; color:#707070; font-size:14px; } 
+
+.input .error-message { color: #F71D26; }
+
+.date select { border: 1px solid #bab9b9; color: 707070; font-size: 14px; width: 125px; }
+
+.checkbox label { display: inline; }
+.checkbox input { width: 20px;}
+
+.com_btn{margin:0px; padding:10px 20px; border:0px; background-color:#f7941d; color:#fff; font-size:14px; }  
+
+
+
+
+
+
+/*.............................................................Check YES or NO.................... */
+
+.check{ margin:25px; text-align:left; padding:10px 15px; border:1px solid #bab9b9; background-color:#f7f7f7;}
+
+.good{}
+
+.icon{padding-right:8px; float:left;}
+
+.bad{}
+
+
+/*..................................................... Navigation .....................*/	
+	
+
+.navigation{ background-color:#464646; float: left; margin-bottom:20px; width:900px; position:relative;}
+
+.navigation ul{ margin:0px; padding:0px; }
+
+.navigation ul li{list-style:none; float: left; margin: 0; padding: 0; font-weight:normal; }
+
+.navigation li a{float:left; color:#fff; margin: 0; font-size: 14px; text-decoration: none; padding:20px 20px; text-transform: uppercase; }
+
+.navigation li a:hover, .navigation li .active { color:#FFFFFF; background-color:#30a4b1; }
+
+.clear{clear:both;}
+
+
+
+
+
+
+/*.............................................................Footer................... */
+
+.footer{text-align:right; margin-bottom:40px;}
+
+
+
+
+/*.............................................................Table................... */
+
+
+td { padding: 12px; text-align:left; }
+
+th { background-color: #d9d8d8; font-size: 14px;}
+
+th a { display: block;  color: #464646;  }
+
+.gray td {background-color:#f7f7f7;}
+
+.table_main { border-top: 1px solid #bab9b9; border-right: 1px solid #bab9b9; border-left: 1px solid #bab9b9;}
+
+.table_main .delete {background:url(../img/x2.gif) center left no-repeat; padding-left:12px;}
+
+.table_sub { border-top: 1px solid #bab9b9; border-right: 1px solid #bab9b9; border-left: 1px solid #bab9b9;}
+
+tr td {border-bottom: 1px solid #bab9b9;}
+
+
+
+/*--------------------- Box -------------- */
+.info_box { float: left;  }
+
+.info_box p strong {width: 25%; display: block;  float: left;}
+
+.image_box { width: 144px; float: right; padding: 20px; text-align: center; position: absolute; top: 0px; right: 0px;}
+.image_box img { border: 0;  }
+
+.content_box { margin: 10px; }
+.content_box h3 { margin: 10px 0; }       
+
+ul.content_box_buttons { list-style: none;}       
+.content_box_buttons li { list-style:none; float: right; margin: 0; padding: 0; font-weight:normal; margin: 0 0 0 2px;}   
+.content_box_buttons li a{ float:left; margin: 0; font-size: 12px; text-decoration: none; padding:5px 5px;}
+
+
+/*--------------------- Cols -------------- */
+.col2 { width: 48%; margin: 10px 5px; float: left;}
+
+
+
+
+/*************** Autocomplete ***************/
+
+#search span.autocomplete-indicator {
+	float: left;
+	width: 16px !important;
+	height: 11px;
+	margin: 0;
+	margin-top: 8px;
+	padding: 0!important;
+}
+
+div.autocomplete {
+	z-index: 1000;
+	position: absolute;
+	background-color: #fff;
+	border: 1px solid #BAB9B9;
+	border-top: 0;
+	font-size: 11px;
+	color: #333;
+	padding: 0;
+	margin: 1px 0 0 0;
+}
+
+div.autocomplete ul { margin: 0; padding: 0; list-style: none; }
+div.autocomplete ul li.selected { background-color: #464646; color: #fff; }
+div.autocomplete ul li {padding: .5em .7em; min-height: 32px; cursor:pointer; text-align:left; color:#2f2f2f; line-height: 1.3em; border-bottom: 1px solid #eee;}
+
+
+/*************** Facebox ***************/
+
+#facebox .b {  
+  background:url(/img/b.png);
+}                  
+
+#facebox .tl {     
+  background:url(/img/tl.png);
+}
+
+#facebox .tr {
+  background:url(/img/tr.png);
+}
+
+#facebox .bl {
+  background:url(/img/bl.png);
+}
+
+#facebox .br {
+  background:url(/img/br.png);
+}
+
+#facebox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  text-align: left;
+}
+
+#facebox .popup {
+  position: relative;
+}
+
+#facebox table {
+  border-collapse: collapse;
+}
+
+#facebox td {
+  border-bottom: 0;
+  padding: 0;
+}
+
+#facebox .body {
+  padding: 10px;
+  background: #fff;
+  width: 370px;
+}
+
+#facebox .loading {
+  text-align: center;
+}
+
+#facebox .image {
+  text-align: center;
+}
+
+#facebox img {
+  border: 0;
+  margin: 0;
+}
+
+#facebox .footer {
+  border-top: 1px solid #DDDDDD;
+  padding-top: 5px;
+  margin-top: 10px;
+  text-align: right;
+}
+
+#facebox .tl, #facebox .tr, #facebox .bl, #facebox .br {
+  height: 10px;
+  width: 10px;
+  overflow: hidden;
+  padding: 0;
+}
+
+#facebox_overlay {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  height:100%;
+  width:100%;
+}
+
+.facebox_hide {
+  z-index:-100;
+}
+
+.facebox_overlayBG {
+  background-color: #000;
+  z-index: 99;
+}

@@ -1,0 +1,53 @@
+Core:
+    Version: 0.1.0
+    
+Menu:
+    dashboard:
+        title: Dashboard
+        sort_order: 10
+        url:
+            admin: true
+            controller: dashboard
+    system:
+        title: System
+        sort_order: 200
+        url:
+            admin: true
+            controller: system
+        children:
+            account:
+                title: My Account
+                sort_order: 10
+                url:
+                    admin: true
+                    controller: system
+                    action: account
+            tools:
+                title: Tools
+                sort_order: 20
+                url:
+                    admin: true
+                    controller: system
+                    action: tools
+            setting:
+                title: Configuration
+                sort_order: 110
+                url:
+                    admin: true
+                    plugin: core
+                    controller: setting
+    pages:
+        title: Pages
+        sort_order: 30
+        url:
+            admin: true
+            plugin: false
+            controller: pages
+        children:
+            test1:
+                title: Test1
+
+                    
+
+            
+    

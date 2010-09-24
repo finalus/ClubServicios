@@ -1,0 +1,530 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />	<title>Errors - <pre class="cake-debug"><a href="javascript:void(0);" onclick="document.getElementById('cakeErr1-trace').style.display = (document.getElementById('cakeErr1-trace').style.display == 'none' ? '' : 'none');"><b>Notice</b> (8)</a>: Undefined variable: appConfigurations [<b>APP/views/layouts/default.ctp</b>, line <b>6</b>]<div id="cakeErr1-trace" class="cake-stack-trace" style="display: none;"><a href="javascript:void(0);" onclick="document.getElementById('cakeErr1-code').style.display = (document.getElementById('cakeErr1-code').style.display == 'none' ? '' : 'none')">Code</a> | <a href="javascript:void(0);" onclick="document.getElementById('cakeErr1-context').style.display = (document.getElementById('cakeErr1-context').style.display == 'none' ? '' : 'none')">Context</a><div id="cakeErr1-code" class="cake-code-dump" style="display: none;"><pre><code><span style="color: #000000">&lt;head&gt;</span></code>
+<code><span style="color: #000000">&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #0000BB">&lt;?php&nbsp;</span><span style="color: #007700">echo&nbsp;</span><span style="color: #0000BB">$html</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">charset</span><span style="color: #007700">();&nbsp;</span><span style="color: #0000BB">?&gt;</span></span></code>
+<span class="code-highlight"><code><span style="color: #000000">&nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;<span style="color: #0000BB">&lt;?php&nbsp;</span><span style="color: #007700">echo&nbsp;</span><span style="color: #0000BB">$title_for_layout</span><span style="color: #007700">;&nbsp;</span><span style="color: #0000BB">?&gt;</span>&nbsp;-&nbsp;<span style="color: #0000BB">&lt;?php&nbsp;</span><span style="color: #007700">echo&nbsp;</span><span style="color: #0000BB">$appConfigurations</span><span style="color: #007700">[</span><span style="color: #DD0000">'name'</span><span style="color: #007700">]</span><span style="color: #0000BB">?&gt;</span>&lt;/title&gt;</span></code></span></pre></div><pre id="cakeErr1-context" class="cake-context" style="display: none;">$___viewFn	=	"/Users/jmashburn/Documents/Projects/Codilibros/app/views/layouts/default.ctp"
+$___dataForView	=	array(
+	"controller" => "ImgController",
+	"controllerName" => "Img",
+	"title" => "Missing Controller",
+	"content_for_layout" => "&lt;h2&gt;Missing Controller&lt;/h2&gt;
+&lt;p class=&quot;error&quot;&gt;
+	&lt;strong&gt;Error: &lt;/strong&gt;
+	&lt;em&gt;ImgController&lt;/em&gt; could not be found.&lt;/p&gt;
+&lt;p class=&quot;error&quot;&gt;
+	&lt;strong&gt;Error: &lt;/strong&gt;
+	Create the class &lt;em&gt;ImgController&lt;/em&gt; below in file: app/controllers/img_controller.php&lt;/p&gt;
+&lt;pre&gt;
+&amp;lt;?php
+class ImgController extends AppController {
+
+	var $name = &#039;Img&#039;;
+}
+?&amp;gt;
+&lt;/pre&gt;
+&lt;p class=&quot;notice&quot;&gt;
+	&lt;strong&gt;Notice: &lt;/strong&gt;
+	If you want to customize this error message, create app/views/errors/missing_controller.ctp&lt;/p&gt;",
+	"scripts_for_layout" => "",
+	"title_for_layout" => "Errors",
+	"auth" => AuthHelper
+AuthHelper::$hashKey = NULL
+AuthHelper::$initialized = false
+AuthHelper::$helpers = array
+AuthHelper::$base = ""
+AuthHelper::$webroot = "/"
+AuthHelper::$theme = NULL
+AuthHelper::$here = NULL
+AuthHelper::$params = array
+AuthHelper::$action = NULL
+AuthHelper::$plugin = NULL
+AuthHelper::$data = array
+AuthHelper::$namedArgs = NULL
+AuthHelper::$argSeparator = NULL
+AuthHelper::$validationErrors = NULL
+AuthHelper::$tags = array
+AuthHelper::$__tainted = NULL
+AuthHelper::$__cleaned = NULL
+AuthHelper::$Session = SessionHelper object,
+	"session" => SessionHelper
+SessionHelper::$helpers = array
+SessionHelper::$__active = true
+SessionHelper::$valid = false
+SessionHelper::$error = false
+SessionHelper::$_userAgent = "75505d1a27c83800c3d9d3fb08f856a4"
+SessionHelper::$path = "/"
+SessionHelper::$lastError = NULL
+SessionHelper::$security = NULL
+SessionHelper::$time = 1281893993
+SessionHelper::$sessionTime = false
+SessionHelper::$watchKeys = array
+SessionHelper::$id = NULL
+SessionHelper::$host = NULL
+SessionHelper::$timeout = NULL
+SessionHelper::$cookieLifeTime = 12000
+SessionHelper::$base = ""
+SessionHelper::$webroot = "/"
+SessionHelper::$here = NULL
+SessionHelper::$params = array
+SessionHelper::$action = NULL
+SessionHelper::$data = array
+SessionHelper::$theme = NULL
+SessionHelper::$plugin = NULL,
+	"text" => TextHelper
+TextHelper::$helpers = NULL
+TextHelper::$base = ""
+TextHelper::$webroot = "/"
+TextHelper::$theme = NULL
+TextHelper::$here = NULL
+TextHelper::$params = array
+TextHelper::$action = NULL
+TextHelper::$plugin = NULL
+TextHelper::$data = array
+TextHelper::$namedArgs = NULL
+TextHelper::$argSeparator = NULL
+TextHelper::$validationErrors = NULL
+TextHelper::$tags = array
+TextHelper::$__tainted = NULL
+TextHelper::$__cleaned = NULL,
+	"cache" => CacheHelper
+CacheHelper::$__replace = array
+CacheHelper::$__match = array
+CacheHelper::$cacheAction = NULL
+CacheHelper::$helpers = NULL
+CacheHelper::$base = ""
+CacheHelper::$webroot = "/"
+CacheHelper::$theme = NULL
+CacheHelper::$here = NULL
+CacheHelper::$params = array
+CacheHelper::$action = NULL
+CacheHelper::$plugin = NULL
+CacheHelper::$data = array
+CacheHelper::$namedArgs = NULL
+CacheHelper::$argSeparator = NULL
+CacheHelper::$validationErrors = NULL
+CacheHelper::$tags = array
+CacheHelper::$__tainted = NULL
+CacheHelper::$__cleaned = NULL,
+	"javascript" => JavascriptHelper
+JavascriptHelper::$useNative = true
+JavascriptHelper::$enabled = true
+JavascriptHelper::$safe = false
+JavascriptHelper::$tags = array
+JavascriptHelper::$_blockOptions = array
+JavascriptHelper::$_cachedEvents = array
+JavascriptHelper::$_cacheEvents = false
+JavascriptHelper::$_cacheToFile = false
+JavascriptHelper::$_cacheAll = false
+JavascriptHelper::$_rules = array
+JavascriptHelper::$__scriptBuffer = NULL
+JavascriptHelper::$helpers = NULL
+JavascriptHelper::$base = ""
+JavascriptHelper::$webroot = "/"
+JavascriptHelper::$theme = NULL
+JavascriptHelper::$here = NULL
+JavascriptHelper::$params = array
+JavascriptHelper::$action = NULL
+JavascriptHelper::$plugin = NULL
+JavascriptHelper::$data = array
+JavascriptHelper::$namedArgs = NULL
+JavascriptHelper::$argSeparator = NULL
+JavascriptHelper::$validationErrors = NULL
+JavascriptHelper::$__tainted = NULL
+JavascriptHelper::$__cleaned = NULL,
+	"number" => NumberHelper
+NumberHelper::$_currencies = array
+NumberHelper::$_currencyDefaults = array
+NumberHelper::$helpers = NULL
+NumberHelper::$base = ""
+NumberHelper::$webroot = "/"
+NumberHelper::$theme = NULL
+NumberHelper::$here = NULL
+NumberHelper::$params = array
+NumberHelper::$action = NULL
+NumberHelper::$plugin = NULL
+NumberHelper::$data = array
+NumberHelper::$namedArgs = NULL
+NumberHelper::$argSeparator = NULL
+NumberHelper::$validationErrors = NULL
+NumberHelper::$tags = array
+NumberHelper::$__tainted = NULL
+NumberHelper::$__cleaned = NULL,
+	"time" => TimeHelper
+TimeHelper::$helpers = NULL
+TimeHelper::$base = ""
+TimeHelper::$webroot = "/"
+TimeHelper::$theme = NULL
+TimeHelper::$here = NULL
+TimeHelper::$params = array
+TimeHelper::$action = NULL
+TimeHelper::$plugin = NULL
+TimeHelper::$data = array
+TimeHelper::$namedArgs = NULL
+TimeHelper::$argSeparator = NULL
+TimeHelper::$validationErrors = NULL
+TimeHelper::$tags = array
+TimeHelper::$__tainted = NULL
+TimeHelper::$__cleaned = NULL,
+	"form" => FormHelper
+FormHelper::$helpers = array
+FormHelper::$fieldset = array
+FormHelper::$__options = array
+FormHelper::$fields = array
+FormHelper::$requestType = NULL
+FormHelper::$defaultModel = NULL
+FormHelper::$_inputDefaults = array
+FormHelper::$base = ""
+FormHelper::$webroot = "/"
+FormHelper::$theme = NULL
+FormHelper::$here = NULL
+FormHelper::$params = array
+FormHelper::$action = NULL
+FormHelper::$plugin = NULL
+FormHelper::$data = array
+FormHelper::$namedArgs = NULL
+FormHelper::$argSeparator = NULL
+FormHelper::$validationErrors = NULL
+FormHelper::$tags = array
+FormHelper::$__tainted = NULL
+FormHelper::$__cleaned = NULL
+FormHelper::$Html = HtmlHelper object,
+	"html" => HtmlHelper
+HtmlHelper::$tags = array
+HtmlHelper::$_crumbs = array
+HtmlHelper::$__includedScripts = array
+HtmlHelper::$_scriptBlockOptions = array
+HtmlHelper::$__docTypes = array
+HtmlHelper::$helpers = NULL
+HtmlHelper::$base = ""
+HtmlHelper::$webroot = "/"
+HtmlHelper::$theme = NULL
+HtmlHelper::$here = NULL
+HtmlHelper::$params = array
+HtmlHelper::$action = NULL
+HtmlHelper::$plugin = NULL
+HtmlHelper::$data = array
+HtmlHelper::$namedArgs = NULL
+HtmlHelper::$argSeparator = NULL
+HtmlHelper::$validationErrors = NULL
+HtmlHelper::$__tainted = NULL
+HtmlHelper::$__cleaned = NULL
+)
+$loadHelpers	=	false
+$cached	=	true
+$loadedHelpers	=	array()
+$controller	=	"ImgController"
+$controllerName	=	"Img"
+$title	=	"Missing Controller"
+$content_for_layout	=	"&lt;h2&gt;Missing Controller&lt;/h2&gt;
+&lt;p class=&quot;error&quot;&gt;
+	&lt;strong&gt;Error: &lt;/strong&gt;
+	&lt;em&gt;ImgController&lt;/em&gt; could not be found.&lt;/p&gt;
+&lt;p class=&quot;error&quot;&gt;
+	&lt;strong&gt;Error: &lt;/strong&gt;
+	Create the class &lt;em&gt;ImgController&lt;/em&gt; below in file: app/controllers/img_controller.php&lt;/p&gt;
+&lt;pre&gt;
+&amp;lt;?php
+class ImgController extends AppController {
+
+	var $name = &#039;Img&#039;;
+}
+?&amp;gt;
+&lt;/pre&gt;
+&lt;p class=&quot;notice&quot;&gt;
+	&lt;strong&gt;Notice: &lt;/strong&gt;
+	If you want to customize this error message, create app/views/errors/missing_controller.ctp&lt;/p&gt;"
+$scripts_for_layout	=	""
+$title_for_layout	=	"Errors"
+$auth	=	AuthHelper
+AuthHelper::$hashKey = NULL
+AuthHelper::$initialized = false
+AuthHelper::$helpers = array
+AuthHelper::$base = ""
+AuthHelper::$webroot = "/"
+AuthHelper::$theme = NULL
+AuthHelper::$here = NULL
+AuthHelper::$params = array
+AuthHelper::$action = NULL
+AuthHelper::$plugin = NULL
+AuthHelper::$data = array
+AuthHelper::$namedArgs = NULL
+AuthHelper::$argSeparator = NULL
+AuthHelper::$validationErrors = NULL
+AuthHelper::$tags = array
+AuthHelper::$__tainted = NULL
+AuthHelper::$__cleaned = NULL
+AuthHelper::$Session = SessionHelper object
+$session	=	SessionHelper
+SessionHelper::$helpers = array
+SessionHelper::$__active = true
+SessionHelper::$valid = false
+SessionHelper::$error = false
+SessionHelper::$_userAgent = "75505d1a27c83800c3d9d3fb08f856a4"
+SessionHelper::$path = "/"
+SessionHelper::$lastError = NULL
+SessionHelper::$security = NULL
+SessionHelper::$time = 1281893993
+SessionHelper::$sessionTime = false
+SessionHelper::$watchKeys = array
+SessionHelper::$id = NULL
+SessionHelper::$host = NULL
+SessionHelper::$timeout = NULL
+SessionHelper::$cookieLifeTime = 12000
+SessionHelper::$base = ""
+SessionHelper::$webroot = "/"
+SessionHelper::$here = NULL
+SessionHelper::$params = array
+SessionHelper::$action = NULL
+SessionHelper::$data = array
+SessionHelper::$theme = NULL
+SessionHelper::$plugin = NULL
+$text	=	TextHelper
+TextHelper::$helpers = NULL
+TextHelper::$base = ""
+TextHelper::$webroot = "/"
+TextHelper::$theme = NULL
+TextHelper::$here = NULL
+TextHelper::$params = array
+TextHelper::$action = NULL
+TextHelper::$plugin = NULL
+TextHelper::$data = array
+TextHelper::$namedArgs = NULL
+TextHelper::$argSeparator = NULL
+TextHelper::$validationErrors = NULL
+TextHelper::$tags = array
+TextHelper::$__tainted = NULL
+TextHelper::$__cleaned = NULL
+$cache	=	CacheHelper
+CacheHelper::$__replace = array
+CacheHelper::$__match = array
+CacheHelper::$cacheAction = NULL
+CacheHelper::$helpers = NULL
+CacheHelper::$base = ""
+CacheHelper::$webroot = "/"
+CacheHelper::$theme = NULL
+CacheHelper::$here = NULL
+CacheHelper::$params = array
+CacheHelper::$action = NULL
+CacheHelper::$plugin = NULL
+CacheHelper::$data = array
+CacheHelper::$namedArgs = NULL
+CacheHelper::$argSeparator = NULL
+CacheHelper::$validationErrors = NULL
+CacheHelper::$tags = array
+CacheHelper::$__tainted = NULL
+CacheHelper::$__cleaned = NULL
+$javascript	=	JavascriptHelper
+JavascriptHelper::$useNative = true
+JavascriptHelper::$enabled = true
+JavascriptHelper::$safe = false
+JavascriptHelper::$tags = array
+JavascriptHelper::$_blockOptions = array
+JavascriptHelper::$_cachedEvents = array
+JavascriptHelper::$_cacheEvents = false
+JavascriptHelper::$_cacheToFile = false
+JavascriptHelper::$_cacheAll = false
+JavascriptHelper::$_rules = array
+JavascriptHelper::$__scriptBuffer = NULL
+JavascriptHelper::$helpers = NULL
+JavascriptHelper::$base = ""
+JavascriptHelper::$webroot = "/"
+JavascriptHelper::$theme = NULL
+JavascriptHelper::$here = NULL
+JavascriptHelper::$params = array
+JavascriptHelper::$action = NULL
+JavascriptHelper::$plugin = NULL
+JavascriptHelper::$data = array
+JavascriptHelper::$namedArgs = NULL
+JavascriptHelper::$argSeparator = NULL
+JavascriptHelper::$validationErrors = NULL
+JavascriptHelper::$__tainted = NULL
+JavascriptHelper::$__cleaned = NULL
+$number	=	NumberHelper
+NumberHelper::$_currencies = array
+NumberHelper::$_currencyDefaults = array
+NumberHelper::$helpers = NULL
+NumberHelper::$base = ""
+NumberHelper::$webroot = "/"
+NumberHelper::$theme = NULL
+NumberHelper::$here = NULL
+NumberHelper::$params = array
+NumberHelper::$action = NULL
+NumberHelper::$plugin = NULL
+NumberHelper::$data = array
+NumberHelper::$namedArgs = NULL
+NumberHelper::$argSeparator = NULL
+NumberHelper::$validationErrors = NULL
+NumberHelper::$tags = array
+NumberHelper::$__tainted = NULL
+NumberHelper::$__cleaned = NULL
+$time	=	TimeHelper
+TimeHelper::$helpers = NULL
+TimeHelper::$base = ""
+TimeHelper::$webroot = "/"
+TimeHelper::$theme = NULL
+TimeHelper::$here = NULL
+TimeHelper::$params = array
+TimeHelper::$action = NULL
+TimeHelper::$plugin = NULL
+TimeHelper::$data = array
+TimeHelper::$namedArgs = NULL
+TimeHelper::$argSeparator = NULL
+TimeHelper::$validationErrors = NULL
+TimeHelper::$tags = array
+TimeHelper::$__tainted = NULL
+TimeHelper::$__cleaned = NULL
+$form	=	FormHelper
+FormHelper::$helpers = array
+FormHelper::$fieldset = array
+FormHelper::$__options = array
+FormHelper::$fields = array
+FormHelper::$requestType = NULL
+FormHelper::$defaultModel = NULL
+FormHelper::$_inputDefaults = array
+FormHelper::$base = ""
+FormHelper::$webroot = "/"
+FormHelper::$theme = NULL
+FormHelper::$here = NULL
+FormHelper::$params = array
+FormHelper::$action = NULL
+FormHelper::$plugin = NULL
+FormHelper::$data = array
+FormHelper::$namedArgs = NULL
+FormHelper::$argSeparator = NULL
+FormHelper::$validationErrors = NULL
+FormHelper::$tags = array
+FormHelper::$__tainted = NULL
+FormHelper::$__cleaned = NULL
+FormHelper::$Html = HtmlHelper object
+$html	=	HtmlHelper
+HtmlHelper::$tags = array
+HtmlHelper::$_crumbs = array
+HtmlHelper::$__includedScripts = array
+HtmlHelper::$_scriptBlockOptions = array
+HtmlHelper::$__docTypes = array
+HtmlHelper::$helpers = NULL
+HtmlHelper::$base = ""
+HtmlHelper::$webroot = "/"
+HtmlHelper::$theme = NULL
+HtmlHelper::$here = NULL
+HtmlHelper::$params = array
+HtmlHelper::$action = NULL
+HtmlHelper::$plugin = NULL
+HtmlHelper::$data = array
+HtmlHelper::$namedArgs = NULL
+HtmlHelper::$argSeparator = NULL
+HtmlHelper::$validationErrors = NULL
+HtmlHelper::$__tainted = NULL
+HtmlHelper::$__cleaned = NULL</pre><pre class="stack-trace">include - APP/views/layouts/default.ctp, line 6
+View::_render() - CORE/cake/libs/view/view.php, line 723
+View::renderLayout() - CORE/cake/libs/view/view.php, line 482
+View::render() - CORE/cake/libs/view/view.php, line 428
+Controller::render() - CORE/cake/libs/controller/controller.php, line 911
+ErrorHandler::_outputMessage() - CORE/cake/libs/error.php, line 457
+ErrorHandler::missingController() - CORE/cake/libs/error.php, line 205
+Object::dispatchMethod() - CORE/cake/libs/object.php, line 112
+ErrorHandler::__construct() - CORE/cake/libs/error.php, line 124
+AppError::__construct() - APP/app_error.php, line 32
+Object::cakeError() - CORE/cake/libs/object.php, line 199
+Dispatcher::dispatch() - CORE/cake/dispatcher.php, line 125
+[main] - APP/webroot/index.php, line 83</pre></div></pre></title>
+	<link href="/favicon.ico" type="image/x-icon" rel="icon" /><link href="/favicon.ico" type="image/x-icon" rel="shortcut icon" /><link rel="stylesheet" type="text/css" href="/css/reset.css" /><link rel="stylesheet" type="text/css" href="/css/main.css" />        <!--[if lt IE 7]>
+            <link rel="stylesheet" type="text/css" href="/css/admin-ie.css" />        <![endif]-->
+    <script type="text/javascript" src="/js/jquery/jquery.js"></script><script type="text/javascript" src="/js/jquery/facebox.js"></script><script type="text/javascript" src="/js/jquery/jquery.wysiwyg.js"></script><script type="text/javascript" src="/js/custom.js"></script></head>
+<body>
+	<div class="wrapper">
+		<h1 class="logo"><a href="/img/closelabel.gif"><img src="/img/logo.jpg" id="logo" alt="" /></a></h1>
+		<p class="txt_right">Logged in as BuscaLibros Store <span class="v_line"> | </span> <a href="/logout">Logout</a></p>   
+
+<div class="navigation">
+		<ul>
+			<li><a href="/publicacions">Publications</a></li>
+		<!--	<li><a href="/exports">Export</a></li>
+			<li><a href="/reportes">Reports</a></li> 
+			<li><a href="/admin">Admin</a></li>-->
+		</ul>
+	
+		<script type="text/javascript" src="/js/jquery/jquery.autocomplete.js"></script><div id="searchform">
+	<span id="search-indicator" class="autocomplete-indicator" style="display: none"><img src="/img/loader.gif" alt="Loading..." /></span>	<input name="data[q]" type="text" id="query" class="search_box" value="Search" />	<input type="button" value="search" class="search_btn" />	<script type="text/javascript">
+//<![CDATA[
+		var options, a;
+		options = {
+			serviceUrl: '/searchable/search_indexes/search',
+			minChars: 2,
+			indicator: 'search-indicator',
+			selectElement:getElementId,
+		};
+		$("#query").autocomplete(options);
+		function getElementId(li) {
+			location.href = $(li).attr('url');
+		}
+	
+//]]>
+</script></div>	
+</div>     
+		<div class="clear"></div>
+		
+		<div class="content">
+						<h2>Missing Controller</h2>
+<p class="error">
+	<strong>Error: </strong>
+	<em>ImgController</em> could not be found.</p>
+<p class="error">
+	<strong>Error: </strong>
+	Create the class <em>ImgController</em> below in file: app/controllers/img_controller.php</p>
+<pre>
+&lt;?php
+class ImgController extends AppController {
+
+	var $name = 'Img';
+}
+?&gt;
+</pre>
+<p class="notice">
+	<strong>Notice: </strong>
+	If you want to customize this error message, create app/views/errors/missing_controller.ctp</p>
+			
+		</div>
+		<p class="footer"><link rel="stylesheet" type="text/css" href="/searchable/css/advanced_search.css" />   
+<div id="searchable_advanced_search" style="display: none;">
+	This is the Advanced Search
+</div>
+<a href="/searchable/search" id="advanced_search">Advanced Search</a>  
+<script type="text/javascript">
+//<![CDATA[
+ 
+	$('#advanced_search').click(function() {
+	  $("#searchable_advanced_search").slideToggle('slow');     
+		return false;
+	})
+
+//]]>
+</script><span class="v_line">|</span><a href="/logout">Logout</a></p>	</div> 
+    <div class="debug">
+	   <table class="cake-sql-log" id="cakeSqlLog_12818939934c682669f3dc87_21814457" summary="Cake SQL Log" cellspacing="0" border = "0"><caption>(default) 17 queries took 147 ms</caption><thead>
+	<tr><th>Nr</th><th>Query</th><th>Error</th><th>Affected</th><th>Num. rows</th><th>Took (ms)</th></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>DESCRIBE `aros`</td><td></td><td style = "text-align: right">7</td><td style = "text-align: right">7</td><td style = "text-align: right">1</td></tr>
+<tr><td>2</td><td>DESCRIBE `acos`</td><td></td><td style = "text-align: right">7</td><td style = "text-align: right">7</td><td style = "text-align: right">1</td></tr>
+<tr><td>3</td><td>DESCRIBE `aros_acos`</td><td></td><td style = "text-align: right">7</td><td style = "text-align: right">7</td><td style = "text-align: right">1</td></tr>
+<tr><td>4</td><td>DESCRIBE `usuarios`</td><td></td><td style = "text-align: right">13</td><td style = "text-align: right">13</td><td style = "text-align: right">18</td></tr>
+<tr><td>5</td><td>DESCRIBE `grupos`</td><td></td><td style = "text-align: right">4</td><td style = "text-align: right">4</td><td style = "text-align: right">6</td></tr>
+<tr><td>6</td><td>DESCRIBE `proveedors`</td><td></td><td style = "text-align: right">4</td><td style = "text-align: right">4</td><td style = "text-align: right">7</td></tr>
+<tr><td>7</td><td>DESCRIBE `publicacions`</td><td></td><td style = "text-align: right">27</td><td style = "text-align: right">27</td><td style = "text-align: right">3</td></tr>
+<tr><td>8</td><td>DESCRIBE `idiomas`</td><td></td><td style = "text-align: right">5</td><td style = "text-align: right">5</td><td style = "text-align: right">4</td></tr>
+<tr><td>9</td><td>DESCRIBE `contenidos`</td><td></td><td style = "text-align: right">10</td><td style = "text-align: right">10</td><td style = "text-align: right">9</td></tr>
+<tr><td>10</td><td>DESCRIBE `formatos`</td><td></td><td style = "text-align: right">5</td><td style = "text-align: right">5</td><td style = "text-align: right">1</td></tr>
+<tr><td>11</td><td>DESCRIBE `productos`</td><td></td><td style = "text-align: right">31</td><td style = "text-align: right">31</td><td style = "text-align: right">6</td></tr>
+<tr><td>12</td><td>DESCRIBE `producto_tipos`</td><td></td><td style = "text-align: right">4</td><td style = "text-align: right">4</td><td style = "text-align: right">10</td></tr>
+<tr><td>13</td><td>DESCRIBE `dispositivo_tipos`</td><td></td><td style = "text-align: right">4</td><td style = "text-align: right">4</td><td style = "text-align: right">7</td></tr>
+<tr><td>14</td><td>DESCRIBE `producto_sales`</td><td></td><td style = "text-align: right">9</td><td style = "text-align: right">9</td><td style = "text-align: right">13</td></tr>
+<tr><td>15</td><td>DESCRIBE `retailers`</td><td></td><td style = "text-align: right">6</td><td style = "text-align: right">6</td><td style = "text-align: right">24</td></tr>
+<tr><td>16</td><td>DESCRIBE `settings`</td><td></td><td style = "text-align: right">6</td><td style = "text-align: right">6</td><td style = "text-align: right">24</td></tr>
+<tr><td>17</td><td>DESCRIBE `setting_types`</td><td></td><td style = "text-align: right">5</td><td style = "text-align: right">5</td><td style = "text-align: right">12</td></tr>
+</tbody></table>
+    </div> 
+</body>
+</html>

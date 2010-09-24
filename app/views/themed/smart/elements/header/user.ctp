@@ -1,0 +1,4 @@
+<div id="userBox">
+	<p><?php echo $html->image('admin/icon_user.gif', array('width' => 16, 'height' => 19)); ?> &nbsp;<?php echo sprintf(__('Hello, %s', true), $html->link('Test', '/admin/system/account', array('class' => 'white'))); ?>. | <?php echo $html->link(__('System', true), '/admin/system', array('class' => 'white')) ?> | <?php echo $html->link(__('Logout', true), array(), array('class' => 'white')); ?></p>
+	<p class="small"><?php echo sprintf(__('Last Login: %s', true), $html->tag('span', 'LAST LOGIN', array('type' => 'span', 'class' => 'white'))); ?></p>
+</div><!-- end of #userBox -->

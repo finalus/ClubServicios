@@ -1,0 +1,205 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">	<title>Publicacions - Codilibros</title>
+	<link href="http://codilibros/favicon.ico" type="image/x-icon" rel="icon"><link href="http://codilibros/favicon.ico" type="image/x-icon" rel="shortcut icon"><link rel="stylesheet" type="text/css" href="6_files/reset.css"><link rel="stylesheet" type="text/css" href="6_files/main.css">        <!--[if lt IE 7]>
+            <link rel="stylesheet" type="text/css" href="/css/admin-ie.css" />        <![endif]-->
+    <script type="text/javascript" src="6_files/jquery_002.js"></script><script type="text/javascript" src="6_files/facebox.js"></script><script type="text/javascript" src="6_files/jquery.js"></script><script type="text/javascript" src="6_files/custom.js"></script><link type="text/css" rel="stylesheet" id="webdeveloper-outline-current-element" href="6_files/outline_current_element.css"></head><body>
+	<div class="wrapper">
+		<h1 class="logo"><a href="http://codilibros/publicacions/edit"><img src="6_files/logo.jpg" id="logo" alt=""></a></h1>
+		<p class="txt_right">Logged in as BuscaLibros Store <span class="v_line"> | </span> <a href="http://codilibros/logout">Logout</a></p>   
+
+<div class="navigation">
+		<ul>
+			<li><a href="http://codilibros/publicacions">Publications</a></li>
+		<!--	<li><a href="/exports">Export</a></li>
+			<li><a href="/reportes">Reports</a></li> 
+			<li><a href="/admin">Admin</a></li>-->
+		</ul>
+	
+		<script type="text/javascript" src="6_files/jquery_003.js"></script><div id="searchform">
+	<span id="search-indicator" class="autocomplete-indicator" style="display: none;"><img src="6_files/loader.gif" alt="Loading..."></span>	<input autocomplete="off" name="data[q]" id="query" class="search_box" value="Search" type="text">	<input value="search" class="search_btn" type="button">	<script type="text/javascript">
+//<![CDATA[
+		var options, a;
+		options = {
+			serviceUrl: '/searchable/search_indexes/search',
+			minChars: 2,
+			indicator: 'search-indicator',
+			selectElement:getElementId,
+		};
+		$("#query").autocomplete(options);
+		function getElementId(li) {
+			location.href = $(li).attr('url');
+		}
+	
+//]]>
+</script></div>	
+</div>     
+		<div class="clear"></div>
+		
+		<div class="content">
+							<div class="author in">
+		<h2>Admin Edit Publicacion</h2>
+		<p></p>
+		<ul>
+			<li><a href="http://codilibros/publicacions/view/6">View Publication</a></li>
+		</ul>
+	</div>
+	
+	<div class="line"></div>
+	
+	<div class="publicacions forms in">
+
+<form id="PublicacionEditForm" enctype="multipart/form-data" method="post" action="/publicacions/edit/6" accept-charset="utf-8"><div style="display: none;"><input name="_method" value="PUT" type="hidden"><input name="data[_Token][key]" value="8c56b349f0eb53acc88f51dfe694cc8ed884f101" id="Token372211355" type="hidden"></div>	<fieldset>
+        <legend>Publicacion Information</legend>
+	<input name="data[Publicacion][id]" value="6" id="PublicacionId" type="hidden"><div class="input select"><label for="PublicacionProveedorId">Proveedor</label><select name="data[Publicacion][proveedor_id]" id="PublicacionProveedorId">
+<option value="6" selected="selected">Universitaria</option>
+</select></div><div class="input text required"><label for="PublicacionCodigo">Codigo</label><input name="data[Publicacion][codigo]" maxlength="50" value="a" id="PublicacionCodigo" type="text"></div><div class="input text required"><label for="PublicacionPublicacion">Publicacion</label><input style="outline: 1px solid rgb(255, 0, 0);" name="data[Publicacion][publicacion]" maxlength="255" value="elementumsasd" id="PublicacionPublicacion" type="text"></div><div class="input text required"><label for="PublicacionAutor">Autor</label><input name="data[Publicacion][autor]" maxlength="255" value="et" id="PublicacionAutor" type="text"></div><div class="input text required"><label for="PublicacionEditorial">Editorial</label><input name="data[Publicacion][editorial]" maxlength="255" value="Nullam" id="PublicacionEditorial" type="text"></div><div class="input text"><label for="PublicacionIsbn">Isbn</label><input name="data[Publicacion][isbn]" maxlength="50" value="non" id="PublicacionIsbn" type="text"></div><div class="input text"><label for="PublicacionIsbn13">Isbn13</label><input name="data[Publicacion][isbn13]" maxlength="50" value="leo" id="PublicacionIsbn13" type="text"></div><div class="input text"><label for="PublicacionPvp">Pvp</label><input name="data[Publicacion][pvp]" maxlength="17" value="0.000" id="PublicacionPvp" type="text"></div><div class="input select"><label for="PublicacionIdiomaId">Idioma</label><select name="data[Publicacion][idioma_id]" id="PublicacionIdiomaId">
+<option value="1" selected="selected">Ingles</option>
+<option value="2">Español</option>
+</select></div><div class="input text"><label for="PublicacionIsbnDigital">Isbn Digital</label><input name="data[Publicacion][isbn_digital]" maxlength="50" value="velit" id="PublicacionIsbnDigital" type="text"></div><div class="input text"><label for="PublicacionIsbnDigital13">Isbn Digital 13</label><input name="data[Publicacion][isbn_digital_13]" maxlength="50" value="blandit" id="PublicacionIsbnDigital13" type="text"></div><div class="input text"><label for="PublicacionTema">Tema</label><input name="data[Publicacion][tema]" maxlength="255" value="Quisque" id="PublicacionTema" type="text"></div><div class="input text"><label for="PublicacionColeccion">Coleccion</label><input name="data[Publicacion][coleccion]" maxlength="255" value="at" id="PublicacionColeccion" type="text"></div><div class="input text"><label for="PublicacionEncuadernacion">Encuadernacion</label><input name="data[Publicacion][encuadernacion]" maxlength="100" value="adipiscing" id="PublicacionEncuadernacion" type="text"></div><div class="input text"><label for="PublicacionNumeroEdicion">Numero Edicion</label><input name="data[Publicacion][numero_edicion]" maxlength="50" value="malesuada" id="PublicacionNumeroEdicion" type="text"></div><div class="input text"><label for="PublicacionAno">Ano</label><input name="data[Publicacion][ano]" maxlength="50" value="leo" id="PublicacionAno" type="text"></div><div class="input text"><label for="PublicacionNumeroPaginas">Numero Paginas</label><input name="data[Publicacion][numero_paginas]" maxlength="11" value="0" id="PublicacionNumeroPaginas" type="text"></div><div class="input textarea"><label for="PublicacionTags">Tags</label><textarea name="data[Publicacion][tags]" cols="30" rows="6" id="PublicacionTags">Nullam ultrices Pellentesque at faucibus elit a tincidunt viverra orci
+
+Nunc dui quam consectetur Cras mattis iaculis non risus consectetur</textarea></div><div class="input textarea required"><label for="PublicacionResumen">Resumen</label><textarea name="data[Publicacion][resumen]" cols="30" rows="6" id="PublicacionResumen">amet velit dignissim augue blandit sed neque dolor iaculis nibh
+
+Nam augue augue sed rutrum eget iaculis ac ante dolor</textarea></div><div class="input textarea"><label for="PublicacionResumenCorto">Resumen Corto</label><textarea name="data[Publicacion][resumen_corto]" cols="30" rows="6" id="PublicacionResumenCorto">non sit nibh dolor purus at undefined ultricies. orci quis
+
+Nam et Nam faucibus quis Praesent risus at velit purus</textarea></div><div class="input textarea"><label for="PublicacionDescripcion">Descripcion</label><textarea name="data[Publicacion][descripcion]" cols="30" rows="6" id="PublicacionDescripcion">non Nam quis rutrum eget neque viverra Pellentesque ante commodo
+
+volutpat dolor sed rutrum iaculis Pellentesque fringilla elit ultricies pretium</textarea></div><div class="input textarea"><label for="PublicacionTablaContenidos">Tabla Contenidos</label><textarea name="data[Publicacion][tabla_contenidos]" cols="30" rows="6" id="PublicacionTablaContenidos">volutpat at vitae sit varius ipsum egestas facilisis blandit at
+
+eget eu dui egestas quis eget amet egestas Nullam blandit</textarea></div>	</fieldset>
+<div class="submit"><input name="Submit" class="com_btn" value="Submit" type="submit"></div><div style="display: none;"><input name="data[_Token][fields]" value="90023c6f2eb8b93cceb9d430b8bf42f99f4af3d9%3An%3A1%3A%7Bv%3A0%3Bf%3A14%3A%22Choyvpnpvba.vq%22%3B%7D" id="TokenFields95798375" type="hidden"></div></form>
+	<div class="image_box">
+		<img src="6_files/b53d74926849278461f2df77043941ee3604650c.jpg" alt="">		<div class="image_text">
+			<a href="http://codilibros/publicacions/delete_image" class="ajax">Delete Image</a>		</div>
+	</div>
+</div>
+
+			
+		</div>
+		<p class="footer"><link rel="stylesheet" type="text/css" href="6_files/advanced_search.css">   
+</p><div id="searchable_advanced_search" style="display: none;">
+	This is the Advanced Search
+</div>
+<a href="http://codilibros/searchable/search" id="advanced_search">Advanced Search</a>  
+<script type="text/javascript">
+//<![CDATA[
+ 
+	$('#advanced_search').click(function() {
+	  $("#searchable_advanced_search").slideToggle('slow');     
+		return false;
+	})
+
+//]]>
+</script><span class="v_line">|</span><a href="http://codilibros/logout">Logout</a>	</div><div class="autocomplete" id="Autocomplete_1281893943323" style="display: none; top: 161.5px; left: 1038.7px; z-index: 9999; max-height: 300px; width: 159px;" 159="" px;=""></div> 
+    <div class="debug">
+	   <table class="cake-sql-log" id="cakeSqlLog_12818939434c682637321a18_63203654" summary="Cake SQL Log" border="0" cellspacing="0"><caption>(default) 30 queries took 222 ms</caption><thead>
+	<tr><th>Nr</th><th>Query</th><th>Error</th><th>Affected</th><th>Num. rows</th><th>Took (ms)</th></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>DESCRIBE `aros`</td><td></td><td style="text-align: right;">7</td><td style="text-align: right;">7</td><td style="text-align: right;">1</td></tr>
+<tr><td>2</td><td>DESCRIBE `acos`</td><td></td><td style="text-align: right;">7</td><td style="text-align: right;">7</td><td style="text-align: right;">1</td></tr>
+<tr><td>3</td><td>DESCRIBE `aros_acos`</td><td></td><td style="text-align: right;">7</td><td style="text-align: right;">7</td><td style="text-align: right;">1</td></tr>
+<tr><td>4</td><td>DESCRIBE `publicacions`</td><td></td><td style="text-align: right;">27</td><td style="text-align: right;">27</td><td style="text-align: right;">2</td></tr>
+<tr><td>5</td><td>DESCRIBE `proveedors`</td><td></td><td style="text-align: right;">4</td><td style="text-align: right;">4</td><td style="text-align: right;">1</td></tr>
+<tr><td>6</td><td>DESCRIBE `usuarios`</td><td></td><td style="text-align: right;">13</td><td style="text-align: right;">13</td><td style="text-align: right;">1</td></tr>
+<tr><td>7</td><td>DESCRIBE `grupos`</td><td></td><td style="text-align: right;">4</td><td style="text-align: right;">4</td><td style="text-align: right;">1</td></tr>
+<tr><td>8</td><td>DESCRIBE `retailers`</td><td></td><td style="text-align: right;">6</td><td style="text-align: right;">6</td><td style="text-align: right;">2</td></tr>
+<tr><td>9</td><td>DESCRIBE `idiomas`</td><td></td><td style="text-align: right;">5</td><td style="text-align: right;">5</td><td style="text-align: right;">1</td></tr>
+<tr><td>10</td><td>DESCRIBE `contenidos`</td><td></td><td style="text-align: right;">10</td><td style="text-align: right;">10</td><td style="text-align: right;">1</td></tr>
+<tr><td>11</td><td>DESCRIBE `formatos`</td><td></td><td style="text-align: right;">5</td><td style="text-align: right;">5</td><td style="text-align: right;">2</td></tr>
+<tr><td>12</td><td>DESCRIBE `productos`</td><td></td><td style="text-align: right;">31</td><td style="text-align: right;">31</td><td style="text-align: right;">2</td></tr>
+<tr><td>13</td><td>DESCRIBE `producto_tipos`</td><td></td><td style="text-align: right;">4</td><td style="text-align: right;">4</td><td style="text-align: right;">3</td></tr>
+<tr><td>14</td><td>DESCRIBE `dispositivo_tipos`</td><td></td><td style="text-align: right;">4</td><td style="text-align: right;">4</td><td style="text-align: right;">1</td></tr>
+<tr><td>15</td><td>DESCRIBE `producto_sales`</td><td></td><td style="text-align: right;">9</td><td style="text-align: right;">9</td><td style="text-align: right;">2</td></tr>
+<tr><td>16</td><td>DESCRIBE `settings`</td><td></td><td style="text-align: right;">6</td><td style="text-align: right;">6</td><td style="text-align: right;">1</td></tr>
+<tr><td>17</td><td>DESCRIBE `setting_types`</td><td></td><td style="text-align: right;">5</td><td style="text-align: right;">5</td><td style="text-align: right;">1</td></tr>
+<tr><td>18</td><td>DESCRIBE `users`</td><td></td><td style="text-align: right;">1</td><td style="text-align: right;">1</td><td style="text-align: right;">1</td></tr>
+<tr><td>19</td><td>SELECT `Aco`.`id`, `Aco`.`parent_id`, `Aco`.`model`, 
+`Aco`.`foreign_key`, `Aco`.`alias` FROM `acos` AS `Aco` LEFT JOIN `acos`
+ AS `Aco0` ON (`Aco0`.`alias` = 'controllers') LEFT JOIN `acos` AS 
+`Aco1` ON (`Aco1`.`lft` &gt; `Aco0`.`lft` AND `Aco1`.`rght` &lt; 
+`Aco0`.`rght` AND `Aco1`.`alias` = 'Publicacions' AND `Aco0`.`id` = 
+`Aco1`.`parent_id`)  WHERE ((`Aco`.`lft` &lt;= `Aco0`.`lft` AND 
+`Aco`.`rght` &gt;= `Aco0`.`rght`) OR (`Aco`.`lft` &lt;= `Aco1`.`lft` AND
+ `Aco`.`rght` &gt;= `Aco1`.`rght`))   ORDER BY `Aco`.`lft` DESC </td><td></td><td style="text-align: right;">2</td><td style="text-align: right;">2</td><td style="text-align: right;">89</td></tr>
+<tr><td>20</td><td>SELECT `Aco`.`id`, `Aco`.`alias` FROM `acos` AS `Aco`   WHERE `Aco`.`parent_id` = 143   </td><td></td><td style="text-align: right;">7</td><td style="text-align: right;">7</td><td style="text-align: right;">0</td></tr>
+<tr><td>21</td><td>SELECT `Permission`.`id`, `Permission`.`aco_id` FROM 
+`aros_acos` AS `Permission`   WHERE `Permission`.`aro_id` IS NULL AND 
+`Permission`.`aco_id` IN (144, 145, 146, 147, 148, 149, 150) AND 
+`Permission`.`_create` = '1' AND `Permission`.`_read` = '1' AND 
+`Permission`.`_update` = '1' AND `Permission`.`_delete` = '1'   </td><td></td><td style="text-align: right;">0</td><td style="text-align: right;">0</td><td style="text-align: right;">0</td></tr>
+<tr><td>22</td><td>SELECT `Usuario`.`id`, `Usuario`.`grupo_id`, 
+`Usuario`.`proveedor_id`, `Usuario`.`retailer_id`, `Usuario`.`nombre`, 
+`Usuario`.`usuario`, `Usuario`.`password`, `Usuario`.`email`, 
+`Usuario`.`active`, `Usuario`.`key`, `Usuario`.`ip`, 
+`Usuario`.`created`, `Usuario`.`modified` FROM `usuarios` AS `Usuario`  
+ WHERE `Usuario`.`id` = 6    LIMIT 1</td><td></td><td style="text-align: right;">1</td><td style="text-align: right;">1</td><td style="text-align: right;">0</td></tr>
+<tr><td>23</td><td>SELECT `Aro`.`id`, `Aro`.`parent_id`, `Aro`.`model`, 
+`Aro`.`foreign_key`, `Aro`.`alias` FROM `aros` AS `Aro` LEFT JOIN `aros`
+ AS `Aro0` ON (`Aro`.`lft` &lt;= `Aro0`.`lft` AND `Aro`.`rght` &gt;= 
+`Aro0`.`rght`)  WHERE `Aro0`.`model` = 'Usuario' AND 
+`Aro0`.`foreign_key` = 6   ORDER BY `Aro`.`lft` DESC </td><td></td><td style="text-align: right;">2</td><td style="text-align: right;">2</td><td style="text-align: right;">0</td></tr>
+<tr><td>24</td><td>SELECT `Aco`.`id`, `Aco`.`parent_id`, `Aco`.`model`, 
+`Aco`.`foreign_key`, `Aco`.`alias` FROM `acos` AS `Aco` LEFT JOIN `acos`
+ AS `Aco0` ON (`Aco0`.`alias` = 'controllers') LEFT JOIN `acos` AS 
+`Aco1` ON (`Aco1`.`lft` &gt; `Aco0`.`lft` AND `Aco1`.`rght` &lt; 
+`Aco0`.`rght` AND `Aco1`.`alias` = 'Publicacions' AND `Aco0`.`id` = 
+`Aco1`.`parent_id`) LEFT JOIN `acos` AS `Aco2` ON (`Aco2`.`lft` &gt; 
+`Aco1`.`lft` AND `Aco2`.`rght` &lt; `Aco1`.`rght` AND `Aco2`.`alias` = 
+'edit' AND `Aco1`.`id` = `Aco2`.`parent_id`)  WHERE ((`Aco`.`lft` &lt;= 
+`Aco0`.`lft` AND `Aco`.`rght` &gt;= `Aco0`.`rght`) OR (`Aco`.`lft` &lt;=
+ `Aco2`.`lft` AND `Aco`.`rght` &gt;= `Aco2`.`rght`))   ORDER BY 
+`Aco`.`lft` DESC </td><td></td><td style="text-align: right;">3</td><td style="text-align: right;">3</td><td style="text-align: right;">108</td></tr>
+<tr><td>25</td><td>SELECT `Permission`.`id`, `Permission`.`aro_id`, 
+`Permission`.`aco_id`, `Permission`.`_create`, `Permission`.`_read`, 
+`Permission`.`_update`, `Permission`.`_delete`, `Aro`.`id`, 
+`Aro`.`parent_id`, `Aro`.`model`, `Aro`.`foreign_key`, `Aro`.`alias`, 
+`Aro`.`lft`, `Aro`.`rght`, `Aco`.`id`, `Aco`.`parent_id`, `Aco`.`model`,
+ `Aco`.`foreign_key`, `Aco`.`alias`, `Aco`.`lft`, `Aco`.`rght` FROM 
+`aros_acos` AS `Permission` LEFT JOIN `aros` AS `Aro` ON 
+(`Permission`.`aro_id` = `Aro`.`id`) LEFT JOIN `acos` AS `Aco` ON 
+(`Permission`.`aco_id` = `Aco`.`id`)  WHERE `Permission`.`aro_id` = 9 
+AND `Permission`.`aco_id` IN (147, 143, 1)   ORDER BY `Aco`.`lft` desc </td><td></td><td style="text-align: right;">0</td><td style="text-align: right;">0</td><td style="text-align: right;">0</td></tr>
+<tr><td>26</td><td>SELECT `Permission`.`id`, `Permission`.`aro_id`, 
+`Permission`.`aco_id`, `Permission`.`_create`, `Permission`.`_read`, 
+`Permission`.`_update`, `Permission`.`_delete`, `Aro`.`id`, 
+`Aro`.`parent_id`, `Aro`.`model`, `Aro`.`foreign_key`, `Aro`.`alias`, 
+`Aro`.`lft`, `Aro`.`rght`, `Aco`.`id`, `Aco`.`parent_id`, `Aco`.`model`,
+ `Aco`.`foreign_key`, `Aco`.`alias`, `Aco`.`lft`, `Aco`.`rght` FROM 
+`aros_acos` AS `Permission` LEFT JOIN `aros` AS `Aro` ON 
+(`Permission`.`aro_id` = `Aro`.`id`) LEFT JOIN `acos` AS `Aco` ON 
+(`Permission`.`aco_id` = `Aco`.`id`)  WHERE `Permission`.`aro_id` = 3 
+AND `Permission`.`aco_id` IN (147, 143, 1)   ORDER BY `Aco`.`lft` desc </td><td></td><td style="text-align: right;">1</td><td style="text-align: right;">1</td><td style="text-align: right;">0</td></tr>
+<tr><td>27</td><td>SELECT `Publicacion`.`id`, 
+`Publicacion`.`proveedor_id`, `Publicacion`.`codigo`, 
+`Publicacion`.`publicacion`, `Publicacion`.`image`, 
+`Publicacion`.`autor`, `Publicacion`.`editorial`, `Publicacion`.`isbn`, 
+`Publicacion`.`isbn13`, `Publicacion`.`pvp`, `Publicacion`.`idioma_id`, 
+`Publicacion`.`isbn_digital`, `Publicacion`.`isbn_digital_13`, 
+`Publicacion`.`tema`, `Publicacion`.`coleccion`, 
+`Publicacion`.`encuadernacion`, `Publicacion`.`numero_edicion`, 
+`Publicacion`.`ano`, `Publicacion`.`numero_paginas`, 
+`Publicacion`.`tags`, `Publicacion`.`resumen`, 
+`Publicacion`.`resumen_corto`, `Publicacion`.`descripcion`, 
+`Publicacion`.`tabla_contenidos`, `Publicacion`.`is_deleted`, 
+`Publicacion`.`created`, `Publicacion`.`modified`, `Proveedor`.`id`, 
+`Proveedor`.`nombre`, `Proveedor`.`created`, `Proveedor`.`modified`, 
+`Idioma`.`id`, `Idioma`.`idioma`, `Idioma`.`code`, `Idioma`.`created`, 
+`Idioma`.`modified` FROM `publicacions` AS `Publicacion` LEFT JOIN 
+`proveedors` AS `Proveedor` ON (`Publicacion`.`proveedor_id` = 
+`Proveedor`.`id`) LEFT JOIN `idiomas` AS `Idioma` ON 
+(`Publicacion`.`idioma_id` = `Idioma`.`id`)  WHERE `Publicacion`.`id` = 6
+    LIMIT 1</td><td></td><td style="text-align: right;">1</td><td style="text-align: right;">1</td><td style="text-align: right;">0</td></tr>
+<tr><td>28</td><td>SELECT `Contenido`.`id`, 
+`Contenido`.`publicacion_id`, `Contenido`.`formato_id`, 
+`Contenido`.`codigo`, `Contenido`.`archivo`, `Contenido`.`contenido`, 
+`Contenido`.`descripcion`, `Contenido`.`is_deleted`, 
+`Contenido`.`created`, `Contenido`.`modified` FROM `contenidos` AS 
+`Contenido`   WHERE `Contenido`.`publicacion_id` = (6)   </td><td></td><td style="text-align: right;">0</td><td style="text-align: right;">0</td><td style="text-align: right;">0</td></tr>
+<tr><td>29</td><td>SELECT `Proveedor`.`id`, `Proveedor`.`nombre` FROM `proveedors` AS `Proveedor`   WHERE 1 = 1   </td><td></td><td style="text-align: right;">1</td><td style="text-align: right;">1</td><td style="text-align: right;">0</td></tr>
+<tr><td>30</td><td>SELECT `Idioma`.`id`, `Idioma`.`idioma` FROM `idiomas` AS `Idioma`   WHERE 1 = 1   </td><td></td><td style="text-align: right;">2</td><td style="text-align: right;">2</td><td style="text-align: right;">0</td></tr>
+</tbody></table>
+    </div> 
+    <div id="facebox" style="display: none;">       <div class="popup">         <table>           <tbody>             <tr>               <td class="tl"></td><td class="b"></td><td class="tr"></td>             </tr>             <tr>               <td class="b"></td>               <td class="body">                 <div class="content">                 </div>                 <div class="footer">                   <a href="#" class="close">                     <img src="6_files/closelabel.html" title="close" class="close_image">                   </a>                 </div>               </td>               <td class="b"></td>             </tr>             <tr>               <td class="bl"></td><td class="b"></td><td class="br"></td>             </tr>           </tbody>         </table>       </div>     </div></body></html>

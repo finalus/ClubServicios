@@ -1,0 +1,28 @@
+Acl:
+    Version: 0.1.0
+    
+Menu:
+    system:
+        children:
+            acl:
+                title: Permissions
+                sort_order: 70
+                url:
+                    admin: true
+                    controller: acl_permissions
+                    plugin: acl
+                children:
+                    users: 
+                        title: Users
+                        sort_order: 10
+                        url:
+                            admin: true
+                            controller: users
+                    groups: 
+                        title: Groups
+                        sort_order: 20
+                        url:
+                            admin: true
+                            controller: groups
+                    
+            

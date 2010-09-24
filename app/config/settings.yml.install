@@ -1,0 +1,12 @@
+---
+Install: 
+    date:
+App: 
+    base: 
+    baseUrl: 
+    timezone: America/Santiago
+    theme: 
+Hook: 
+    bootstraps: core
+    components: 
+    routes: core

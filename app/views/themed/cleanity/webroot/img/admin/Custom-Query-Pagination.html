@@ -1,0 +1,273 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="keywords" content="CakePHP Documentation, Custom Query Pagination, Pagination, Common Tasks With CakePHP, The Manual, 1.2 Collection"><title>
+	Custom Query Pagination :: Pagination :: Common Tasks With CakePHP :: The Manual :: 1.2 Collection :: The Cookbook</title>
+
+<link rel="icon" href="http://book.cakephp.org/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="http://book.cakephp.org/favicon.ico" type="image/x-icon">
+<meta rel="alternate" title="Mobile version" media="handheld" url="http://book.cakephp.org/m"><link href="http://book.cakephp.org/changes/index.rss" type="application/rss+xml" rel="alternate" title="Recent Changes"><link href="http://book.cakephp.org/changes/index/language:*.rss" type="application/rss+xml" rel="alternate" title="Recent Changes for all languages"><link href="http://book.cakephp.org/comments/recent.rss" type="application/rss+xml" rel="alternate" title="Recent comments"><link href="http://book.cakephp.org/comments/recent/language:*.rss" type="application/rss+xml" rel="alternate" title="Recent Comments for all languages">
+	
+<script type="text/javascript">
+//<![CDATA[
+var baseUrl = '/';
+//]]>
+</script><link rel="stylesheet" type="text/css" href="Custom-Query-Pagination_files/mini.css" media="screen"><link rel="stylesheet" type="text/css" href="Custom-Query-Pagination_files/mini_002.css" media="print"><meta name="description" content="Fix me: Please add an example where overriding paginate is justified
+A good example of when you would need this is if the underlying DB does not s...">
+	<link href="http://book.cakephp.org/comments/index/249/Custom-Query-Pagination.rss" type="application/rss+xml" rel="alternate" title="Comments for Custom Query Pagination">
+	<link href="http://book.cakephp.org/changes/index/249.rss" type="application/rss+xml" rel="alternate" title="Change history for Custom Query Pagination"><link rel="stylesheet" type="text/css" href="Custom-Query-Pagination_files/style.css"></head><body>
+	<div id="cakephp-global-navigation">
+	<ul>
+		<li class="main"><a href="http://cakephp.org/">CakePHP</a></li>
+		<li><span>Downloads</span>
+			<ul>
+				<li><a href="http://cakephp.org/">Latest Release</a></li>
+				<li class="cake-version"><a href="http://github.com/cakephp/cakephp">CakePHP 1.1</a>
+					<ul>
+						<li><a href="#">Download</a></li>
+					<!-- <li><a href="#">Tickets</a></li> -->
+					</ul>
+				</li>
+				<li class="cake-version"><a href="http://github.com/cakephp/cakephp/tree/1.2">CakePHP 1.2</a>
+					<ul>
+						<li><a href="http://github.com/cakephp/cakephp/archives/1.2">Download</a>&nbsp;|</li>
+						<li><a href="http://cakephp.lighthouseapp.com/projects/42648-cakephp/milestones">Tickets</a></li>
+					</ul>
+				</li>
+				<li class="cake-version"><a href="http://github.com/cakephp/cakephp/tree/1.3">CakePHP 1.3</a>
+					<ul>
+						<li><a href="http://github.com/cakephp/cakephp/archives/1.3">Download</a>&nbsp;|</li>
+						<li><a href="http://cakephp.lighthouseapp.com/projects/42648-cakephp/milestones">Tickets</a></li>
+					</ul>
+				</li>
+				<li class="cake-version"><a href="http://github.com/cakephp/cakephp/tree/2.0">CakePHP 2.0</a>
+					<ul>
+					<!-- <li><a href="#">Download</a>|</li> -->
+					<li><a href="http://cakephp.lighthouseapp.com/projects/42648-cakephp/milestones">Tickets</a></li>
+					</ul>
+				</li>
+			</ul>
+		</li>
+		<li><span>Documentation</span>
+			<ul>
+				<li class="cake-version"><a href="http://api.cakephp.org/">API</a>
+					<ul>
+						<li><a href="http://api11.cakephp.org/">1.1</a>&nbsp;|</li>
+						<li><a href="http://api12.cakephp.org/">1.2</a>&nbsp;|</li>
+						<li><a href="http://api13.cakephp.org/">1.3</a></li>
+					</ul>
+				</li>
+				<li class="cake-version"><a href="http://book.cakephp.org/">Book</a>
+					<ul>
+						<li><a href="http://book.cakephp.org/view/304/x1-1-Collection">1.1</a>&nbsp;|</li>
+						<li><a href="http://book.cakephp.org/view/2/x1-2-Collection">1.2</a>&nbsp;|</li>
+						<li><a href="http://book.cakephp.org/view/875/x1-3-Collection">1.3</a></li>
+					</ul>
+				</li>
+				<li><a href="http://translation.cakephp.org/">Translations</a></li>
+				<li><a href="http://cakephp.lighthouseapp.com/">Tickets</a></li>
+				<!-- <li><a href="http://cakephp.tv">Screencasts</a></li> -->
+			</ul>
+		</li>
+		<li><span>Community</span>
+			<ul>
+				<li><a href="http://groups.google.com/group/cake-php">Google Groups</a></li>
+				<li><a href="http://cakeqs.org/">CakeQs</a></li>
+				<li><a href="http://bakery.cakephp.org/">Bakery</a></li>
+				<li><a href="http://cakephp.org/planet">Planet</a></li>
+				<li><a href="http://github.com/cakephp/cakephp/contributors">Contributors</a></li>
+				<li><a href="http://cakephp.org/logos">Logo</a></li>
+			</ul>
+		</li>
+		<li><a href="http://cakephp.org/services">Services</a>
+			<ul>
+				<li><a href="http://cakephp.org/services/support">Support</a></li>
+				<li><a href="http://cakephp.org/services/training">Training</a></li>
+				<li><a href="http://cakephp.org/services/consultation">Consultation</a></li>
+				<li><a href="http://cakephp.org/services/certification">Certification</a></li>
+			</ul>
+		</li>
+	</ul>
+</div>        <div id="container">
+		<div id="header">
+			<h1>
+				<a href="http://book.cakephp.org/">Welcome to The Cookbook</a>			</h1>
+		</div>
+		<div id="main_nav">
+<ul class="navigation">
+<li><a href="http://book.cakephp.org/view/875/x1-3-Collection">1.3 Collection</a></li><li><a href="http://book.cakephp.org/view/2/x1-2-Collection" class="active">1.2 Collection</a></li><li><a href="http://book.cakephp.org/view/304/x1-1-Collection">1.1 Collection</a></li><li><a href="http://book.cakephp.org/view/500/General">General</a></li></ul>
+</div>		
+			<div id="secondary_nav">
+<ul class="navigation">
+		<li><a href="http://book.cakephp.org/users/login">Login</a></li>			<li><a href="http://book.cakephp.org/stats#en">Top Contributors</a></li>
+		<li><a href="http://book.cakephp.org/todo">Todo</a></li>
+		<li><a href="http://cakephp.org/">About CakePHP</a></li>
+		<li><a href="http://cakefoundation.org/pages/donations">Donate</a></li>
+	</ul>
+</div>		
+		<div id="site_search"><form id="search" method="post" action="/search/collection:2"><fieldset style="display: none;"><input name="_method" value="POST" type="hidden"></fieldset><fieldset><input name="data[Search][query]" class="query" id="SearchQuery" type="text"><input name="data[Search][collection]" value="2" id="SearchCollection" type="hidden"><input name="data[Search][lang]" value="en" id="SearchLang" type="hidden"></fieldset><input id="search_submit_btn" value="Search" type="submit"></form></div>		<div id="content">
+			<div id="side">
+				<div id="toc" class="context-menu toc tree">
+<h4><a href="http://book.cakephp.org/toc/3/The-Manual" title="see fully expanded table of contents (only)" id="tocLink">Table of Contents</a> : <a href="http://book.cakephp.org/view/3/The-Manual">The Manual</a></h4><ul><li><a href="http://book.cakephp.org/view/4/Beginning-With-CakePHP" id="toc-Beginning-With-CakePHP-4">1 Beginning With CakePHP</a></li><li><a href="http://book.cakephp.org/view/13/Basic-Principles-of-CakePHP" id="toc-Basic-Principles-of-CakePHP-13">2 Basic Principles of CakePHP</a></li><li><a href="http://book.cakephp.org/view/27/Developing-with-CakePHP" id="toc-Developing-with-CakePHP-27">3 Developing with CakePHP</a></li><li><a href="http://book.cakephp.org/view/124/Common-Tasks-With-CakePHP" id="toc-Common-Tasks-With-CakePHP-124">4 Common Tasks With CakePHP</a><ul><li><a href="http://book.cakephp.org/view/125/Data-Validation" id="toc-Data-Validation-125">4.1 Data Validation</a></li><li><a href="http://book.cakephp.org/view/153/Data-Sanitization" id="toc-Data-Sanitization-153">4.2 Data Sanitization</a></li><li><a href="http://book.cakephp.org/view/154/Error-Handling" id="toc-Error-Handling-154">4.3 Error Handling</a></li><li><a href="http://book.cakephp.org/view/155/Debugging" id="toc-Debugging-155">4.4 Debugging</a></li><li><a href="http://book.cakephp.org/view/156/Caching" id="toc-Caching-156">4.5 Caching</a></li><li><a href="http://book.cakephp.org/view/157/Logging" id="toc-Logging-157">4.6 Logging</a></li><li><a href="http://book.cakephp.org/view/160/Testing" id="toc-Testing-160">4.7 Testing</a></li><li><a href="http://book.cakephp.org/view/161/Internationalization-Localization" id="toc-Internationalization-Localization-161">4.8 Internationalization &amp; Localization</a></li><li><a href="http://book.cakephp.org/view/164/Pagination" id="toc-Pagination-164">4.9 Pagination</a><ul><li><a href="http://book.cakephp.org/view/165/Controller-Setup" id="toc-Controller-Setup-165">4.9.1 Controller Setup</a></li><li><a href="http://book.cakephp.org/view/166/Pagination-in-Views" id="toc-Pagination-in-Views-166">4.9.2 Pagination in Views</a></li><li><a href="http://book.cakephp.org/view/167/AJAX-Pagination" id="toc-AJAX-Pagination-167">4.9.3 AJAX Pagination</a></li><li><a href="http://book.cakephp.org/view/249/Custom-Query-Pagination" id="toc-Custom-Query-Pagination-249" class="selected">4.9.4 Custom Query Pagination</a></li></ul></li><li><a href="http://book.cakephp.org/view/476/REST" id="toc-REST-476">4.10 REST</a></li></ul></li><li><a href="http://book.cakephp.org/view/170/Core-Components" id="toc-Core-Components-170">5 Core Components</a></li><li><a href="http://book.cakephp.org/view/495/Core-Behaviors" id="toc-Core-Behaviors-495">6 Core Behaviors</a></li><li><a href="http://book.cakephp.org/view/181/Core-Helpers" id="toc-Core-Helpers-181">7 Core Helpers</a></li><li><a href="http://book.cakephp.org/view/486/Core-Utility-Libraries" id="toc-Core-Utility-Libraries-486">8 Core Utility Libraries</a></li><li><a href="http://book.cakephp.org/view/620/Core-Console-Applications" id="toc-Core-Console-Applications-620">9 Core Console Applications</a></li><li><a href="http://book.cakephp.org/view/218/Tutorials-Examples" id="toc-Tutorials-Examples-218">10 Tutorials &amp; Examples</a></li><li><a href="http://book.cakephp.org/view/221/Appendices" id="toc-Appendices-221">11 Appendices</a></li></ul></div>
+				
+				<br>
+				<!--
+				<a href="http://matsuri.cakephp.jp"><img src="http://matsuri.cakephp.jp/themed/tokyo09/img/badges/matsurired_en.png" id="cakefest" alt="CakeMatsuri : October 30-31 2009 : Tokyo, Japan" /></a>				-->
+<a href="http://cakefest.org/" target="_blank" style="margin: 0pt 80px;"><img src="Custom-Query-Pagination_files/attending125x125.png" alt="I'm attending CakeFest 2010!"></a>				<div style="padding-left: 20px;">
+					<div class="doc-block">
+	<script type="text/javascript"><!--
+	google_ad_client = "pub-6807678397741215";
+	google_ad_slot = "5509637016";
+	google_ad_width = 250;
+	google_ad_height = 250;
+	//--></script>
+	<script type="text/javascript" src="Custom-Query-Pagination_files/show_ads.js"></script><script src="Custom-Query-Pagination_files/expansion_embed.js"></script><script src="Custom-Query-Pagination_files/test_domain.js"></script><script>google_protectAndRun("ads_core.google_render_ad", google_handleError, google_render_ad);</script><ins style="display: inline-table; border: medium none; height: 250px; margin: 0pt; padding: 0pt; position: relative; visibility: visible; width: 250px;"><ins id="google_ads_frame1_anchor" style="display: block; border: medium none; height: 250px; margin: 0pt; padding: 0pt; position: relative; visibility: visible; width: 250px;"><iframe allowtransparency="true" hspace="0" id="google_ads_frame1" marginheight="0" marginwidth="0" name="google_ads_frame" src="Custom-Query-Pagination_files/ads.html" style="left: 0pt; position: absolute; top: 0pt;" vspace="0" width="250" frameborder="0" height="250" scrolling="no"></iframe></ins></ins>
+</div>				</div>
+
+				
+					<div class="context-menu options"><h4>Options</h4><ul class="menu">
+	<li><a href="http://book.cakephp.org/complete/249/Custom-Query-Pagination">All in one page</a></li>
+	<li><a href="http://book.cakephp.org/add/249/Custom-Query-Pagination">Suggest a new section here</a></li>
+</ul></div><div class="context-menu feeds"><h4>Feeds</h4><ul class="menu">
+	<li><a href="http://book.cakephp.org/comments/index/249/Custom-Query-Pagination.rss">Comments for Custom Query Pagination</a></li>
+	<li><a href="http://book.cakephp.org/changes/index/249.rss">Change history for Custom Query Pagination</a></li>
+</ul></div>				
+			</div>
+			<div id="body">
+				<div class="crumbs">
+<a href="http://book.cakephp.org/view/3/The-Manual">The Manual</a>»<a href="http://book.cakephp.org/view/124/Common-Tasks-With-CakePHP">Common Tasks With CakePHP</a>»<a href="http://book.cakephp.org/view/164/Pagination">Pagination</a>»<a href="http://book.cakephp.org/view/249/Custom-Query-Pagination">Custom Query Pagination</a></div>								
+									
+				<div class="nodes view">
+<h2 id="Custom-Query-Pagination-249">4.9.4 Custom Query Pagination</h2><div class="options"><ul class="node-options"><li><a href="http://book.cakephp.org/edit/249/Custom-Query-Pagination" title="Don't like this text? Submit your thoughts" class="contribute">Edit</a></li><li><a href="http://book.cakephp.org/comments/index/249" title="Comments for Custom Query Pagination" class="dialog">Comments (14)</a></li><li><a href="http://book.cakephp.org/history/249/Custom-Query-Pagination" class="dialog">History</a></li></ul></div><div class="summary"><p class="note">Fix me: Please add an example where overriding paginate is justified</p>
+<p>A good example of when you would need this is if the underlying DB 
+does not support the SQL LIMIT syntax. This is true of IBM's DB2. You 
+can still use the CakePHP pagination by adding the custom query to the 
+model.</p>
+<p>Should you need to create custom queries to generate the data you want to paginate, you can override the <code>paginate()</code> and <code>paginateCount()</code> model methods used by the pagination controller logic.</p>
+<p class="warning">Before continuing check you can't achieve your goal with the core model methods.</p>
+<p>The <code>paginate()</code> method uses the same parameters as <code>Model::find()</code>.  To use your own method/logic override it in the model you wish to get the data from.</p>
+<a class="codeToggle" href="#">Plain Text View</a><pre class="code">/**
+ * Overridden paginate method - group by week, away_team_id and home_team_id
+ */
+function paginate($conditions, $fields, $order, $limit, $page = 1, $recursive = null, $extra = array()) {
+	$recursive = -1;
+	$group = $fields = array('week', 'away_team_id', 'home_team_id');
+	 return $this-&gt;find('all', compact('conditions', 'fields', 'order', 'limit', 'page', 'recursive', 'group'));
+}
+</pre>  <ol style="border-top: medium none;" class="code">
+    
+    
+    <li><code><span class="comment">/**</span></code></li>
+    <li class="even"><code><span class="comment"> * Overridden paginate method - group by week, away_team_id and home_team_id</span></code></li>
+    <li><code><span class="comment"> */</span></code></li>
+    <li class="even"><code><span class="keyword">function </span><span class="default">paginate</span><span class="keyword">(</span><span class="default">$conditions</span><span class="keyword">, </span><span class="default">$fields</span><span class="keyword">, </span><span class="default">$order</span><span class="keyword">, </span><span class="default">$limit</span><span class="keyword">, </span><span class="default">$page </span><span class="keyword">= </span><span class="default">1</span><span class="keyword">, </span><span class="default">$recursive </span><span class="keyword">= </span><span class="default">null</span><span class="keyword">, </span><span class="default">$extra </span><span class="keyword">= array()) {</span></code></li>
+    <li><code><span class="keyword">    </span><span class="default">$recursive </span><span class="keyword">= -</span><span class="default">1</span><span class="keyword">;</span></code></li>
+    <li class="even"><code><span class="keyword">    </span><span class="default">$group </span><span class="keyword">= </span><span class="default">$fields </span><span class="keyword">= array(</span><span class="string">'week'</span><span class="keyword">, </span><span class="string">'away_team_id'</span><span class="keyword">, </span><span class="string">'home_team_id'</span><span class="keyword">);</span></code></li>
+    <li><code><span class="keyword">     return </span><span class="default">$this</span><span class="keyword">-&gt;</span><span class="default">find</span><span class="keyword">(</span><span class="string">'all'</span><span class="keyword">, </span><span class="default">compact</span><span class="keyword">(</span><span class="string">'conditions'</span><span class="keyword">, </span><span class="string">'fields'</span><span class="keyword">, </span><span class="string">'order'</span><span class="keyword">, </span><span class="string">'limit'</span><span class="keyword">, </span><span class="string">'page'</span><span class="keyword">, </span><span class="string">'recursive'</span><span class="keyword">, </span><span class="string">'group'</span><span class="keyword">));</span></code></li>
+    <li class="even"><code><span class="keyword">}</span></code></li>
+  </ol>
+
+<p>You also need to override the core <code>paginateCount()</code>, this method expects the same arguments as <code>Model::find('count')</code>.  The example below uses some Postgres-specifc features, so please adjust accordingly depending on what database you are using.</p>
+<a class="codeToggle" href="#">Plain Text View</a><pre class="code">/**
+ * Overridden paginateCount method
+ */
+function paginateCount($conditions = null, $recursive = 0, $extra = array()) {
+	$sql = "SELECT DISTINCT ON(week, home_team_id, away_team_id) week, home_team_id, away_team_id FROM games";
+	$this-&gt;recursive = $recursive;
+	$results = $this-&gt;query($sql);
+	return count($results);
+}
+</pre>  <ol style="border-top: medium none;" class="code">
+    
+    
+    <li><code><span class="comment">/**</span></code></li>
+    <li class="even"><code><span class="comment"> * Overridden paginateCount method</span></code></li>
+    <li><code><span class="comment"> */</span></code></li>
+    <li class="even"><code><span class="keyword">function </span><span class="default">paginateCount</span><span class="keyword">(</span><span class="default">$conditions </span><span class="keyword">= </span><span class="default">null</span><span class="keyword">, </span><span class="default">$recursive </span><span class="keyword">= </span><span class="default">0</span><span class="keyword">, </span><span class="default">$extra </span><span class="keyword">= array()) {</span></code></li>
+    <li><code><span class="keyword">    </span><span class="default">$sql </span><span class="keyword">= </span><span class="string">"SELECT DISTINCT ON(week, home_team_id, away_team_id) week, home_team_id, away_team_id FROM games"</span><span class="keyword">;</span></code></li>
+    <li class="even"><code><span class="keyword">    </span><span class="default">$this</span><span class="keyword">-&gt;</span><span class="default">recursive </span><span class="keyword">= </span><span class="default">$recursive</span><span class="keyword">;</span></code></li>
+    <li><code><span class="keyword">    </span><span class="default">$results </span><span class="keyword">= </span><span class="default">$this</span><span class="keyword">-&gt;</span><span class="default">query</span><span class="keyword">(</span><span class="default">$sql</span><span class="keyword">);</span></code></li>
+    <li class="even"><code><span class="keyword">    return </span><span class="default">count</span><span class="keyword">(</span><span class="default">$results</span><span class="keyword">);</span></code></li>
+    <li><code><span class="keyword">}</span></code></li>
+  </ol>
+
+<p>The observant reader will have noticed that the paginate method we've
+ defined wasn't actually necessary - All you have to do is add the 
+keyword in controller's <code>$paginate</code> class variable.</p>
+<a class="codeToggle" href="#">Plain Text View</a><pre class="code">/**
+* Add GROUP BY clause
+*/
+var $paginate = array(
+	'MyModel' =&gt; array('limit' =&gt; 20, 
+                           'order' =&gt; array('week' =&gt; 'desc'),
+                           'group' =&gt; array('week', 'home_team_id', 'away_team_id'))
+                          );
+/**
+* Or on-the-fly from within the action
+*/
+function index() {
+	$this-&gt;paginate = array(
+	'MyModel' =&gt; array('limit' =&gt; 20, 
+                           'order' =&gt; array('week' =&gt; 'desc'),
+                           'group' =&gt; array('week', 'home_team_id', 'away_team_id'))
+                          );
+</pre>  <ol style="border-top: medium none;" class="code">
+    
+    
+    <li><code><span class="comment">/**</span></code></li>
+    <li class="even"><code><span class="comment">* Add GROUP BY clause</span></code></li>
+    <li><code><span class="comment">*/</span></code></li>
+    <li class="even"><code><span class="keyword">var </span><span class="default">$paginate </span><span class="keyword">= array(</span></code></li>
+    <li><code><span class="keyword">    </span><span class="string">'MyModel' </span><span class="keyword">=&gt; array(</span><span class="string">'limit' </span><span class="keyword">=&gt; </span><span class="default">20</span><span class="keyword">, </span></code></li>
+    <li class="even"><code><span class="keyword">                           </span><span class="string">'order' </span><span class="keyword">=&gt; array(</span><span class="string">'week' </span><span class="keyword">=&gt; </span><span class="string">'desc'</span><span class="keyword">),</span></code></li>
+    <li><code><span class="keyword">                           </span><span class="string">'group' </span><span class="keyword">=&gt; array(</span><span class="string">'week'</span><span class="keyword">, </span><span class="string">'home_team_id'</span><span class="keyword">, </span><span class="string">'away_team_id'</span><span class="keyword">))</span></code></li>
+    <li class="even"><code><span class="keyword">                          );</span></code></li>
+    <li><code><span class="comment">/**</span></code></li>
+    <li class="even"><code><span class="comment">* Or on-the-fly from within the action</span></code></li>
+    <li><code><span class="comment">*/</span></code></li>
+    <li class="even"><code><span class="keyword">function </span><span class="default">index</span><span class="keyword">() {</span></code></li>
+    <li><code><span class="keyword">    </span><span class="default">$this</span><span class="keyword">-&gt;</span><span class="default">paginate </span><span class="keyword">= array(</span></code></li>
+    <li class="even"><code><span class="keyword">    </span><span class="string">'MyModel' </span><span class="keyword">=&gt; array(</span><span class="string">'limit' </span><span class="keyword">=&gt; </span><span class="default">20</span><span class="keyword">, </span></code></li>
+    <li><code><span class="keyword">                           </span><span class="string">'order' </span><span class="keyword">=&gt; array(</span><span class="string">'week' </span><span class="keyword">=&gt; </span><span class="string">'desc'</span><span class="keyword">),</span></code></li>
+    <li class="even"><code><span class="keyword">                           </span><span class="string">'group' </span><span class="keyword">=&gt; array(</span><span class="string">'week'</span><span class="keyword">, </span><span class="string">'home_team_id'</span><span class="keyword">, </span><span class="string">'away_team_id'</span><span class="keyword">))</span></code></li>
+    <li><code><span class="keyword">                          );</span></code></li>
+  </ol>
+
+<p>However, it will still be necessary to override the <code>paginateCount()</code> method to get an accurate value.</p></div></div>
+<div class="node-nav">
+<span class="prev"><a href="http://book.cakephp.org/view/169/View-Changes" title="View Changes">« View Changes</a></span>&nbsp;|&nbsp;<span class="next"><a href="http://book.cakephp.org/view/476/REST" title="REST">REST »</a></span></div>     
+				<div class="doc-block">
+	<script type="text/javascript"><!--
+	google_ad_client = "pub-6807678397741215";
+	google_ad_slot = "0872800083";
+	google_ad_width = 728;
+	google_ad_height = 90;
+	//--></script>
+	<script type="text/javascript" src="Custom-Query-Pagination_files/show_ads.js"></script><script>google_protectAndRun("ads_core.google_render_ad", google_handleError, google_render_ad);</script><ins style="display: inline-table; border: medium none; height: 90px; margin: 0pt; padding: 0pt; position: relative; visibility: visible; width: 728px;"><ins id="google_ads_frame2_anchor" style="display: block; border: medium none; height: 90px; margin: 0pt; padding: 0pt; position: relative; visibility: visible; width: 728px;"><iframe allowtransparency="true" hspace="0" id="google_ads_frame2" marginheight="0" marginwidth="0" name="google_ads_frame" src="Custom-Query-Pagination_files/ads_002.html" style="left: 0pt; position: absolute; top: 0pt;" vspace="0" width="728" frameborder="0" height="90" scrolling="no"></iframe></ins></ins>
+</div>				<div class="clear"></div>
+			</div>
+
+			<div class="clear"></div>
+		</div>
+		<div id="footer">
+			<p>
+				<span>Also available in <a href="http://book.cakephp.org/ar/view/249/Custom-Query-Pagination" class="lowlight" title="No ar translation yet for Custom Query Pagination">ar</a> · <a href="http://book.cakephp.org/bg/view/249/Custom-Query-Pagination" class="lowlight" title="No bg translation yet for Custom Query Pagination">bg</a> · <a href="http://book.cakephp.org/cn/view/249/Custom-Query-Pagination" class="lowlight" title="No cn translation yet for Custom Query Pagination">cn</a> · <a href="http://book.cakephp.org/cz/view/249/Custom-Query-Pagination" class="lowlight" title="No cz translation yet for Custom Query Pagination">cz</a> · <a href="http://book.cakephp.org/de/view/249/Custom-Query-Pagination" class="lowlight" title="No de translation yet for Custom Query Pagination">de</a> · <a href="http://book.cakephp.org/el/view/249/Custom-Query-Pagination" class="lowlight" title="No el translation yet for Custom Query Pagination">el</a> · <a href="http://book.cakephp.org/es/view/249/Custom-Query-Pagination" class="lowlight" title="No es translation yet for Custom Query Pagination">es</a> · <a href="http://book.cakephp.org/fa/view/249/Custom-Query-Pagination" class="lowlight" title="No fa translation yet for Custom Query Pagination">fa</a> · <a href="http://book.cakephp.org/fr/view/249/Requ%C3%AAte-de-pagination-personnalis%C3%A9e" title="Requête de pagination personnalisée">fr</a> · <a href="http://book.cakephp.org/hu/view/249/Lapoz%C3%A1s-egy%C3%A9ni-lek%C3%A9rdez%C3%A9s-alapj%C3%A1n" title="Lapozás egyéni lekérdezés alapján">hu</a> · <a href="http://book.cakephp.org/id/view/249/Custom-Query-Pagination" class="lowlight" title="No id translation yet for Custom Query Pagination">id</a> · <a href="http://book.cakephp.org/it/view/249/Custom-Query-Pagination" class="lowlight" title="No it translation yet for Custom Query Pagination">it</a> · <a href="" title="カスタムしたクエリによるページ付け">ja</a> · <a href="http://book.cakephp.org/ko/view/249/Custom-Query-Pagination" title="Custom Query Pagination">ko</a> · <a href="http://book.cakephp.org/ms/view/249/Pengubahsuaian-Query-Pagination" title="Pengubahsuaian Query Pagination">ms</a> · <a href="http://book.cakephp.org/nl/view/249/Custom-Query-Pagination" class="lowlight" title="No nl translation yet for Custom Query Pagination">nl</a> · <a href="http://book.cakephp.org/pl/view/249/Custom-Query-Pagination" class="lowlight" title="No pl translation yet for Custom Query Pagination">pl</a> · <a href="http://book.cakephp.org/pt/view/249/Pagina%C3%A7%C3%A3o-com-Consultas-Personalizadas" title="Paginação com Consultas Personalizadas">pt</a> · <a href="http://book.cakephp.org/ro/view/249/Custom-Query-Pagination" class="lowlight" title="No ro translation yet for Custom Query Pagination">ro</a> · <a href="http://book.cakephp.org/ru/view/249/Custom-Query-Pagination" class="lowlight" title="No ru translation yet for Custom Query Pagination">ru</a> · <a href="http://book.cakephp.org/sk/view/249/Custom-Query-Pagination" class="lowlight" title="No sk translation yet for Custom Query Pagination">sk</a> · <a href="http://book.cakephp.org/tr/view/249/Custom-Query-Pagination" class="lowlight" title="No tr translation yet for Custom Query Pagination">tr</a> · <a href="http://book.cakephp.org/tw/view/249/Custom-Query-Pagination" class="lowlight" title="No tw translation yet for Custom Query Pagination">tw</a> · <a href="http://book.cakephp.org/vi/view/249/Custom-Query-Pagination" class="lowlight" title="No vi translation yet for Custom Query Pagination">vi</a></span> &nbsp; <a href="http://www.cakephp.org/"><img src="Custom-Query-Pagination_files/cake.gif" alt="CakePHP: the PHP Rapid Development Framework"></a>				<a href="http://creativecommons.org/licenses/by-nc-nd/3.0/">
+					<img src="Custom-Query-Pagination_files/license.png" alt="Creative Commons License">				</a>
+			</p>
+			<p>© <a href="http://cakefoundation.org/">Cake Software Foundation, Inc.</a></p>
+			<p><a href="http://book.cakephp.org/pages/display/privacy">Privacy Policy</a></p>
+		</div>
+	</div>
+<script type="text/javascript" src="Custom-Query-Pagination_files/mini.js"></script>	<script type="text/javascript">
+		var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+		document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+	</script><script src="Custom-Query-Pagination_files/ga.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		var pageTracker = _gat._getTracker("UA-743287-3");
+		pageTracker._initData();
+		pageTracker._trackPageview();
+	</script>
+<div aria-labelledby="ui-dialog-title-tocFull" role="dialog" tabindex="-1" class="ui-dialog ui-widget ui-widget-content ui-corner-all undefined" style="display: none; position: absolute; overflow: hidden; z-index: 1000; outline: 0px none;"><div style="-moz-user-select: none;" unselectable="on" class="ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix"><span style="-moz-user-select: none;" unselectable="on" id="ui-dialog-title-tocFull" class="ui-dialog-title">The Manual</span><a style="-moz-user-select: none;" unselectable="on" role="button" class="ui-dialog-titlebar-close ui-corner-all" href="#"><span style="-moz-user-select: none;" unselectable="on" class="ui-icon ui-icon-closethick">close</span></a></div><div class="ui-dialog-content ui-widget-content" style="display: block;" id="tocFull"><div class="column"><ul><li><a href="http://book.cakephp.org/view/4/Beginning-With-CakePHP">1 Beginning With CakePHP</a><ul><li><a href="http://book.cakephp.org/view/8/What-is-CakePHP-Why-Use-it">1.1 What is CakePHP? Why Use it?</a></li><li><a href="http://book.cakephp.org/view/9/Where-to-Get-Help">1.2 Where to Get Help</a></li><li><a href="http://book.cakephp.org/view/10/Understanding-Model-View-Controller">1.3 Understanding Model-View-Controller</a></li></ul></li><li><a href="http://book.cakephp.org/view/13/Basic-Principles-of-CakePHP">2 Basic Principles of CakePHP</a><ul><li><a href="http://book.cakephp.org/view/14/CakePHP-Structure">2.1 CakePHP Structure</a></li><li><a href="http://book.cakephp.org/view/21/A-Typical-CakePHP-Request">2.2 A Typical CakePHP Request</a></li><li><a href="http://book.cakephp.org/view/19/CakePHP-Folder-Structure">2.3 CakePHP Folder Structure</a></li><li><a href="http://book.cakephp.org/view/22/CakePHP-Conventions">2.4 CakePHP Conventions</a></li></ul></li><li><a href="http://book.cakephp.org/view/27/Developing-with-CakePHP">3 Developing with CakePHP</a><ul><li><a href="http://book.cakephp.org/view/28/Requirements">3.1 Requirements</a></li><li><a href="http://book.cakephp.org/view/29/Installation-Preparation">3.2 Installation Preparation</a></li><li><a href="http://book.cakephp.org/view/32/Installation">3.3 Installation</a></li><li><a href="http://book.cakephp.org/view/39/Configuration">3.4 Configuration</a></li><li><a href="http://book.cakephp.org/view/49/Controllers">3.5 Controllers</a></li><li><a href="http://book.cakephp.org/view/62/Components">3.6 Components</a></li><li><a href="http://book.cakephp.org/view/66/Models">3.7 Models</a></li><li><a href="http://book.cakephp.org/view/88/Behaviors">3.8 Behaviors</a></li><li><a href="http://book.cakephp.org/view/87/DataSources">3.9 DataSources</a></li><li><a href="http://book.cakephp.org/view/94/Views">3.10 Views</a></li></ul></li></ul></div><div class="column"><ul><li><ul><li><a href="http://book.cakephp.org/view/98/Helpers">3.11 Helpers</a></li><li><a href="http://book.cakephp.org/view/105/Scaffolding">3.12 Scaffolding</a></li><li><a href="http://book.cakephp.org/view/108/The-CakePHP-Console">3.13 The CakePHP Console</a></li><li><a href="http://book.cakephp.org/view/114/Plugins">3.14 Plugins</a></li><li><a href="http://book.cakephp.org/view/120/Global-Constants-and-Functions">3.15 Global Constants and Functions</a></li></ul></li><li><a href="http://book.cakephp.org/view/124/Common-Tasks-With-CakePHP">4 Common Tasks With CakePHP</a><ul><li><a href="http://book.cakephp.org/view/125/Data-Validation">4.1 Data Validation</a></li><li><a href="http://book.cakephp.org/view/153/Data-Sanitization">4.2 Data Sanitization</a></li><li><a href="http://book.cakephp.org/view/154/Error-Handling">4.3 Error Handling</a></li><li><a href="http://book.cakephp.org/view/155/Debugging">4.4 Debugging</a></li><li><a href="http://book.cakephp.org/view/156/Caching">4.5 Caching</a></li><li><a href="http://book.cakephp.org/view/157/Logging">4.6 Logging</a></li><li><a href="http://book.cakephp.org/view/160/Testing">4.7 Testing</a></li><li><a href="http://book.cakephp.org/view/161/Internationalization-Localization">4.8 Internationalization &amp; Localization</a></li><li><a href="http://book.cakephp.org/view/164/Pagination">4.9 Pagination</a></li><li><a href="http://book.cakephp.org/view/476/REST">4.10 REST</a></li></ul></li><li><a href="http://book.cakephp.org/view/170/Core-Components">5 Core Components</a><ul><li><a href="http://book.cakephp.org/view/171/Access-Control-Lists">5.1 Access Control Lists</a></li><li><a href="http://book.cakephp.org/view/172/Authentication">5.2 Authentication</a></li><li><a href="http://book.cakephp.org/view/177/Cookies">5.3 Cookies</a></li></ul></li></ul></div><div class="column"><ul><li><ul><li><a href="http://book.cakephp.org/view/176/Email">5.4 Email</a></li><li><a href="http://book.cakephp.org/view/174/Request-Handling">5.5 Request Handling</a></li><li><a href="http://book.cakephp.org/view/175/Security-Component">5.6 Security Component</a></li><li><a href="http://book.cakephp.org/view/173/Sessions">5.7 Sessions</a></li></ul></li><li><a href="http://book.cakephp.org/view/495/Core-Behaviors">6 Core Behaviors</a><ul><li><a href="http://book.cakephp.org/view/93/ACL">6.1 ACL</a></li><li><a href="http://book.cakephp.org/view/474/Containable">6.2 Containable</a></li><li><a href="http://book.cakephp.org/view/92/Translate">6.3 Translate</a></li><li><a href="http://book.cakephp.org/view/91/Tree">6.4 Tree</a></li></ul></li><li><a href="http://book.cakephp.org/view/181/Core-Helpers">7 Core Helpers</a><ul><li><a href="http://book.cakephp.org/view/208/AJAX">7.1 AJAX</a></li><li><a href="http://book.cakephp.org/view/213/Cache">7.2 Cache</a></li><li><a href="http://book.cakephp.org/view/182/Form">7.3 Form</a></li><li><a href="http://book.cakephp.org/view/205/HTML">7.4 HTML</a></li><li><a href="http://book.cakephp.org/view/207/Javascript">7.5 Javascript</a></li><li><a href="http://book.cakephp.org/view/215/Number">7.6 Number</a></li><li><a href="http://book.cakephp.org/view/496/Paginator">7.7 Paginator</a></li><li><a href="http://book.cakephp.org/view/494/RSS">7.8 RSS</a></li><li><a href="http://book.cakephp.org/view/484/Session">7.9 Session</a></li><li><a href="http://book.cakephp.org/view/216/Text">7.10 Text</a></li></ul></li></ul></div><div class="column"><ul><li><ul><li><a href="http://book.cakephp.org/view/217/Time">7.11 Time</a></li><li><a href="http://book.cakephp.org/view/380/XML">7.12 XML</a></li></ul></li><li><a href="http://book.cakephp.org/view/486/Core-Utility-Libraries">8 Core Utility Libraries</a><ul><li><a href="http://book.cakephp.org/view/1631/App">8.1 App</a></li><li><a href="http://book.cakephp.org/view/491/Inflector">8.2 Inflector</a></li><li><a href="http://book.cakephp.org/view/492/String">8.3 String</a></li><li><a href="http://book.cakephp.org/view/623/Xml">8.4 Xml</a></li><li><a href="http://book.cakephp.org/view/640/Set">8.5 Set</a></li><li><a href="http://book.cakephp.org/view/733/Security">8.6 Security</a></li><li><a href="http://book.cakephp.org/view/764/Cache">8.7 Cache</a></li><li><a href="http://book.cakephp.org/view/792/HttpSocket">8.8 HttpSocket</a></li></ul></li><li><a href="http://book.cakephp.org/view/620/Core-Console-Applications">9 Core Console Applications</a><ul><li><a href="http://book.cakephp.org/view/113/Code-Generation-with-Bake">9.1 Code Generation with Bake</a></li><li><a href="http://book.cakephp.org/view/734/Schema-management-and-migrations">9.2 Schema management and migrations</a></li><li><a href="http://book.cakephp.org/view/789/Modify-default-HTML-produced-by-baked-templates">9.3 Modify default HTML produced by "baked" templates</a></li></ul></li><li><a href="http://book.cakephp.org/view/218/Tutorials-Examples">10 Tutorials &amp; Examples</a><ul><li><a href="http://book.cakephp.org/view/219/Blog">10.1 Blog</a></li><li><a href="http://book.cakephp.org/view/641/Simple-Acl-controlled-Application">10.2 Simple Acl controlled Application</a></li></ul></li><li><a href="http://book.cakephp.org/view/221/Appendices">11 Appendices</a><ul><li><a href="http://book.cakephp.org/view/411/Migrating-from-CakePHP-1-1-to-1-2">11.1 Migrating from CakePHP 1.1 to 1.2</a></li></ul></li></ul></div><p style="clear: both;">&nbsp;</p></div></div></body></html>

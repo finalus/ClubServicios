@@ -1,0 +1,1 @@
+<p>© 2009 Cleanity. Theme by Onur Oztaskiran of <a href="http://www.monofactor.com">Monofactor</a>,  via <a href="http://themeforest.net">Themeforest</a></p>

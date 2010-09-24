@@ -1,0 +1,26 @@
+ul#menu {margin-top:-2px;}
+ul#menu li ul li a:hover {color:#000;}
+div#content-top {padding-bottom:5px;}
+div#content-top h2 {border-bottom:1px solid #f2f2ec;}
+ul.list-links {width:213px;}
+ul.list-links li ul {width:203px;}
+ul#menu li ul {width:200px !important;}
+ul.list-links, div#to-do-list ul {width:213px; margin-left:-10px; margin-top:0px;}
+
+	input.txtbox-short {width:92px;}
+	input.txtbox-middle {width:160px;}
+	input.txtbox-long, form.middle-forms fieldset ol li textarea {width:285px;}
+	form.middle-forms fieldset ol li {padding:10px 10px 0px 10px;}
+	
+	table.table-short {width:495px;}
+	
+	div#date-container {margin:0px; padding:0px;}
+	div#date-container span.hour {margin-right:0px;}
+	.ui-icon-circle-triangle-e {right:10px;}
+	.ui-icon-circle-triangle-w {left:-90px;}
+
+	
+	div#mid-col {margin-right:0;}
+	
+	ul#quick-visual-links li {width:62px;}
+	

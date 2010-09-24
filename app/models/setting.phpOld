@@ -1,0 +1,67 @@
+<?php
+class Setting extends AppModel {
+	var $name = 'Setting';
+	var $displayField = 'name';
+	//The Associations below have been created with all possible keys, those that are not needed can be removed
+
+	var $belongsTo = array(
+		'SettingType' => array(
+			'className' => 'SettingType',
+			'foreignKey' => 'setting_type_id',
+			'conditions' => '',
+			'fields' => '',
+			'order' => ''
+		)
+	);
+	
+	function get($code) {
+		if(!empty($code)) {
+			$setting = Cache::read($code);   
+			if(!empty($setting)) {
+				return $setting;
+			} else {
+				$setting = $this->findByCode($code);
+				if(!empty($setting)) {
+					Cache::write($setting['Setting']['code'], $setting['Setting']['value'], '+1 month');
+					return $setting['Setting']['value'];
+				} else {
+					return false;
+				}
+			}
+		} else {
+			return false;
+		}
+	}
+
+	function beforeSave(){       
+		if(!empty($this->data)){    
+			$this->data['Setting']['code'] = strtoupper(Inflector::slug($this->data['Setting']['name']));
+			if(!empty($this->data['Setting']['code'])){
+				Cache::delete($this->data['Setting']['code']);
+				Cache::write($this->data['Setting']['code'], $this->data['Setting']['value'], '+1 month');
+			}
+		}
+
+		return true;
+	}   
+	
+	function __construct($id = false, $table = null, $ds = null) {
+		parent::__construct($id, $table, $ds);
+		
+		$this->validate = array(
+			'name' => array(
+				'notempty' => array(
+					'rule' => array('notempty'),
+					'message' => __('Please add a setting name.', true),
+				),
+			),
+			'value' => array(
+				'notempty' => array(
+					'rule' => array('notempty'),
+					'message' => __('Please specify a value for this setting.', true),
+				),
+			), 
+		); 
+	}                     
+}
+?>

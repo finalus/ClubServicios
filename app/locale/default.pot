@@ -1,0 +1,1716 @@
+# LANGUAGE translation of CakePHP Application
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2010-08-19 13:45-0400\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: /app_controller.php:17
+msgid "Error: Title For Layout needed"
+msgstr ""
+
+#: /app_controller.php:39
+msgid "Site down for maintenance"
+msgstr ""
+
+#: /app_controller.php:139
+msgid "Your %s or %s is incorrect.  Please try again."
+msgstr ""
+
+#: /app_error.php:26
+#: /plugins/acl/views/acl_permissions/admin_toggle.ctp:9
+#: /plugins/install/controllers/wizard_controller.php:215
+#: /views/themed/cleanity/elements/error.ctp:3
+msgid "Error"
+msgstr ""
+
+#: /controllers/dashboard_controller.php:9
+#: /views/dashboard/admin_index.ctp:4
+#: /views/themed/cleanity/elements/crumbs.ctp:6
+#: /views/themed/smart/elements/crumbs.ctp:3
+msgid "Dashboard"
+msgstr ""
+
+#: /controllers/groups_controller.php:14
+#: /views/groups/admin_index.ctp:4;13
+#: /views/groups/admin_view.ctp:31
+#: /views/groups/index.ctp:3
+#: /views/groups/view.ctp:31
+#: /views/users/admin_index.ctp:8;9
+#: /views/users/admin_view.ctp:73
+#: /views/users/view.ctp:73
+msgid "Groups"
+msgstr ""
+
+#: /controllers/groups_controller.php:21;41
+#: /controllers/users_controller.php:184;208
+msgid "Invalid %s"
+msgstr ""
+
+#: /controllers/groups_controller.php:31;46
+#: /controllers/users_controller.php:194;213
+msgid "The %s has been saved"
+msgstr ""
+
+#: /controllers/groups_controller.php:34;49
+#: /controllers/users_controller.php:197;216
+msgid "The %s could not be saved. Please, try again."
+msgstr ""
+
+#: /controllers/groups_controller.php:62
+#: /controllers/users_controller.php:231
+msgid "Invalid id for %s"
+msgstr ""
+
+#: /controllers/groups_controller.php:66
+#: /controllers/users_controller.php:235
+msgid "%s deleted"
+msgstr ""
+
+#: /controllers/groups_controller.php:69
+msgid "%s was not deleted"
+msgstr ""
+
+#: /controllers/pages_controller.php:19
+#: /views/pages/admin_index.ctp:2
+msgid "Pages"
+msgstr ""
+
+#: /controllers/system_controller.php:12
+#: /plugins/acl/views/acl_acos/admin_index.ctp:2
+#: /plugins/acl/views/acl_actions/admin_add.ctp:2
+#: /plugins/acl/views/acl_actions/admin_edit.ctp:2
+#: /plugins/acl/views/acl_actions/admin_index.ctp:6
+#: /plugins/acl/views/acl_permissions/admin_index.ctp:5
+#: /views/groups/admin_index.ctp:2
+#: /views/system/admin_account.ctp:2
+#: /views/system/admin_email_templates.ctp:2
+#: /views/system/admin_index.ctp:2
+#: /views/system/admin_tools.ctp:2
+#: /views/themed/smart/elements/header/user.ctp:2
+msgid "System"
+msgstr ""
+
+#: /controllers/system_controller.php:17
+#: /views/system/admin_account.ctp:3;8
+#: /views/themed/cleanity/elements/header/user.ctp:1
+msgid "My Account"
+msgstr ""
+
+#: /controllers/system_controller.php:23
+msgid "Your account as been updated."
+msgstr ""
+
+#: /controllers/system_controller.php:26
+msgid "Your account could not be saved. Please, try again."
+msgstr ""
+
+#: /controllers/system_controller.php:40
+#: /views/system/admin_tools.ctp:3
+msgid "Tools"
+msgstr ""
+
+#: /controllers/system_controller.php:45
+#: /views/system/admin_email_templates.ctp:3
+msgid "Email Templates"
+msgstr ""
+
+#: /controllers/users_controller.php:50
+msgid "We were unable to register your account!"
+msgstr ""
+
+#: /controllers/users_controller.php:72
+msgid "Your account is verified!"
+msgstr ""
+
+#: /controllers/users_controller.php:75
+msgid "We were unable to verify you account! Account may already be active."
+msgstr ""
+
+#: /controllers/users_controller.php:115
+msgid "Password Change Email has been sent!"
+msgstr ""
+
+#: /controllers/users_controller.php:118
+msgid "No user found with that email"
+msgstr ""
+
+#: /controllers/users_controller.php:148
+msgid "Unable to send activation email.  It may be that the account is already active or the email doesn't exisit."
+msgstr ""
+
+#: /controllers/users_controller.php:156
+msgid "Administration Login"
+msgstr ""
+
+#: /controllers/users_controller.php:177
+#: /views/groups/admin_view.ctp:33;38
+#: /views/groups/index.ctp:6
+#: /views/groups/view.ctp:33;38
+#: /views/users/admin_index.ctp:6;7;18
+#: /views/users/admin_view.ctp:71
+#: /views/users/index.ctp:3
+#: /views/users/view.ctp:71
+msgid "Users"
+msgstr ""
+
+#: /controllers/users_controller.php:200
+#: /plugins/acl/views/acl_acos/admin_add.ctp:3
+#: /plugins/acl/views/acl_actions/admin_add.ctp:4;9
+#: /plugins/acl/views/acl_aros/admin_add.ctp:3
+#: /plugins/acl/views/acl_aros/admin_edit.ctp:3
+#: /views/groups/add.ctp:3
+#: /views/users/add.ctp:2
+msgid "Add %s"
+msgstr ""
+
+#: /controllers/users_controller.php:224
+msgid "Edit \"%s\""
+msgstr ""
+
+#: /models/user.php:21
+msgid "Username must not be empty."
+msgstr ""
+
+#: /models/user.php:25
+msgid "Username is already taken. Please choose a different username"
+msgstr ""
+
+#: /models/user.php:29
+msgid "The username can contain letters and numbers only."
+msgstr ""
+
+#: /models/user.php:33
+msgid "Username must be between 3 and 16 characters long."
+msgstr ""
+
+#: /models/user.php:37
+msgid "Username is a required field"
+msgstr ""
+
+#: /models/user.php:43
+msgid "Password must be between 6 and 20 characters long."
+msgstr ""
+
+#: /models/user.php:47
+msgid "A valid password is required."
+msgstr ""
+
+#: /models/user.php:53
+msgid "Password and Retype Password do not match."
+msgstr ""
+
+#: /models/user.php:57
+msgid "A valid retype password is required."
+msgstr ""
+
+#: /models/user.php:63
+msgid "The email was already used by another user."
+msgstr ""
+
+#: /models/user.php:67
+msgid "The email you provided does not appear to be valid."
+msgstr ""
+
+#: /models/user.php:71
+msgid "A valid email is required."
+msgstr ""
+
+#: /models/user.php:170
+msgid "Account Reset - %s"
+msgstr ""
+
+#: /models/user.php:233
+msgid "Resent Verification - %s"
+msgstr ""
+
+#: /models/user.php:253
+msgid "Welcome to %s, %s"
+msgstr ""
+
+#: /models/behaviors/file_upload.php:164
+msgid "Invalid file type. Only %s allowed."
+msgstr ""
+
+#: /models/behaviors/file_upload.php:171
+msgid "Invalid file type"
+msgstr ""
+
+#: /models/behaviors/file_upload.php:177
+msgid "The image you uploaded exceeds the maximum file size of %d bytes"
+msgstr ""
+
+#: /models/behaviors/file_upload.php:202;207
+#: /plugins/dataflow/models/behaviors/import_upload.php:126;131
+msgid "%s is required."
+msgstr ""
+
+#: /plugins/acl/controllers/acl_acos_controller.php:8
+#: /plugins/acl/views/acl_acos/admin_index.ctp:4;8
+msgid "Acos"
+msgstr ""
+
+#: /plugins/acl/controllers/acl_acos_controller.php:15
+msgid "Add Aco"
+msgstr ""
+
+#: /plugins/acl/controllers/acl_acos_controller.php:20;37
+msgid "The Aco has been saved"
+msgstr ""
+
+#: /plugins/acl/controllers/acl_acos_controller.php:23;40
+msgid "The Aco could not be saved. Please, try again."
+msgstr ""
+
+#: /plugins/acl/controllers/acl_acos_controller.php:29
+msgid "Edit Aco"
+msgstr ""
+
+#: /plugins/acl/controllers/acl_acos_controller.php:32
+msgid "Invalid Aco"
+msgstr ""
+
+#: /plugins/acl/controllers/acl_acos_controller.php:50
+msgid "Invalid id for Aco"
+msgstr ""
+
+#: /plugins/acl/controllers/acl_acos_controller.php:58
+msgid "Aco deleted"
+msgstr ""
+
+#: /plugins/acl/controllers/acl_actions_controller.php:9
+#: /plugins/acl/views/acl_acos/admin_index.ctp:22
+#: /plugins/acl/views/acl_actions/admin_index.ctp:8;12;23
+#: /plugins/acl/views/acl_aros/admin_index.ctp:14
+#: /plugins/dataflow/views/delimiter/admin_index.ctp:18
+#: /views/groups/admin_index.ctp:21
+#: /views/groups/admin_view.ctp:27;58
+#: /views/groups/index.ctp:20
+#: /views/groups/view.ctp:27;58
+#: /views/users/admin_index.ctp:30
+#: /views/users/admin_view.ctp:67
+#: /views/users/index.ctp:22
+#: /views/users/view.ctp:67
+msgid "Actions"
+msgstr ""
+
+#: /plugins/acl/controllers/acl_actions_controller.php:21
+msgid "Add Action"
+msgstr ""
+
+#: /plugins/acl/controllers/acl_actions_controller.php:35;38
+msgid "The "
+msgstr ""
+
+#: /plugins/acl/controllers/acl_actions_controller.php:61
+msgid "Edit Action"
+msgstr ""
+
+#: /plugins/acl/controllers/acl_actions_controller.php:64
+msgid "Invalid Action"
+msgstr ""
+
+#: /plugins/acl/controllers/acl_actions_controller.php:69
+msgid "The Action has been saved"
+msgstr ""
+
+#: /plugins/acl/controllers/acl_actions_controller.php:72
+msgid "The Action could not be saved. Please, try again."
+msgstr ""
+
+#: /plugins/acl/controllers/acl_actions_controller.php:99;114
+msgid "Invalid id for Action"
+msgstr ""
+
+#: /plugins/acl/controllers/acl_actions_controller.php:107
+msgid "Action deleted"
+msgstr ""
+
+#: /plugins/acl/controllers/acl_actions_controller.php:119
+msgid "Action moved up"
+msgstr ""
+
+#: /plugins/acl/controllers/acl_actions_controller.php:124
+msgid "Action moved down"
+msgstr ""
+
+#: /plugins/acl/controllers/acl_aros_controller.php:8
+#: /plugins/acl/views/acl_aros/admin_index.ctp:3
+msgid "Aros"
+msgstr ""
+
+#: /plugins/acl/controllers/acl_aros_controller.php:15
+msgid "Add Aro"
+msgstr ""
+
+#: /plugins/acl/controllers/acl_aros_controller.php:20;37
+msgid "The Aro has been saved"
+msgstr ""
+
+#: /plugins/acl/controllers/acl_aros_controller.php:23;40
+msgid "The Aro could not be saved. Please, try again."
+msgstr ""
+
+#: /plugins/acl/controllers/acl_aros_controller.php:29
+msgid "Edit Aro"
+msgstr ""
+
+#: /plugins/acl/controllers/acl_aros_controller.php:32
+msgid "Invalid Aro"
+msgstr ""
+
+#: /plugins/acl/controllers/acl_aros_controller.php:50
+msgid "Invalid id for Aro"
+msgstr ""
+
+#: /plugins/acl/controllers/acl_aros_controller.php:58
+msgid "Aro deleted"
+msgstr ""
+
+#: /plugins/acl/controllers/acl_permissions_controller.php:32
+#: /plugins/acl/views/acl_acos/admin_index.ctp:3
+#: /plugins/acl/views/acl_actions/admin_add.ctp:3
+#: /plugins/acl/views/acl_actions/admin_edit.ctp:3
+#: /plugins/acl/views/acl_actions/admin_index.ctp:7
+#: /plugins/acl/views/acl_permissions/admin_index.ctp:6;10
+#: /views/groups/admin_index.ctp:3
+msgid "Permissions"
+msgstr ""
+
+#: /plugins/acl/controllers/components/acl_filter.php:35
+msgid "Login failed. Invalid username or password."
+msgstr ""
+
+#: /plugins/acl/controllers/components/acl_filter.php:37
+msgid "You are not authorized to access that location."
+msgstr ""
+
+#: /plugins/acl/views/acl_acos/admin_add.ctp:3
+#: /plugins/acl/views/acl_acos/admin_edit.ctp:3
+msgid "Aco"
+msgstr ""
+
+#: /plugins/acl/views/acl_acos/admin_add.ctp:15
+#: /plugins/acl/views/acl_acos/admin_edit.ctp:16
+#: /plugins/acl/views/acl_actions/admin_add.ctp:21
+#: /plugins/acl/views/acl_actions/admin_edit.ctp:22
+#: /plugins/acl/views/acl_aros/admin_add.ctp:15
+#: /plugins/acl/views/acl_aros/admin_edit.ctp:16
+#: /views/groups/add.ctp:14
+#: /views/groups/admin_add.ctp:16
+#: /views/groups/admin_edit.ctp:17
+#: /views/groups/edit.ctp:15
+#: /views/users/add.ctp:25
+#: /views/users/admin_add.ctp:23
+#: /views/users/admin_edit.ctp:25
+#: /views/users/edit.ctp:26
+msgid "Submit"
+msgstr ""
+
+#: /plugins/acl/views/acl_acos/admin_edit.ctp:3
+#: /plugins/acl/views/acl_actions/admin_edit.ctp:4;9
+#: /views/groups/admin_view.ctp:29
+#: /views/groups/edit.ctp:3
+#: /views/groups/view.ctp:29
+#: /views/users/admin_view.ctp:69
+#: /views/users/edit.ctp:2
+#: /views/users/view.ctp:69
+msgid "Edit %s"
+msgstr ""
+
+#: /plugins/acl/views/acl_acos/admin_index.ctp:10
+msgid "New Aco"
+msgstr ""
+
+#: /plugins/acl/views/acl_acos/admin_index.ctp:28
+#: /plugins/acl/views/acl_actions/admin_index.ctp:44
+#: /plugins/acl/views/acl_aros/admin_index.ctp:20
+#: /plugins/dataflow/views/delimiter/admin_index.ctp:52
+#: /plugins/dataflow/views/import/admin_index.ctp:52
+#: /views/groups/admin_index.ctp:41;41
+#: /views/groups/admin_view.ctp:87
+#: /views/groups/index.ctp:41;41
+#: /views/groups/view.ctp:87
+#: /views/users/admin_index.ctp:55;55
+#: /views/users/index.ctp:54;54
+msgid "Edit"
+msgstr ""
+
+#: /plugins/acl/views/acl_acos/admin_index.ctp:29
+#: /plugins/acl/views/acl_actions/admin_index.ctp:45
+#: /plugins/acl/views/acl_aros/admin_index.ctp:21
+#: /plugins/dataflow/views/delimiter/admin_edit.ctp:17
+#: /plugins/dataflow/views/delimiter/admin_index.ctp:53
+#: /plugins/dataflow/views/import/admin_index.ctp:56
+#: /views/groups/admin_index.ctp:42;42
+#: /views/groups/admin_view.ctp:88
+#: /views/groups/index.ctp:42;42
+#: /views/groups/view.ctp:88
+#: /views/users/admin_index.ctp:56;56
+#: /views/users/index.ctp:56;56
+msgid "Delete"
+msgstr ""
+
+#: /plugins/acl/views/acl_acos/admin_index.ctp:33
+#: /plugins/acl/views/acl_actions/admin_index.ctp:49
+#: /plugins/acl/views/acl_aros/admin_index.ctp:25
+msgid "Are you sure?"
+msgstr ""
+
+#: /plugins/acl/views/acl_acos/admin_index.ctp:52
+#: /plugins/dataflow/views/delimiter/admin_index.ctp:6
+msgid "Page %page% of %pages%, showing %current% records out of %count% total, starting on record %start%, ending on %end%"
+msgstr ""
+
+#: /plugins/acl/views/acl_actions/admin_add.ctp:4;9
+#: /plugins/acl/views/acl_actions/admin_edit.ctp:4;9
+msgid "Action"
+msgstr ""
+
+#: /plugins/acl/views/acl_actions/admin_add.ctp:14
+#: /plugins/acl/views/acl_actions/admin_edit.ctp:15
+msgid "Parent"
+msgstr ""
+
+#: /plugins/acl/views/acl_actions/admin_add.ctp:17
+#: /plugins/acl/views/acl_actions/admin_edit.ctp:18
+msgid "Choose none if the Aco is a controller."
+msgstr ""
+
+#: /plugins/acl/views/acl_actions/admin_add.ctp:19
+#: /plugins/acl/views/acl_actions/admin_edit.ctp:20
+#: /plugins/acl/views/acl_actions/admin_index.ctp:22
+#: /plugins/acl/views/acl_permissions/admin_index.ctp:19
+msgid "Alias"
+msgstr ""
+
+#: /plugins/acl/views/acl_actions/admin_index.ctp:14
+msgid "New Action"
+msgstr ""
+
+#: /plugins/acl/views/acl_actions/admin_index.ctp:15
+msgid "Generate Actions"
+msgstr ""
+
+#: /plugins/acl/views/acl_actions/admin_index.ctp:50
+msgid "Move up"
+msgstr ""
+
+#: /plugins/acl/views/acl_actions/admin_index.ctp:51
+msgid "Move down"
+msgstr ""
+
+#: /plugins/acl/views/acl_aros/admin_add.ctp:3
+#: /plugins/acl/views/acl_aros/admin_edit.ctp:3
+msgid "Aro"
+msgstr ""
+
+#: /plugins/acl/views/acl_aros/admin_index.ctp:46
+#: /views/groups/admin_index.ctp:66
+#: /views/groups/index.ctp:52
+#: /views/users/admin_index.ctp:74
+#: /views/users/index.ctp:74
+msgid "First"
+msgstr ""
+
+#: /plugins/acl/views/acl_aros/admin_index.ctp:47
+#: /views/groups/admin_index.ctp:67
+#: /views/groups/index.ctp:53
+#: /views/users/admin_index.ctp:75
+#: /views/users/index.ctp:75
+msgid "Previous"
+msgstr ""
+
+#: /plugins/acl/views/acl_aros/admin_index.ctp:49
+#: /views/groups/admin_index.ctp:69
+#: /views/groups/index.ctp:55
+#: /views/users/admin_index.ctp:77
+#: /views/users/index.ctp:77
+msgid "Next"
+msgstr ""
+
+#: /plugins/acl/views/acl_aros/admin_index.ctp:50
+#: /views/groups/admin_index.ctp:70
+#: /views/groups/index.ctp:56
+#: /views/users/admin_index.ctp:78
+#: /views/users/index.ctp:78
+msgid "Last"
+msgstr ""
+
+#: /plugins/acl/views/helpers/jstree.php:49
+msgid "Jstree Helper needs to have and ID to work"
+msgstr ""
+
+#: /plugins/dataflow/controllers/daemons_controller.php:36
+msgid "Importing"
+msgstr ""
+
+#: /plugins/dataflow/controllers/import_controller.php:26
+msgid "Invalid id for the Import"
+msgstr ""
+
+#: /plugins/dataflow/controllers/import_controller.php:31
+msgid "The import ID was invalid."
+msgstr ""
+
+#: /plugins/dataflow/controllers/import_controller.php:36
+msgid "The import was successfully deleted."
+msgstr ""
+
+#: /plugins/dataflow/controllers/import_controller.php:38
+msgid "There was a problem deleting the import."
+msgstr ""
+
+#: /plugins/dataflow/controllers/import_controller.php:45;74
+msgid "Invalid id for Import"
+msgstr ""
+
+#: /plugins/dataflow/controllers/import_controller.php:54
+msgid "Import has been parsed. Please create a map."
+msgstr ""
+
+#: /plugins/dataflow/controllers/import_controller.php:57
+msgid "There was a problem parsing the import. Please review the errors and try again."
+msgstr ""
+
+#: /plugins/dataflow/controllers/import_controller.php:64
+msgid "Invalid Import"
+msgstr ""
+
+#: /plugins/dataflow/controllers/import_controller.php:110
+msgid "Import has been mapped."
+msgstr ""
+
+#: /plugins/dataflow/controllers/import_controller.php:113
+msgid "There was a problem mapping the import.  Please review the errors and try again."
+msgstr ""
+
+#: /plugins/dataflow/controllers/import_controller.php:120
+msgid "Invalid import"
+msgstr ""
+
+#: /plugins/dataflow/controllers/import_controller.php:140
+msgid "Invalid id for import"
+msgstr ""
+
+#: /plugins/dataflow/controllers/import_controller.php:145
+msgid "The import id was invalid"
+msgstr ""
+
+#: /plugins/dataflow/controllers/import_controller.php:152
+msgid "Import is ready.  Waiting to be processed"
+msgstr ""
+
+#: /plugins/dataflow/controllers/import_controller.php:172
+msgid "The file %s does not exist on this server."
+msgstr ""
+
+#: /plugins/dataflow/models/behaviors/import_upload.php:91
+msgid "Invalid file type.  Only %s allowed."
+msgstr ""
+
+#: /plugins/dataflow/models/behaviors/import_upload.php:96
+msgid "Invalid file type."
+msgstr ""
+
+#: /plugins/dataflow/models/behaviors/import_upload.php:101
+msgid "The file you uploaded exceeds the maximum file size of %d bytes"
+msgstr ""
+
+#: /plugins/dataflow/vendors/shells/import_upload.php:73
+msgid "Possible Import Ids based on your current data set:"
+msgstr ""
+
+#: /plugins/dataflow/vendors/shells/import_upload.php:82
+msgid "Enter one or more numbers from the list above seperated by a space, 'a' for all or 'q' for exit"
+msgstr ""
+
+#: /plugins/dataflow/vendors/shells/import_upload.php:85
+msgid "Byebye"
+msgstr ""
+
+#: /plugins/dataflow/views/delimiter/admin_add.ctp:4
+msgid "Add ImportMasterDelimiter"
+msgstr ""
+
+#: /plugins/dataflow/views/delimiter/admin_add.ctp:16
+#: /plugins/dataflow/views/delimiter/admin_edit.ctp:18
+msgid "List Delimiters"
+msgstr ""
+
+#: /plugins/dataflow/views/delimiter/admin_edit.ctp:4
+msgid "Edit Delimiter"
+msgstr ""
+
+#: /plugins/dataflow/views/delimiter/admin_edit.ctp:17
+msgid "Are you sure you want to delete %s?"
+msgstr ""
+
+#: /plugins/dataflow/views/delimiter/admin_index.ctp:2
+msgid "ImportMasterDelimiters"
+msgstr ""
+
+#: /plugins/dataflow/views/delimiter/admin_index.ctp:51
+#: /views/groups/admin_view.ctp:86
+#: /views/groups/index.ctp:40;40
+#: /views/groups/view.ctp:86
+msgid "View"
+msgstr ""
+
+#: /plugins/dataflow/views/delimiter/admin_index.ctp:53
+#: /plugins/dataflow/views/delimiter/admin_view.ctp:44
+#: /views/groups/admin_index.ctp:42
+#: /views/groups/admin_view.ctp:30;88
+#: /views/groups/index.ctp:42
+#: /views/groups/view.ctp:30;88
+#: /views/users/admin_index.ctp:56
+#: /views/users/admin_view.ctp:70
+#: /views/users/view.ctp:70
+msgid "Are you sure you want to delete # %s?"
+msgstr ""
+
+#: /plugins/dataflow/views/delimiter/admin_index.ctp:60
+#: /plugins/searchable/views/search_indexes/index.ctp:28
+msgid "previous"
+msgstr ""
+
+#: /plugins/dataflow/views/delimiter/admin_index.ctp:62
+#: /plugins/searchable/views/search_indexes/index.ctp:30
+msgid "next"
+msgstr ""
+
+#: /plugins/dataflow/views/delimiter/admin_index.ctp:66
+#: /plugins/dataflow/views/delimiter/admin_view.ctp:46
+msgid "New ImportMasterDelimiter"
+msgstr ""
+
+#: /plugins/dataflow/views/delimiter/admin_view.ctp:2
+msgid "ImportMasterDelimiter"
+msgstr ""
+
+#: /plugins/dataflow/views/delimiter/admin_view.ctp:4
+#: /views/groups/admin_view.ctp:4;42
+#: /views/groups/view.ctp:4;42
+#: /views/users/admin_view.ctp:4
+#: /views/users/view.ctp:4
+msgid "Id"
+msgstr ""
+
+#: /plugins/dataflow/views/delimiter/admin_view.ctp:9
+#: /views/groups/admin_add.ctp:13
+#: /views/groups/admin_edit.ctp:14
+#: /views/groups/admin_view.ctp:9
+#: /views/groups/view.ctp:9
+msgid "Name"
+msgstr ""
+
+#: /plugins/dataflow/views/delimiter/admin_view.ctp:14
+msgid "Description"
+msgstr ""
+
+#: /plugins/dataflow/views/delimiter/admin_view.ctp:19
+#: /plugins/dataflow/views/import/admin_index.ctp:22
+#: /plugins/dataflow/views/import/admin_parse.ctp:31
+msgid "Delimiter"
+msgstr ""
+
+#: /plugins/dataflow/views/delimiter/admin_view.ctp:24
+msgid "Use Excel Reader"
+msgstr ""
+
+#: /plugins/dataflow/views/delimiter/admin_view.ctp:29
+#: /views/groups/admin_view.ctp:14
+#: /views/groups/view.ctp:14
+#: /views/users/admin_view.ctp:54
+#: /views/users/view.ctp:54
+msgid "Created"
+msgstr ""
+
+#: /plugins/dataflow/views/delimiter/admin_view.ctp:34
+#: /views/groups/admin_view.ctp:19
+#: /views/groups/view.ctp:19
+#: /views/users/admin_view.ctp:59
+#: /views/users/view.ctp:59
+msgid "Modified"
+msgstr ""
+
+#: /plugins/dataflow/views/delimiter/admin_view.ctp:43
+msgid "Edit ImportMasterDelimiter"
+msgstr ""
+
+#: /plugins/dataflow/views/delimiter/admin_view.ctp:44
+msgid "Delete ImportMasterDelimiter"
+msgstr ""
+
+#: /plugins/dataflow/views/delimiter/admin_view.ctp:45
+msgid "List ImportMasterDelimiters"
+msgstr ""
+
+#: /plugins/dataflow/views/helpers/import.php:136
+msgid "Import has no status"
+msgstr ""
+
+#: /plugins/dataflow/views/import/admin_index.ctp:2
+msgid "Imports"
+msgstr ""
+
+#: /plugins/dataflow/views/import/admin_index.ctp:8
+msgid "Import Uploads"
+msgstr ""
+
+#: /plugins/dataflow/views/import/admin_index.ctp:12
+msgid "Add new Import"
+msgstr ""
+
+#: /plugins/dataflow/views/import/admin_index.ctp:21
+msgid "Filename"
+msgstr ""
+
+#: /plugins/dataflow/views/import/admin_index.ctp:23
+msgid "Uploaded"
+msgstr ""
+
+#: /plugins/dataflow/views/import/admin_index.ctp:24
+msgid "Progress"
+msgstr ""
+
+#: /plugins/dataflow/views/import/admin_index.ctp:25
+msgid "Options"
+msgstr ""
+
+#: /plugins/dataflow/views/import/admin_index.ctp:46
+msgid "Yes"
+msgstr ""
+
+#: /plugins/dataflow/views/import/admin_index.ctp:46
+msgid "No"
+msgstr ""
+
+#: /plugins/dataflow/views/import/admin_index.ctp:54
+msgid "Start Import"
+msgstr ""
+
+#: /plugins/dataflow/views/import/admin_index.ctp:63
+msgid "There are no imports at the moment"
+msgstr ""
+
+#: /plugins/dataflow/views/import/admin_map.ctp:31
+#: /plugins/dataflow/views/import/admin_parse.ctp:14
+msgid "Loading Preview... Please wait"
+msgstr ""
+
+#: /plugins/dataflow/views/import/admin_map.ctp:42
+msgid "Map an import upload"
+msgstr ""
+
+#: /plugins/dataflow/views/import/admin_map.ctp:45
+#: /plugins/dataflow/views/import/admin_parse.ctp:23
+msgid "Preview of \"%s\""
+msgstr ""
+
+#: /plugins/dataflow/views/import/admin_map.ctp:56
+msgid "--Select Mapping--"
+msgstr ""
+
+#: /plugins/dataflow/views/import/admin_map.ctp:59
+msgid "--Select Model--"
+msgstr ""
+
+#: /plugins/dataflow/views/import/admin_map.ctp:59
+msgid "Mapping model"
+msgstr ""
+
+#: /plugins/dataflow/views/import/admin_map.ctp:60
+msgid "Mapping name"
+msgstr ""
+
+#: /plugins/dataflow/views/import/admin_map.ctp:61
+msgid "Mapping description"
+msgstr ""
+
+#: /plugins/dataflow/views/import/admin_map.ctp:64
+msgid "Map Import"
+msgstr ""
+
+#: /plugins/dataflow/views/import/admin_map.ctp:68
+#: /plugins/dataflow/views/import/admin_parse.ctp:40
+#: /plugins/dataflow/views/import/admin_upload.ctp:13
+msgid "<< Back to Import Uploads"
+msgstr ""
+
+#: /plugins/dataflow/views/import/admin_parse.ctp:20
+msgid "Update an import upload"
+msgstr ""
+
+#: /plugins/dataflow/views/import/admin_parse.ctp:32
+msgid "Text Qualifier"
+msgstr ""
+
+#: /plugins/dataflow/views/import/admin_parse.ctp:33
+msgid "This file has"
+msgstr ""
+
+#: /plugins/dataflow/views/import/admin_parse.ctp:33
+msgid "Header Row"
+msgstr ""
+
+#: /plugins/dataflow/views/import/admin_parse.ctp:33
+msgid "No Header"
+msgstr ""
+
+#: /plugins/dataflow/views/import/admin_parse.ctp:34
+msgid "Source"
+msgstr ""
+
+#: /plugins/dataflow/views/import/admin_parse.ctp:34
+msgid "--Select a Source--"
+msgstr ""
+
+#: /plugins/dataflow/views/import/admin_parse.ctp:36
+msgid "Parse Import"
+msgstr ""
+
+#: /plugins/dataflow/views/import/admin_preview.ctp:26
+msgid "--Skip Column--"
+msgstr ""
+
+#: /plugins/dataflow/views/import/admin_preview.ctp:56
+msgid "The import \"%s\" was empty."
+msgstr ""
+
+#: /plugins/dataflow/views/import/admin_upload.ctp:6
+msgid "Add an import upload"
+msgstr ""
+
+#: /plugins/dataflow/views/import/admin_upload.ctp:9
+msgid "Upload Import"
+msgstr ""
+
+#: /plugins/install/controllers/wizard_controller.php:22
+msgid "Already installed"
+msgstr ""
+
+#: /plugins/install/controllers/wizard_controller.php:29
+msgid "Installation: Welcome"
+msgstr ""
+
+#: /plugins/install/controllers/wizard_controller.php:34
+msgid "Step 1: Database"
+msgstr ""
+
+#: /plugins/install/controllers/wizard_controller.php:44
+msgid "Could not connect to database"
+msgstr ""
+
+#: /plugins/install/controllers/wizard_controller.php:48
+msgid "Could not select database"
+msgstr ""
+
+#: /plugins/install/controllers/wizard_controller.php:75
+msgid "Could not write database.php file."
+msgstr ""
+
+#: /plugins/install/controllers/wizard_controller.php:81
+msgid "Step 2: Run SQL"
+msgstr ""
+
+#: /plugins/install/controllers/wizard_controller.php:90
+msgid "Could not connect to database."
+msgstr ""
+
+#: /plugins/install/controllers/wizard_controller.php:111
+msgid "Installation completed sucessfully"
+msgstr ""
+
+#: /plugins/install/views/wizard/data.ctp:5
+msgid "Click here to create your database."
+msgstr ""
+
+#: /plugins/install/views/wizard/database.ctp:5
+msgid "Database Driver"
+msgstr ""
+
+#: /plugins/install/views/wizard/database.ctp:5
+msgid "MySQL"
+msgstr ""
+
+#: /plugins/install/views/wizard/database.ctp:5
+msgid "SQLite"
+msgstr ""
+
+#: /plugins/install/views/wizard/database.ctp:6
+msgid "Host"
+msgstr ""
+
+#: /plugins/install/views/wizard/database.ctp:7
+#: /views/groups/admin_view.ctp:43
+#: /views/groups/view.ctp:43
+#: /views/themed/cleanity/layouts/admin_login.ctp:41
+#: /views/users/admin_login.ctp:3
+#: /views/users/admin_view.ctp:14
+#: /views/users/login.ctp:21
+#: /views/users/view.ctp:14
+msgid "Username"
+msgstr ""
+
+#: /plugins/install/views/wizard/database.ctp:8
+#: /views/groups/admin_view.ctp:44
+#: /views/groups/view.ctp:44
+#: /views/system/admin_account.ctp:21
+#: /views/themed/cleanity/layouts/admin_login.ctp:42
+#: /views/users/admin_add.ctp:17
+#: /views/users/admin_edit.ctp:18
+#: /views/users/admin_login.ctp:7
+#: /views/users/admin_view.ctp:29
+#: /views/users/login.ctp:22
+#: /views/users/view.ctp:29
+msgid "Password"
+msgstr ""
+
+#: /plugins/install/views/wizard/database.ctp:9
+msgid "Database"
+msgstr ""
+
+#: /plugins/install/views/wizard/database.ctp:10
+msgid "Table Prefix"
+msgstr ""
+
+#: /plugins/install/views/wizard/index.ctp:7
+msgid "Your tmp directory is writable."
+msgstr ""
+
+#: /plugins/install/views/wizard/index.ctp:10
+msgid "Your tmp directory is not writable."
+msgstr ""
+
+#: /plugins/install/views/wizard/index.ctp:14
+msgid "Your config directory is writable."
+msgstr ""
+
+#: /plugins/install/views/wizard/index.ctp:17
+msgid "Your config directory is not writable."
+msgstr ""
+
+#: /plugins/install/views/wizard/index.ctp:21;24
+msgid "PHP Version %s < 5"
+msgstr ""
+
+#: /plugins/install/views/wizard/index.ctp:28
+msgid "Click here to begin installation"
+msgstr ""
+
+#: /plugins/install/views/wizard/index.ctp:30
+msgid "Installation cannot continue as minimum requirements are not met"
+msgstr ""
+
+#: /plugins/searchable/vendors/shells/build_search_index.php:64;196
+msgid "Exit"
+msgstr ""
+
+#: /plugins/searchable/vendors/shells/build_search_index.php:70
+msgid "Skipping "
+msgstr ""
+
+#: /plugins/searchable/vendors/shells/build_search_index.php:79
+msgid "Could not delete search index"
+msgstr ""
+
+#: /plugins/searchable/vendors/shells/build_search_index.php:118
+msgid "Use Database Config"
+msgstr ""
+
+#: /plugins/searchable/vendors/shells/build_search_index.php:179
+msgid "Possible Models based on your current database:"
+msgstr ""
+
+#: /plugins/searchable/vendors/shells/build_search_index.php:192
+msgid "Enter one or more numbers from the list above separated by a space, or type in the names of one or more other models, 'a' for all or 'q' to exit"
+msgstr ""
+
+#: /plugins/searchable/vendors/shells/build_search_index.php:241
+msgid "You entered an invalid model \""
+msgstr ""
+
+#: /plugins/searchable/views/elements/advanced_search.ctp:5
+msgid "Advanced Search"
+msgstr ""
+
+#: /plugins/searchable/views/elements/search.ctp:3
+msgid "Loading"
+msgstr ""
+
+#: /plugins/searchable/views/elements/search.ctp:4;5
+msgid "Search"
+msgstr ""
+
+#: /plugins/searchable/views/search_indexes/search.ctp:28
+msgid "Nothing Found"
+msgstr ""
+
+#: /plugins/shorturl/controllers/shorturl_controller.php:16
+msgid "Your new Url is %s"
+msgstr ""
+
+#: /plugins/shorturl/controllers/shorturl_controller.php:19
+msgid "The %s could not be shortened. Please, try again."
+msgstr ""
+
+#: /plugins/shorturl/controllers/shorturl_controller.php:19
+msgid "Url"
+msgstr ""
+
+#: /plugins/shorturl/views/elements/form.ctp:10
+#: /plugins/shorturl/views/elements/short.ctp:10
+msgid "Shorten URL"
+msgstr ""
+
+#: /vendors/shells/Upload.php:150
+msgid "Version %s"
+msgstr ""
+
+#: /vendors/shells/Upload.php:182
+msgid "Creating connection to packaging server: %s"
+msgstr ""
+
+#: /vendors/shells/Upload.php:185
+msgid "Connection to packaging server: %s failed!"
+msgstr ""
+
+#: /vendors/shells/Upload.php:201
+msgid "File extension not .xml"
+msgstr ""
+
+#: /vendors/shells/Upload.php:203
+msgid "File extension is neither .pdf nor .epub"
+msgstr ""
+
+#: /vendors/shells/Upload.php:237
+msgid "Creating package request for: %s"
+msgstr ""
+
+#: /vendors/shells/Upload.php:247
+msgid "An Error occured with the XML Source"
+msgstr ""
+
+#: /vendors/shells/Upload.php:345
+msgid "Found thumbnail file"
+msgstr ""
+
+#: /vendors/shells/Upload.php:350
+msgid "Cannot find thumbnail file"
+msgstr ""
+
+#: /vendors/shells/Upload.php:375
+msgid "Package Request:"
+msgstr ""
+
+#: /vendors/shells/Upload.php:383
+msgid "Sending Package Request"
+msgstr ""
+
+#: /vendors/shells/Upload.php:401;412
+msgid "HTML Response Code: %s"
+msgstr ""
+
+#: /vendors/shells/Upload.php:402;413
+msgid "Response Content Type: %s"
+msgstr ""
+
+#: /vendors/shells/Upload.php:404
+msgid "There was an error with the Package Request"
+msgstr ""
+
+#: /vendors/shells/Upload.php:414
+msgid "Response: %s"
+msgstr ""
+
+#: /vendors/shells/Upload.php:417
+msgid "The book has been successfully packaged!"
+msgstr ""
+
+#: /vendors/shells/Upload.php:419
+msgid "The book %s has been packaged successfully packaged!"
+msgstr ""
+
+#: /vendors/shells/Upload.php:430
+msgid "File \"%s\" was removed"
+msgstr ""
+
+#: /vendors/shells/Upload.php:433
+msgid "Unable to delete file: %s"
+msgstr ""
+
+#: /vendors/shells/Upload.php:538
+msgid "When dataPath mode is on, all XML Source documents must include dataPath element."
+msgstr ""
+
+#: /vendors/shells/Upload.php:543
+msgid "Could not find XML Source: %s"
+msgstr ""
+
+#: /vendors/shells/Upload.php:578;584;591;597
+msgid "XML Validation Error"
+msgstr ""
+
+#: /vendors/shells/Upload.php:579
+msgid "If <resourceItem> is used, <resource> must be used as well."
+msgstr ""
+
+#: /vendors/shells/Upload.php:580
+msgid "<resourceItem> will be ignored"
+msgstr ""
+
+#: /vendors/shells/Upload.php:585
+msgid "If <fileName> is used, <location> and <src> must not be used"
+msgstr ""
+
+#: /vendors/shells/Upload.php:586
+msgid "<location> and <src> will be ignored"
+msgstr ""
+
+#: /vendors/shells/Upload.php:592
+msgid "If <src> is used, <location> must be used as well."
+msgstr ""
+
+#: /vendors/shells/Upload.php:593
+msgid "<src> will be ignored"
+msgstr ""
+
+#: /vendors/shells/Upload.php:598
+msgid "If <location> is used, <src> must be used as well."
+msgstr ""
+
+#: /vendors/shells/Upload.php:599
+msgid "<loction> will be ignored"
+msgstr ""
+
+#: /vendors/shells/Upload.php:605
+msgid "Content Server XML Import"
+msgstr ""
+
+#: /vendors/shells/Upload.php:607
+msgid "[I]mport package file(s)"
+msgstr ""
+
+#: /vendors/shells/Upload.php:608
+msgid "[H]elp"
+msgstr ""
+
+#: /vendors/shells/Upload.php:609
+msgid "[Q]uit"
+msgstr ""
+
+#: /vendors/shells/Upload.php:611
+msgid "What would you like to do?"
+msgstr ""
+
+#: /vendors/shells/Upload.php:623
+msgid "You have made an invalid selection. Please choose a command to execute by entering E, I, H, or Q."
+msgstr ""
+
+#: /vendors/shells/Upload.php:639
+msgid "Target URL Invalid"
+msgstr ""
+
+#: /vendors/shells/Upload.php:647
+msgid "Second argument is a file."
+msgstr ""
+
+#: /vendors/shells/Upload.php:648
+msgid "DataPath mode requires that to be a directory."
+msgstr ""
+
+#: /vendors/shells/Upload.php:652
+msgid "Target file found."
+msgstr ""
+
+#: /vendors/shells/Upload.php:668
+msgid "Found Target Directory: %s"
+msgstr ""
+
+#: /vendors/shells/Upload.php:697
+msgid "Second arg must be a file or directory to package"
+msgstr ""
+
+#: /vendors/shells/Upload.php:701
+msgid "Please supply a valid Directory"
+msgstr ""
+
+#: /vendors/shells/Upload.php:705
+msgid "Finished!"
+msgstr ""
+
+#: /vendors/shells/Upload.php:706
+msgid "Successful packages created: %d"
+msgstr ""
+
+#: /vendors/shells/Upload.php:707
+msgid "Unsuccessful packages attempts: %d"
+msgstr ""
+
+#: /vendors/shells/Upload.php:709
+msgid "Here are the files that failed to package: \n %s"
+msgstr ""
+
+#: /views/groups/add.ctp:3
+#: /views/groups/admin_add.ctp:3
+#: /views/groups/admin_edit.ctp:3
+#: /views/groups/admin_view.ctp:2;29;30;32
+#: /views/groups/edit.ctp:3
+#: /views/groups/index.ctp:5
+#: /views/groups/view.ctp:2;29;30;32
+#: /views/users/admin_add.ctp:20
+#: /views/users/admin_edit.ctp:22
+#: /views/users/admin_index.ctp:10
+#: /views/users/admin_view.ctp:9;74
+#: /views/users/view.ctp:9;74
+msgid "Group"
+msgstr ""
+
+#: /views/groups/add.ctp:9
+#: /views/groups/admin_add.ctp:10
+#: /views/groups/admin_edit.ctp:10
+#: /views/groups/edit.ctp:9
+msgid "Group %s"
+msgstr ""
+
+#: /views/groups/add.ctp:9
+#: /views/groups/admin_add.ctp:10
+#: /views/groups/admin_edit.ctp:10
+#: /views/groups/edit.ctp:9
+#: /views/users/add.ctp:12
+#: /views/users/admin_add.ctp:10
+#: /views/users/admin_edit.ctp:10
+#: /views/users/edit.ctp:12
+msgid "Information"
+msgstr ""
+
+#: /views/groups/admin_add.ctp:3
+#: /views/users/admin_add.ctp:3
+msgid "Admin Add %s"
+msgstr ""
+
+#: /views/groups/admin_edit.ctp:3
+#: /views/users/admin_edit.ctp:3
+msgid "Admin Edit %s"
+msgstr ""
+
+#: /views/groups/admin_index.ctp:6
+msgid "Group Menu"
+msgstr ""
+
+#: /views/groups/admin_view.ctp:30
+#: /views/groups/view.ctp:30
+#: /views/users/admin_view.ctp:70
+#: /views/users/view.ctp:70
+msgid "Delete %s"
+msgstr ""
+
+#: /views/groups/admin_view.ctp:31;33
+#: /views/groups/index.ctp:6
+#: /views/groups/view.ctp:31;33
+#: /views/users/admin_index.ctp:9
+#: /views/users/admin_view.ctp:71;73
+#: /views/users/view.ctp:71;73
+msgid "List %s"
+msgstr ""
+
+#: /views/groups/admin_view.ctp:32;34;97
+#: /views/groups/index.ctp:7
+#: /views/groups/view.ctp:32;34;97
+#: /views/users/admin_index.ctp:7;10
+#: /views/users/admin_view.ctp:72;74
+#: /views/users/view.ctp:72;74
+msgid "New %s"
+msgstr ""
+
+#: /views/groups/admin_view.ctp:34;97
+#: /views/groups/index.ctp:7
+#: /views/groups/view.ctp:34;97
+#: /views/users/add.ctp:2
+#: /views/users/admin_add.ctp:3
+#: /views/users/admin_edit.ctp:3
+#: /views/users/admin_index.ctp:3;5;62
+#: /views/users/admin_view.ctp:2;69;70;72
+#: /views/users/edit.ctp:2
+#: /views/users/index.ctp:62
+#: /views/users/view.ctp:2;69;70;72
+msgid "User"
+msgstr ""
+
+#: /views/groups/admin_view.ctp:38
+#: /views/groups/view.ctp:38
+msgid "Related %s"
+msgstr ""
+
+#: /views/groups/admin_view.ctp:45
+#: /views/groups/view.ctp:45
+#: /views/system/admin_account.ctp:20
+#: /views/users/admin_add.ctp:16
+#: /views/users/admin_edit.ctp:17
+#: /views/users/admin_view.ctp:34
+#: /views/users/view.ctp:34
+msgid "Email"
+msgstr ""
+
+#: /views/groups/admin_view.ctp:46
+#: /views/groups/view.ctp:46
+#: /views/users/admin_add.ctp:19
+#: /views/users/admin_edit.ctp:21
+#: /views/users/admin_view.ctp:39
+#: /views/users/view.ctp:39
+msgid "Active"
+msgstr ""
+
+#: /views/groups/admin_view.ctp:47
+#: /views/groups/view.ctp:47
+msgid "Date Of Birth"
+msgstr ""
+
+#: /views/groups/admin_view.ctp:48
+#: /views/groups/view.ctp:48
+#: /views/users/done.ctp:9
+msgid "Full Name"
+msgstr ""
+
+#: /views/groups/admin_view.ctp:49
+#: /views/groups/view.ctp:49
+msgid "Gender Id"
+msgstr ""
+
+#: /views/groups/admin_view.ctp:50
+#: /views/groups/view.ctp:50
+msgid "Newsletter"
+msgstr ""
+
+#: /views/groups/admin_view.ctp:51
+#: /views/groups/view.ctp:51
+#: /views/users/admin_view.ctp:49
+#: /views/users/view.ctp:49
+msgid "Ip"
+msgstr ""
+
+#: /views/groups/admin_view.ctp:52
+#: /views/groups/view.ctp:52
+#: /views/users/admin_view.ctp:44
+#: /views/users/view.ctp:44
+msgid "Key"
+msgstr ""
+
+#: /views/groups/admin_view.ctp:53
+#: /views/groups/view.ctp:53
+#: /views/users/done.ctp:10
+msgid "Location"
+msgstr ""
+
+#: /views/groups/admin_view.ctp:54
+#: /views/groups/view.ctp:54
+msgid "Postcode"
+msgstr ""
+
+#: /views/groups/admin_view.ctp:55
+#: /views/groups/view.ctp:55
+msgid "Country Id"
+msgstr ""
+
+#: /views/groups/admin_view.ctp:56
+#: /views/groups/view.ctp:56
+msgid "Admin"
+msgstr ""
+
+#: /views/groups/admin_view.ctp:57
+#: /views/groups/view.ctp:57
+msgid "Group Id"
+msgstr ""
+
+#: /views/groups/index.ctp:5
+msgid "Add New %s"
+msgstr ""
+
+#: /views/layouts/default.ctp:9
+#: /views/themed/smart/layouts/admin.ctp:9
+msgid "Live Auctions"
+msgstr ""
+
+#: /views/layouts/maintenance.ctp:13
+msgid "Site down for maintenance."
+msgstr ""
+
+#: /views/system/admin_account.ctp:17
+#: /views/users/admin_add.ctp:15
+#: /views/users/admin_edit.ctp:16
+msgid "User Name"
+msgstr ""
+
+#: /views/system/admin_account.ctp:18
+#: /views/users/admin_add.ctp:13
+#: /views/users/admin_edit.ctp:14
+#: /views/users/admin_view.ctp:19
+#: /views/users/view.ctp:19
+msgid "First Name"
+msgstr ""
+
+#: /views/system/admin_account.ctp:19
+#: /views/users/admin_add.ctp:14
+#: /views/users/admin_edit.ctp:15
+#: /views/users/admin_view.ctp:24
+#: /views/users/view.ctp:24
+msgid "Last Name"
+msgstr ""
+
+#: /views/system/admin_account.ctp:22
+#: /views/users/admin_add.ctp:18
+#: /views/users/admin_edit.ctp:19
+msgid "Password Confirmation"
+msgstr ""
+
+#: /views/themed/cleanity/elements/header/user.ctp:1
+#: /views/themed/smart/elements/header/user.ctp:2
+msgid "Hello, %s"
+msgstr ""
+
+#: /views/themed/cleanity/elements/header/user.ctp:1
+#: /views/themed/smart/elements/header/user.ctp:2
+msgid "Logout"
+msgstr ""
+
+#: /views/themed/cleanity/elements/header/user.ctp:2
+#: /views/themed/smart/elements/header/user.ctp:3
+msgid "Last Login: %s"
+msgstr ""
+
+#: /views/themed/cleanity/layouts/admin_login.ctp:39
+#: /views/users/admin_login.ctp:14
+#: /views/users/login.ctp:24
+msgid "Login"
+msgstr ""
+
+#: /views/themed/cleanity/layouts/admin_login.ctp:43
+msgid "Remember Me"
+msgstr ""
+
+#: /views/themed/smart/elements/header/logo.ctp:2
+msgid "SITE NAME"
+msgstr ""
+
+#: /views/themed/smart/elements/header/menu.ctp:14
+msgid "View Site"
+msgstr ""
+
+#: /views/users/add.ctp:12
+#: /views/users/admin_add.ctp:10
+#: /views/users/admin_edit.ctp:10
+#: /views/users/edit.ctp:12
+msgid "User %s"
+msgstr ""
+
+#: /views/users/admin_edit.ctp:20
+msgid "Reset API Key"
+msgstr ""
+
+#: /views/users/admin_index.ctp:5
+msgid "%s Menu"
+msgstr ""
+
+#: /views/users/admin_index.ctp:6;8
+msgid "Manage %s"
+msgstr ""
+
+#: /views/users/admin_index.ctp:62
+#: /views/users/index.ctp:62
+msgid "No %s Found"
+msgstr ""
+
+#: /views/users/admin_login.ctp:11
+msgid "Remember me"
+msgstr ""
+
+#: /views/users/done.ctp:7
+msgid "Add to your profile?"
+msgstr ""
+
+#: /views/users/done.ctp:7
+msgid "optional"
+msgstr ""
+
+#: /views/users/done.ctp:11
+msgid "Country"
+msgstr ""
+
+#: /views/users/done.ctp:11;13
+msgid "Please select"
+msgstr ""
+
+#: /views/users/done.ctp:12
+msgid "Postal Code"
+msgstr ""
+
+#: /views/users/done.ctp:13
+msgid "Gender"
+msgstr ""
+
+#: /views/users/done.ctp:17
+msgid "Save Changes"
+msgstr ""
+
+#: /views/users/done.ctp:18
+msgid "Skip this step..."
+msgstr ""
+
+#: /views/users/login.ctp:12
+msgid "Sign in with Facebook"
+msgstr ""
+
+#: /views/users/login.ctp:13
+#: /views/users/register.ctp:7
+msgid "or"
+msgstr ""
+
+#: /views/users/login.ctp:18
+msgid "Login to %s"
+msgstr ""
+
+#: /views/users/login.ctp:23
+msgid "Keep me logged in on this computer"
+msgstr ""
+
+#: /views/users/login.ctp:29
+#: /views/users/recover.ctp:2
+msgid "Forgot your username or password?"
+msgstr ""
+
+#: /views/users/login.ctp:32
+#: /views/users/recover.ctp:5
+msgid "Enter your email address"
+msgstr ""
+
+#: /views/users/login.ctp:33
+#: /views/users/recover.ctp:6
+msgid "Retrieve Password"
+msgstr ""
+
+#: /views/users/login.ctp:36
+msgid "Don't have an account?"
+msgstr ""
+
+#: /views/users/login.ctp:37
+msgid "It's easy! Just %s now!"
+msgstr ""
+
+#: /views/users/login.ctp:37
+msgid "Sign up"
+msgstr ""
+
+#: /views/users/register.ctp:2
+msgid "Optional: Start with an existing account"
+msgstr ""
+
+#: /views/users/register.ctp:8
+msgid "Sign in with Twitter"
+msgstr ""
+
+#: /views/users/register.ctp:13
+msgid "Or start a new account"
+msgstr ""
+
+#: /views/users/register.ctp:15
+msgid "Choose a username (no spaces)"
+msgstr ""
+
+#: /views/users/register.ctp:16
+msgid "Choose a password"
+msgstr ""
+
+#: /views/users/register.ctp:17
+msgid "Retype a password"
+msgstr ""
+
+#: /views/users/register.ctp:18
+msgid "Email address (must be real!)"
+msgstr ""
+
+#: /views/users/register.ctp:19
+msgid "Send me occasional update"
+msgstr ""
+
+#: /views/users/register.ctp:20
+msgid "Date of birth"
+msgstr ""
+
+#: /views/users/register.ctp:24
+msgid "Enter the text in the image"
+msgstr ""
+
+#: /views/users/register.ctp:29
+msgid "I agree to the <a href=\"#\">terms of use</a> and <a href=\"#\">privacy policy</a>"
+msgstr ""
+
+#: /views/users/register.ctp:30
+msgid "I agree, continue"
+msgstr ""
+
+#: /views/users/register_success.ctp:1
+msgid "Now, please check your email"
+msgstr ""
+
+#: /views/users/register_success.ctp:3
+msgid "You must click on the link in the email we just sent you in order to complete your registration"
+msgstr ""
+
+#: /views/users/register_success.ctp:4
+msgid "The email was sent to %s"
+msgstr ""
+
+#: /views/users/register_success.ctp:7
+msgid "Never received the email?"
+msgstr ""
+
+#: /views/users/register_success.ctp:9
+msgid "Has it been less than 10 minutes? Please wait -- it sometimes just takes a bit"
+msgstr ""
+
+#: /views/users/register_success.ctp:10
+msgid "Check your spam folder just in case"
+msgstr ""
+
+#: /views/users/register_success.ctp:11
+msgid "Try %s your email"
+msgstr ""
+
+#: /views/users/register_success.ctp:11
+msgid "resending"
+msgstr ""
+
+#: /views/users/reset.ctp:1
+msgid "Please Enter a new Password"
+msgstr ""
+
+#: /views/users/reset.ctp:3
+msgid "Your username is \"%s\""
+msgstr ""
+
+#: /views/users/reset.ctp:6
+msgid "Enter a New Password"
+msgstr ""
+
+#: /views/users/reset.ctp:7
+msgid "Verify New Password"
+msgstr ""
+
+#: /views/users/reset.ctp:8
+msgid "Reset Password"
+msgstr ""
+
+#: /webroot/test.php:88
+msgid "Debug setting does not allow access to this url."
+msgstr ""
+

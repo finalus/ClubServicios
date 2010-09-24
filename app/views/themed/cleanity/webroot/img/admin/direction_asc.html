@@ -1,0 +1,299 @@
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+	
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">		<title>
+			Users ::
+			Smart Admin		</title>
+		<link rel="stylesheet" type="text/css" href="direction_asc_files/reset.css"><link rel="stylesheet" type="text/css" href="direction_asc_files/style.css"><link rel="stylesheet" type="text/css" href="direction_asc_files/colorbox.css"><link rel="stylesheet" type="text/css" href="direction_asc_files/colorbox-custom.css"><link rel="stylesheet" type="text/css" href="direction_asc_files/jquery.css"><script type="text/javascript" src="direction_asc_files/jquery-1.js"></script><script type="text/javascript" src="direction_asc_files/jquery_004.js"></script><script type="text/javascript" src="direction_asc_files/jquery_003.js"></script><script type="text/javascript" src="direction_asc_files/jquery_002.js"></script><script type="text/javascript" src="direction_asc_files/bg.js"></script><script type="text/javascript" src="direction_asc_files/jquery.js"></script><script type="text/javascript" src="direction_asc_files/tabs.js"></script><script type="text/javascript" src="direction_asc_files/default.js"></script>
+		<style type="text/css">
+        div.wysiwyg ul.panel li {padding:0px !important;} /**textarea visual editor padding override**/
+        </style>
+	    <!--[if IE 6]> -->
+		<link rel="stylesheet" type="text/css" href="direction_asc_files/ie.css">       	<!-- <![endif]-->
+       	<!--[if IE]> -->
+		<link rel="stylesheet" type="text/css" href="direction_asc_files/colorbox-custom-ie.css">       	<!--<![endif]-->
+
+			</head><body>
+		<div id="container">
+			<div class="hidden"><!-- the modal box container - this div is hidden until it is called from a modal box trigger. see cleanity.js for details -->
+<div id="sample-modal"><h2 style="font-size: 160%; font-weight: bold; margin: 10px 0pt;">Modal Box Content</h2><p>Place your desired modal box content here</p></div>
+</div><!-- end of hidden -->			<div id="header">
+	<div id="top">
+		 <h1><a href="#">Cleanity</a></h1>  		<p id="userbox">Hello, <strong>Jared Mashburn</strong> &nbsp;| &nbsp; <a href="http://lance/admin/system/account">My Account</a> &nbsp;| &nbsp;<a href="http://lance/admin/users/logout">Logout</a> <br>
+<small>Last Login: 12 May 2009</small></p>
+<span class="clearFix">&nbsp;</span>		<span class="clearFix">&nbsp;</span>
+  	</div>
+		<ul id="menu">
+					<li class="   level0"><a style="background-position: 0pt 0pt;" href="http://lance/admin" class=" ">Dashboard</a>
+			        	</li>
+        			<li class="   parent level0"><a style="background-position: 0pt 0pt;" href="http://lance/admin/pages" class="  top-level">Pages<span>&nbsp;</span></a>
+			                	<ul style="visibility: hidden; display: none;">
+					<li class="   last level1"><a style="background-position: 0pt 0pt;" href="#" onclick="return false" class=" ">Test1</a>
+			        	</li>
+        	</ul>
+                    	</li>
+        			<li class="  selected  parent level0"><a style="background-position: 0pt 0pt;" href="http://lance/admin/system" class="active  top-level">System<span>&nbsp;</span></a>
+			                	<ul style="visibility: hidden; display: none;">
+					<li class="   level1"><a style="background-position: 0pt 0pt;" href="http://lance/admin/system/account" class=" ">My Account</a>
+			        	</li>
+        			<li class="   level1"><a style="background-position: 0pt 0pt;" href="http://lance/admin/system/tools" class=" ">Tools</a>
+			        	</li>
+        			<li class="   parent level1"><a style="background-position: 0pt 0pt;" href="http://lance/admin/acl/acl_permissions" class="  top-level">Permissions<span>&nbsp;</span></a>
+			                	<ul style="visibility: hidden; display: none;">
+					<li class="  selected  level2"><a style="background-position: 0pt 0pt;" href="http://lance/admin/users" class=" ">Users</a>
+			        	</li>
+        			<li class="   last level2"><a style="background-position: 0pt 0pt;" href="http://lance/admin/groups" class=" ">Groups</a>
+			        	</li>
+        	</ul>
+                    	</li>
+        			<li class="   last level1"><a style="background-position: 0pt 0pt;" href="http://lance/admin/core/setting" class=" ">Configuration</a>
+			        	</li>
+        	</ul>
+                    	</li>
+        	</ul>
+<!-- end of #menu -->	<form action="" method="get" name="form1" id="form1">
+ 	<fieldset>
+	 <legend>Search</legend>
+	   <label id="searchbox">
+	   <input name="s" id="s" type="text">
+	   </label>
+	   <input class="hidden" name="Submit" value="Search" type="submit">
+	 </fieldset>
+ </form>
+ <span class="clearFix">&nbsp;</span></div><!-- end of #header -->			<div id="content">
+				<div id="content-top">
+	<h2>Users</h2>	
+	<a href="#" id="topLink">Change Order</a>
+	<span class="clearFix">&nbsp;</span>
+		<p><a href="http://lance/admin">Dashboard</a>			» 
+	<a href="http://lance/admin/system">System</a> » <a href="http://lance/admin/acl/acl_permissions">Permissions</a> » Users</p>
+	</div>
+								<div id="left-col">
+									<div class="box">
+		<div style="-moz-border-radius-topleft: 5px; -moz-border-radius-topright: 5px;" class="box-top yellow rounded_by_jQuery_corners">
+			<h4 style="-moz-border-radius-topleft: 5px; -moz-border-radius-topright: 5px;" class="rounded_by_jQuery_corners">User Menu</h4>
+		</div>
+    	<div style="-moz-border-radius-bottomleft: 5px; -moz-border-radius-bottomright: 5px;" class="box-container rounded_by_jQuery_corners">
+		        	<ul role="tablist" class="list-links ui-accordion ui-widget ui-helper-reset">
+							<li class="ui-accordion-li-fix">
+					<a tabindex="0" aria-expanded="true" role="tab" href="http://lance/admin/user" class="ui-accordion-header ui-helper-reset active top-level ui-state-active ui-corner-top"><span class="ui-icon ui-icon-triangle-1-s"></span>Manage User<span>&nbsp;</span></a>
+						                			        	<ul style="visibility: hidden; display: none; height: 32px;" role="tablist" class="list-links ui-accordion ui-widget ui-helper-reset ui-accordion-content ui-widget-content ui-corner-bottom ui-accordion-content-active">
+							<li class="ui-accordion-li-fix">
+					<a tabindex="0" aria-expanded="true" role="tab" href="http://lance/admin/user/add" class="ui-accordion-header ui-helper-reset ui-state-active ui-corner-top"><span class="ui-icon ui-icon-triangle-1-s"></span>Add New User</a>
+						
+	        	</li>
+	        			</ul>
+				            		
+	        	</li>
+	        			</ul>
+					</div>
+		</div>
+			<!-- end of #menu -->				</div><!-- end of left-col-->
+				<div id="mid-col" class="half-col">
+					
+<div class="users index box">
+	<div style="-moz-border-radius-topleft: 5px; -moz-border-radius-topright: 5px;" class="box-top white rounded_by_jQuery_corners">
+		<h4 style="-moz-border-radius-topleft: 5px; -moz-border-radius-topright: 5px;" class="rounded_by_jQuery_corners">Users</h4>
+		<ul class="box-top-buttons">
+			<li>Test</li>
+		</ul>
+	</div>
+	<div style="-moz-border-radius-bottomleft: 5px; -moz-border-radius-bottomright: 5px;" class="box-container rounded_by_jQuery_corners">
+    	<table class="table-long" cellpadding="0" cellspacing="0">
+            <thead>
+    	        <tr>
+                   	<th>&nbsp;</th>
+            		<th><a href="http://lance/admin/users/index/page:1/sort:id/direction:asc">Id</a></th>
+					<th><a href="http://lance/admin/users/index/page:1/sort:first_name/direction:asc">First Name</a></th>
+					<th><a href="http://lance/admin/users/index/page:1/sort:last_name/direction:asc">Last Name</a></th>
+            		<th><a href="http://lance/admin/users/index/page:1/sort:username/direction:asc">Username</a></th>
+            		<th><a href="http://lance/admin/users/index/page:1/sort:active/direction:asc">Active</a></th>
+            		<th><a href="http://lance/admin/users/index/page:1/sort:group_id/direction:desc" class="asc">Group</a></th>
+			      	<th class="actions">Actions</th>
+	            </tr>
+            </thead> 
+            <tbody>
+			<tr class="altrow">
+			<td class="col-chk"><input name="mass" value="10" type="checkbox"></td>
+			<td>10&nbsp;</td>
+			<td>Catherine&nbsp;</td>
+			<td>Dinklage&nbsp;</td>
+			<td>jarmusch&nbsp;</td>
+			<td>Active&nbsp;</td>
+			<td>
+				<a href="http://lance/admin/groups/view/1">Administrator</a>			</td>
+			<td class="actions">
+				<a href="http://lance/admin/users/edit/10" title="Edit" class="table-edit-link">Edit</a>				<a href="http://lance/admin/users/delete/10" title="Delete" class="table-delete-link" onclick="return confirm('Are you sure you want to delete # 10?');">Delete</a>			</td>
+		</tr>
+				<tr>
+			<td class="col-chk"><input name="mass" value="9" type="checkbox"></td>
+			<td>9&nbsp;</td>
+			<td>Danielle&nbsp;</td>
+			<td>undefined&nbsp;</td>
+			<td>peter&nbsp;</td>
+			<td>Active&nbsp;</td>
+			<td>
+				<a href="http://lance/admin/groups/view/1">Administrator</a>			</td>
+			<td class="actions">
+				<a href="http://lance/admin/users/edit/9" title="Edit" class="table-edit-link">Edit</a>				<a href="http://lance/admin/users/delete/9" title="Delete" class="table-delete-link" onclick="return confirm('Are you sure you want to delete # 9?');">Delete</a>			</td>
+		</tr>
+				<tr class="altrow">
+			<td class="col-chk"><input name="mass" value="8" type="checkbox"></td>
+			<td>8&nbsp;</td>
+			<td>Michael&nbsp;</td>
+			<td>Matthew&nbsp;</td>
+			<td>griffiths&nbsp;</td>
+			<td>Active&nbsp;</td>
+			<td>
+				<a href="http://lance/admin/groups/view/1">Administrator</a>			</td>
+			<td class="actions">
+				<a href="http://lance/admin/users/edit/8" title="Edit" class="table-edit-link">Edit</a>				<a href="http://lance/admin/users/delete/8" title="Delete" class="table-delete-link" onclick="return confirm('Are you sure you want to delete # 8?');">Delete</a>			</td>
+		</tr>
+				<tr>
+			<td class="col-chk"><input name="mass" value="7" type="checkbox"></td>
+			<td>7&nbsp;</td>
+			<td>Dinklage&nbsp;</td>
+			<td>Danielle&nbsp;</td>
+			<td>ryan&nbsp;</td>
+			<td>Active&nbsp;</td>
+			<td>
+				<a href="http://lance/admin/groups/view/1">Administrator</a>			</td>
+			<td class="actions">
+				<a href="http://lance/admin/users/edit/7" title="Edit" class="table-edit-link">Edit</a>				<a href="http://lance/admin/users/delete/7" title="Delete" class="table-delete-link" onclick="return confirm('Are you sure you want to delete # 7?');">Delete</a>			</td>
+		</tr>
+				<tr class="altrow">
+			<td class="col-chk"><input name="mass" value="1" type="checkbox"></td>
+			<td>1&nbsp;</td>
+			<td>Jared&nbsp;</td>
+			<td>Mashburn&nbsp;</td>
+			<td>jmashburn&nbsp;</td>
+			<td>Active&nbsp;</td>
+			<td>
+				<a href="http://lance/admin/groups/view/1">Administrator</a>			</td>
+			<td class="actions">
+				<a href="http://lance/admin/users/edit/1" title="Edit" class="table-edit-link">Edit</a>				<a href="http://lance/admin/users/delete/1" title="Delete" class="table-delete-link" onclick="return confirm('Are you sure you want to delete # 1?');">Delete</a>			</td>
+		</tr>
+				<tr>
+			<td class="col-chk"><input name="mass" value="6" type="checkbox"></td>
+			<td>6&nbsp;</td>
+			<td>Zerneck&nbsp;</td>
+			<td>James&nbsp;</td>
+			<td>buscemi&nbsp;</td>
+			<td>Active&nbsp;</td>
+			<td>
+				<a href="http://lance/admin/groups/view/2">Managers</a>			</td>
+			<td class="actions">
+				<a href="http://lance/admin/users/edit/6" title="Edit" class="table-edit-link">Edit</a>				<a href="http://lance/admin/users/delete/6" title="Delete" class="table-delete-link" onclick="return confirm('Are you sure you want to delete # 6?');">Delete</a>			</td>
+		</tr>
+				<tr class="altrow">
+			<td class="col-chk"><input name="mass" value="2" type="checkbox"></td>
+			<td>2&nbsp;</td>
+			<td>Steve&nbsp;</td>
+			<td>Peter&nbsp;</td>
+			<td>keener&nbsp;</td>
+			<td>Active&nbsp;</td>
+			<td>
+				<a href="http://lance/admin/groups/view/2">Managers</a>			</td>
+			<td class="actions">
+				<a href="http://lance/admin/users/edit/2" title="Edit" class="table-edit-link">Edit</a>				<a href="http://lance/admin/users/delete/2" title="Delete" class="table-delete-link" onclick="return confirm('Are you sure you want to delete # 2?');">Delete</a>			</td>
+		</tr>
+				<tr>
+			<td class="col-chk"><input name="mass" value="5" type="checkbox"></td>
+			<td>5&nbsp;</td>
+			<td>Peter&nbsp;</td>
+			<td>Martens&nbsp;</td>
+			<td>legros&nbsp;</td>
+			<td>Active&nbsp;</td>
+			<td>
+				<a href="http://lance/admin/groups/view/3">Public</a>			</td>
+			<td class="actions">
+				<a href="http://lance/admin/users/edit/5" title="Edit" class="table-edit-link">Edit</a>				<a href="http://lance/admin/users/delete/5" title="Delete" class="table-delete-link" onclick="return confirm('Are you sure you want to delete # 5?');">Delete</a>			</td>
+		</tr>
+				<tr class="altrow">
+			<td class="col-chk"><input name="mass" value="4" type="checkbox"></td>
+			<td>4&nbsp;</td>
+			<td>LeGros&nbsp;</td>
+			<td>Rica&nbsp;</td>
+			<td>grace&nbsp;</td>
+			<td>Active&nbsp;</td>
+			<td>
+				<a href="http://lance/admin/groups/view/3">Public</a>			</td>
+			<td class="actions">
+				<a href="http://lance/admin/users/edit/4" title="Edit" class="table-edit-link">Edit</a>				<a href="http://lance/admin/users/delete/4" title="Delete" class="table-delete-link" onclick="return confirm('Are you sure you want to delete # 4?');">Delete</a>			</td>
+		</tr>
+				<tr>
+			<td class="col-chk"><input name="mass" value="3" type="checkbox"></td>
+			<td>3&nbsp;</td>
+			<td>Wightman&nbsp;</td>
+			<td>Mulroney&nbsp;</td>
+			<td>bowker&nbsp;</td>
+			<td>Active&nbsp;</td>
+			<td>
+				<a href="http://lance/admin/groups/view/3">Public</a>			</td>
+			<td class="actions">
+				<a href="http://lance/admin/users/edit/3" title="Edit" class="table-edit-link">Edit</a>				<a href="http://lance/admin/users/delete/3" title="Delete" class="table-delete-link" onclick="return confirm('Are you sure you want to delete # 3?');">Delete</a>			</td>
+		</tr>
+		            </tbody>
+
+            <tfoot>
+				<tr>
+					<td class="col-ckk"><input class="check-all" type="checkbox"></td>
+					<td colspan="13">
+						<select></select>
+					</td>
+				</tr>
+                <tr>
+                    <td colspan="14">
+                        <div class="pagination">
+                            	                            	<span class="disabled">&lt;&lt;Previous</span>                            	                            	<span class="disabled">Next&gt;&gt;</span>                            	                        </div>
+                    </td>
+                </tr>
+            </tfoot>
+	</table>
+	</div>
+</div>
+				</div><!-- end of #min-col -->
+				<div id="right-col">
+									</div> <!-- end of #right-col -->
+				<span class="clearFix">&nbsp;</span>     
+
+			</div><!-- end of #content -->
+			<div class="push"></div>
+		</div><!-- end of #container -->
+		<div id="footer-wrap">
+	<div id="footer">
+        <div id="footer-top">
+    		<div class="align-left">
+   	<h4>Users</h4>
+   	<p><a href="#">Dasboard Sub 1</a> | <a href="#">Dasboard Sub 2</a> | <a href="#">Dasboard Sub 3</a></p>
+</div>
+<div class="align-right">
+	<h2><a href="#">Cleanity</a></h2>
+</div>
+<span class="clearFix"></span>        </div><!-- end of div#footer-top -->
+        <div id="footer-bottom">
+        	<p>© 2009 Cleanity. Theme by Onur Oztaskiran of <a href="http://www.monofactor.com/">Monofactor</a>,  via <a href="http://themeforest.net/">Themeforest</a></p>        </div>
+	</div>
+</div>
+
+<div style="display: none; opacity: 0.85; cursor: auto;" id="modalBackgroundOverlay"></div>
+<div style="opacity: 1; padding-bottom: 54px; padding-right: 54px; display: none; height: 73px; width: 778px; top: 689px; left: 416.5px;" id="colorbox">
+	<div id="modalWrap">
+		<div>
+			<div id="borderTopLeft"></div>
+			<div style="width: 778px;" id="borderTopCenter"></div>
+			<div id="borderTopRight"></div>
+		</div>
+		<div style="height: 73px;" id="borderMiddleLeft"></div>
+		<div style="height: 73px; width: 778px;" id="modalContent">
+			<div style="display: none;" id="modalLoadingOverlay"></div>
+			<a class="" id="modalClose" href="#">close</a>
+		</div>
+		<div style="height: 73px;" id="borderMiddleRight"></div>
+		<div>
+			<div id="borderBottomLeft"></div>
+			<div style="width: 778px;" id="borderBottomCenter"></div>
+			<div id="borderBottomRight"></div>
+		</div>
+	</div>
+</div>
+<div id="ui-datepicker-div" class="ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all ui-helper-hidden-accessible"></div>	<div style="display: none;" id="modalBackgroundOverlay"></div><div style="opacity: 0; padding-bottom: 0px; padding-right: 54px; display: none;" id="colorbox"><div id="modalWrap"><div><div id="borderTopLeft"></div><div id="borderTopCenter"></div><div id="borderTopRight"></div></div><div id="borderMiddleLeft"></div><div style="" id="modalContent"><div style="" id="modalLoadedContent"></div><div id="modalLoadingOverlay"></div><a id="modalClose" href="#"></a></div><div id="borderMiddleRight"></div><div><div id="borderBottomLeft"></div><div id="borderBottomCenter"></div><div id="borderBottomRight"></div></div></div></div><div id="ui-datepicker-div" class="ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all ui-helper-hidden-accessible"></div></body></html>

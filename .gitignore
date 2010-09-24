@@ -1,1 +1,11 @@
-/cakephp
+# This is a Submodule Ignore it
+cakephp
+
+app/config/database.php
+app/config/settings.yml
+
+app/tmp/cache/cake_*
+app/tmp/cache/**/cake_*
+app/tmp/logs/*.log
+
+app/config/schema/*.sqlite

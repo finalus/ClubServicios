@@ -1,0 +1,52 @@
+/** Message Boxes **/
+.error-message, .successBox, .error-box, .success-box {
+    padding-bottom:10px; margin:10px 0; font-size:0.8em;
+    }
+.error-box {
+  background: #FFFFDF;
+  border: 1px solid #dddddd;
+}
+.success-box {
+	background: #CFFFCF;
+	border: 1px solid #dddddd;
+}
+.error-message {
+    background:url(../../img/admin/bg_errBox.gif) no-repeat bottom;
+	width: 708px;
+    }
+.successBox {
+    background:url(../../img/admin/bg_successBox.gif) no-repeat bottom;
+	width:708px;
+    }
+.successBoxTop {
+    background:url(../../img/admin/bg_successBoxTop.gif) no-repeat; height:6px;
+    }
+.errorBoxTop {
+    background:url(../../img/admin/bg_errBoxTop.gif) no-repeat; height:6px;
+    }
+.errorIcon {
+    background:url(../../img/admin/icon-error.gif) no-repeat 10px 10px;
+    }
+.successIcon {
+    background:url(../../img/admin/icon-success.gif) no-repeat 10px 10px;
+    }
+.msgBoxContent {
+    padding:10px 10px 10px 30px;
+    }
+.msgBoxContent p {
+    margin:10px 0;
+    }
+.errorIcon p:first-child {
+    color:#a84114;
+    }
+.successIcon p:first-child {
+    color:#669638;
+    }
+.msgBoxContent p:first-child {
+    margin:0px; 
+    font-size:1.2em; 
+    font-weight:strong;
+    }
+.msgBoxContent p:last-child {
+    margin-bottom:0;
+    }

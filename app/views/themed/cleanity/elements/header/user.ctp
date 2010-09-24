@@ -1,0 +1,3 @@
+<p id="userbox"><?php echo sprintf(__('Hello, %s', true), "<strong>". $session->read('Auth.User.first_name')." ". $session->read('Auth.User.last_name') ."</strong>"); ?> &nbsp;| &nbsp; <?php echo $html->link(__('My Account', true), array('admin' => true, 'plugin' => false, 'controller' => 'system', 'action' => 'account')); ?> &nbsp;| &nbsp;<?php echo $html->link(__('Logout', true), array('admin' => true, 'plugin' => false, 'controller' => 'users', 'action' => 'logout')); ?> <br>
+<?php echo $html->tag('small', sprintf(__('Last Login: %s', true), '12 May 2009' )); ?></p>
+<span class="clearFix">&nbsp;</span>

@@ -1,0 +1,75 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">	<title>Acs4 - Human Sensor</title>
+	<link href="http://codilibros/favicon.ico" type="image/x-icon" rel="icon"><link href="http://codilibros/favicon.ico" type="image/x-icon" rel="shortcut icon"><link rel="stylesheet" type="text/css" href="distributor_files/reset.css"><link rel="stylesheet" type="text/css" href="distributor_files/main.css">        <!--[if lt IE 7]>
+            <link rel="stylesheet" type="text/css" href="/css/admin-ie.css" />        <![endif]-->
+    <script type="text/javascript" src="distributor_files/jquery_002.js"></script><script type="text/javascript" src="distributor_files/facebox.js"></script><script type="text/javascript" src="distributor_files/jquery.js"></script><script type="text/javascript" src="distributor_files/custom.js"></script></head><body>
+	<div class="wrapper">
+		<h1 class="logo"><a href="http://codilibros/acs4/distributor"><img src="distributor_files/logo.jpg" id="logo" alt=""></a></h1>
+		<p class="txt_right">Logged in as  <span class="v_line"> | </span> <a href="http://codilibros/logout">Logout</a></p>   
+
+<div class="navigation">
+		<ul>
+			<li><a href="http://codilibros/publicacions">Publications</a></li>
+		<!--	<li><a href="/exports">Export</a></li>
+			<li><a href="/reportes">Reports</a></li> 
+			<li><a href="/admin">Admin</a></li>-->
+		</ul>
+	
+		<script type="text/javascript" src="distributor_files/jquery_003.js"></script><div id="searchform">
+	<span id="search-indicator" class="autocomplete-indicator" style="display: none;"><img src="distributor_files/loader.gif" alt="Loading..."></span>	<input autocomplete="off" name="data[q]" id="query" class="search_box" value="Search" type="text">	<input value="search" class="search_btn" type="button">	<script type="text/javascript">
+//<![CDATA[
+		var options, a;
+		options = {
+			serviceUrl: '/searchable/search_indexes/search',
+			minChars: 2,
+			indicator: 'search-indicator',
+			selectElement:getElementId,
+		};
+		$("#query").autocomplete(options);
+		function getElementId(li) {
+			location.href = $(li).attr('url');
+		}
+	
+//]]>
+</script></div>	
+</div>     
+		<div class="clear"></div>
+		
+		<div class="content">
+						Distributor
+			
+		</div>
+		<p class="footer"><link rel="stylesheet" type="text/css" href="distributor_files/advanced_search.css">   
+</p><div id="searchable_advanced_search" style="display: none;">
+	This is the Advanced Search
+</div>
+<a href="http://codilibros/searchable/search" id="advanced_search">Advanced Search</a>  
+<script type="text/javascript">
+//<![CDATA[
+ 
+	$('#advanced_search').click(function() {
+	  $("#searchable_advanced_search").slideToggle('slow');     
+		return false;
+	})
+
+//]]>
+</script><span class="v_line">|</span><a href="http://codilibros/logout">Logout</a>	</div><div class="autocomplete" id="Autocomplete_1282168187489" style="display: none; top: 161.5px; left: 1038.7px; z-index: 9999; max-height: 300px; width: 159px;" 159="" px;=""></div> 
+    <div class="debug">
+	   <table class="cake-sql-log" id="cakeSqlLog_12821681874c6c557b516df7_87306032" summary="Cake SQL Log" border="0" cellspacing="0"><caption>(default) 1 query took 76 ms</caption><thead>
+	<tr><th>Nr</th><th>Query</th><th>Error</th><th>Affected</th><th>Num. rows</th><th>Took (ms)</th></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>SELECT `Aco`.`id`, `Aco`.`parent_id`, `Aco`.`model`, 
+`Aco`.`foreign_key`, `Aco`.`alias` FROM `acos` AS `Aco` LEFT JOIN `acos`
+ AS `Aco0` ON (`Aco0`.`alias` = 'controllers') LEFT JOIN `acos` AS 
+`Aco1` ON (`Aco1`.`lft` &gt; `Aco0`.`lft` AND `Aco1`.`rght` &lt; 
+`Aco0`.`rght` AND `Aco1`.`alias` = 'Acs4' AND `Aco0`.`id` = 
+`Aco1`.`parent_id`)  WHERE ((`Aco`.`lft` &lt;= `Aco0`.`lft` AND 
+`Aco`.`rght` &gt;= `Aco0`.`rght`) OR (`Aco`.`lft` &lt;= `Aco1`.`lft` AND
+ `Aco`.`rght` &gt;= `Aco1`.`rght`))   ORDER BY `Aco`.`lft` DESC </td><td></td><td style="text-align: right;">1</td><td style="text-align: right;">1</td><td style="text-align: right;">76</td></tr>
+</tbody></table>
+    </div> 
+    <div id="facebox" style="display: none;">       <div class="popup">         <table>           <tbody>             <tr>               <td class="tl"></td><td class="b"></td><td class="tr"></td>             </tr>             <tr>               <td class="b"></td>               <td class="body">                 <div class="content">                 </div>                 <div class="footer">                   <a href="#" class="close">                     <img src="distributor_files/closelabel.html" title="close" class="close_image">                   </a>                 </div>               </td>               <td class="b"></td>             </tr>             <tr>               <td class="bl"></td><td class="b"></td><td class="br"></td>             </tr>           </tbody>         </table>       </div>     </div></body></html>

@@ -1,0 +1,51 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">	<title>Usuarios - Codilibros</title>
+	<link href="http://codilibros/favicon.ico" type="image/x-icon" rel="icon"><link href="http://codilibros/favicon.ico" type="image/x-icon" rel="shortcut icon"><link rel="stylesheet" type="text/css" href="ingreso_files/reset.css"><link rel="stylesheet" type="text/css" href="ingreso_files/main.css">        <!--[if lt IE 7]>
+            <link rel="stylesheet" type="text/css" href="/css/admin-ie.css" />        <![endif]-->
+    <script type="text/javascript" src="ingreso_files/jquery.js"></script></head><body>
+	<div class="wrapper">
+		<h1 class="logo"><a href="http://codilibros/admin/dashboards"><img src="ingreso_files/logo.jpg" id="logo" alt=""></a></h1>
+
+     
+		<div class="clear"></div>
+		
+		<div class="content">
+						<div class="author in">
+	<h2>Login - Codilibros</h2>
+	<p></p>
+</div>
+
+<div class="line"></div>
+
+<div class="in forms">
+<fieldset>
+	<legend>Login to Codilibros</legend>
+	<form id="UsuarioIngresoForm" method="post" action="/usuarios/ingreso" accept-charset="utf-8"><div style="display: none;"><input name="_method" value="POST" type="hidden"><input name="data[_Token][key]" value="8c56b349f0eb53acc88f51dfe694cc8ed884f101" id="Token751485452" type="hidden"></div><div class="input text required"><label for="UsuarioUsuario">Username</label><input name="data[Usuario][usuario]" maxlength="100" id="UsuarioUsuario" type="text"></div><div class="input password"><label for="UsuarioPassword">Password</label><input name="data[Usuario][password]" id="UsuarioPassword" type="password"></div><div class="input checkbox"><input name="data[Usuario][remember_me]" id="UsuarioRememberMe_" value="0" type="hidden"><input name="data[Usuario][remember_me]" value="1" id="UsuarioRememberMe" type="checkbox"><label for="UsuarioRememberMe">Keep me logged into this computer</label></div><div class="submit"><input value="Login" type="submit"></div><div style="display: none;"><input name="data[_Token][fields]" value="bbbd99af6bad43e3008bdb900471d5a4d307bdde%3An%3A0%3A%7B%7D" id="TokenFields705394419" type="hidden"></div></form></fieldset>
+</div>		</div>
+	</div> 
+    <div class="debug">
+	   <table class="cake-sql-log" id="cakeSqlLog_12818905904c68191e7621e1_00360776" summary="Cake SQL Log" border="0" cellspacing="0"><caption>(default) 3 queries took 75 ms</caption><thead>
+	<tr><th>Nr</th><th>Query</th><th>Error</th><th>Affected</th><th>Num. rows</th><th>Took (ms)</th></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>SELECT `Aco`.`id`, `Aco`.`parent_id`, `Aco`.`model`, 
+`Aco`.`foreign_key`, `Aco`.`alias` FROM `acos` AS `Aco` LEFT JOIN `acos`
+ AS `Aco0` ON (`Aco0`.`alias` = 'controllers') LEFT JOIN `acos` AS 
+`Aco1` ON (`Aco1`.`lft` &gt; `Aco0`.`lft` AND `Aco1`.`rght` &lt; 
+`Aco0`.`rght` AND `Aco1`.`alias` = 'Usuarios' AND `Aco0`.`id` = 
+`Aco1`.`parent_id`)  WHERE ((`Aco`.`lft` &lt;= `Aco0`.`lft` AND 
+`Aco`.`rght` &gt;= `Aco0`.`rght`) OR (`Aco`.`lft` &lt;= `Aco1`.`lft` AND
+ `Aco`.`rght` &gt;= `Aco1`.`rght`))   ORDER BY `Aco`.`lft` DESC </td><td></td><td style="text-align: right;">2</td><td style="text-align: right;">2</td><td style="text-align: right;">75</td></tr>
+<tr><td>2</td><td>SELECT `Aco`.`id`, `Aco`.`alias` FROM `acos` AS `Aco`   WHERE `Aco`.`parent_id` = 190   </td><td></td><td style="text-align: right;">13</td><td style="text-align: right;">13</td><td style="text-align: right;">0</td></tr>
+<tr><td>3</td><td>SELECT `Permission`.`id`, `Permission`.`aco_id` FROM 
+`aros_acos` AS `Permission`   WHERE `Permission`.`aro_id` = 3 AND 
+`Permission`.`aco_id` IN (191, 192, 193, 194, 195, 196, 197, 198, 199, 
+200, 201, 202, 203) AND `Permission`.`_create` = '1' AND 
+`Permission`.`_read` = '1' AND `Permission`.`_update` = '1' AND 
+`Permission`.`_delete` = '1'   </td><td></td><td style="text-align: right;">2</td><td style="text-align: right;">2</td><td style="text-align: right;">0</td></tr>
+</tbody></table>
+    </div> 
+</body></html>
