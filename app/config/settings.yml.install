@@ -5,7 +5,12 @@ App:
     base: 
     baseUrl: 
     timezone: America/Santiago
-    theme: 
+    theme:
+Site:
+    name:
+    theme:
+    admin_theme: cleanity
+    status: 1
 Hook: 
     bootstraps: core
     components: 
